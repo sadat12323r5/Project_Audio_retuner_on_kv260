@@ -1,0 +1,16 @@
+13:36:13 **** Incremental Build of configuration Debug for project kv260_lab3_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55337 C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm standalone_domain C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/_ide/bitstream/design_1_wrapper.bit --elf C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+13:36:28 Build Finished (took 15s.159ms)
+

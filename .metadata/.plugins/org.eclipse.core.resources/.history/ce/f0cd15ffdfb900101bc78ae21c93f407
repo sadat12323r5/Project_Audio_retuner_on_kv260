@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="kv260_lab3" location="C:/Sadat_files/Current_Term/COMP3601/lab3/kv260_lab3" platform="C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm" platformUID="xilinx:kv260_som::0.0(custom)" systemProject="kv260_lab3_system" sysConfig="kv260_lab3_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="1b1f671bdb7af52b0701bc4bc73549d7">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.2028106636" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1035725494" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

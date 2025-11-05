@@ -1,0 +1,637 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Oct 30 00:30:42 2025
+# Process ID: 24832
+# Current directory: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5928 C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.xpr
+# Log file: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/vivado.log
+# Journal file: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3\vivado.jou
+# Running On        :S-K
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14877 MB
+# Swap memory       :14877 MB
+# Total Virtual     :29754 MB
+# Available Virtual :13518 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 1599.070 ; gain = 486.828
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+report_ip_status -name ip_status 
+open_bd_design {C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:module_ref:audio_pipeline:1.0 - audio_pipeline_0
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/audio_pipeline_0'.
+Given inputs for module-source, Top-module name : audio_pipeline, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Successfully read diagram <design_1> from block design file <C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1771.312 ; gain = 130.770
+regenerate_bd_layout
+import_files -norecurse C:/Sadat_files/Current_Term/COMP3601/Lab_2/COMP3601-Lab2/COMP3601-Lab2.srcs/sources_1/imports/Lab2_Resources/axi_gpio.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+create_bd_cell -type module -reference axi_gpio axi_gpio_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-3571] IP 'design_1_axi_gpio_0_0' is restricted:
+* Detected changes to module reference file(s).
+regenerate_bd_layout
+set_property location {6 2005 65} [get_bd_cells axi_gpio_0]
+set_property location {6 2097 145} [get_bd_cells axi_gpio_0]
+startgroup
+set_property CONFIG.NUM_MI {3} [get_bd_cells ps8_0_axi_periph]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps8_0_axi_periph/M02_AXI] [get_bd_intf_pins axi_gpio_0/S_AXI]
+create_bd_port -dir I pmod_btn_sw1
+set_property location {959 282} [get_bd_ports pmod_btn_sw1]
+set_property location {2071 285} [get_bd_ports pmod_btn_sw1]
+set_property location {1475 595} [get_bd_ports pmod_btn_sw1]
+create_bd_port -dir O pmod_led_d1
+set_property location {2245 134} [get_bd_ports pmod_led_d1]
+set_property location {2232 143} [get_bd_ports pmod_led_d1]
+startgroup
+connect_bd_net [get_bd_ports pmod_led_d1] [get_bd_pins axi_gpio_0/LED_OUT]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/S_AXI_ARESETN] [get_bd_pins rst_ps8_0_99M/peripheral_aresetn]
+connect_bd_net [get_bd_ports pmod_btn_sw1] [get_bd_pins axi_gpio_0/BUTTON]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins axi_gpio_0/S_AXI_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Freq {99} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ps8_0_axi_periph/M02_ACLK]
+assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/axi_gpio_0/S_AXI/reg0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_1000 [ 4K ]>.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+set_property offset 0xA0030000 [get_bd_addr_segs {zynq_ultra_ps_e_0/Data/SEG_axi_gpio_0_reg0}]
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+report_ip_status -name ip_status 
+update_module_reference [get_ips  design_1_axi_gpio_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+Upgrading 'C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_axi_gpio_0_0 to use current project options
+Wrote  : <C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+Wrote  : <C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+Exporting to file c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2241.301 ; gain = 302.219
+export_ip_user_files -of_objects [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files/sim_scripts -ip_user_files_dir C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files -ipstatic_source_dir C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/modelsim} {questa=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/questa} {riviera=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/riviera} {activehdl=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/utils_1/imports/synth_1/audio_pipeline.dcp with file C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.runs/synth_1/design_1_wrapper.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+update_module_reference design_1_audio_pipeline_0_0
+ERROR: [filemgmt 56-190] Failed to uniquely resolve reference. Multiple different modules were found that match the name 'audio_pipeline'.
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+export_ip_user_files -of_objects  [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd] -no_script -reset -force -quiet
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Sadat_files/personal_page/others/fifo.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/others/fifo.vhd] -no_script -reset -force -quiet
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/others/fifo.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd] -no_script -reset -force -quiet
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd
+export_ip_user_files -of_objects  [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd] -no_script -reset -force -quiet
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd
+file delete -force C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd
+export_ip_user_files -of_objects  [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd] -no_script -reset -force -quiet
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
+file delete -force C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+remove_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
+WARNING: [Vivado 12-818] No files matched 'C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd'
+update_compile_order -fileset sim_1
+import_files -force -norecurse {C:/Sadat_files/Current_Term/COMP3601/Lab_3/IBR_Resources/ctrl_bus.vhd C:/Sadat_files/Current_Term/COMP3601/Lab_3/IBR_Resources/audio_pipeline.vhd C:/Sadat_files/Current_Term/COMP3601/Lab_3/IBR_Resources/i2s_master.vhd C:/Sadat_files/Current_Term/COMP3601/Lab_3/IBR_Resources/fifo.vhd C:/Sadat_files/Current_Term/COMP3601/Lab_3/IBR_Resources/params.vhd}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  design_1_audio_pipeline_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 's00_axi_aclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axi_aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 's00_axi_aclk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 's00_axi_aclk' has no FREQ_HZ parameter.
+Upgrading 'C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_audio_pipeline_0_0 to use current project options
+Wrote  : <C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+generate_target all [get_files  C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+Wrote  : <C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_pipeline_0 .
+Exporting to file c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2259.062 ; gain = 15.719
+export_ip_user_files -of_objects [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files/sim_scripts -ip_user_files_dir C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files -ipstatic_source_dir C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/modelsim} {questa=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/questa} {riviera=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/riviera} {activehdl=C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\fifo.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\i2s_master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\Lab3.srcs\sources_1\imports\IBR_Resources\audio_pipeline.vhd:]
+report_ip_status -name ip_status 
+launch_runs synth_1 -jobs 6
+[Thu Oct 30 01:21:08 2025] Launched synth_1...
+Run output will be captured here: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Oct 30 01:23:31 2025] Launched impl_1...
+Run output will be captured here: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 30 10:30:53 2025] Launched impl_1...
+Run output will be captured here: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/Lab3.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/design_1_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2446.332 ; gain = 126.449
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 11:38:48 2025...

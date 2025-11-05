@@ -1,0 +1,36 @@
+Nothing to build in platform 'kv260_lab3_platform'
+
+13:36:10 **** Incremental Build of configuration Debug for project kv260_lab3 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:96:16: warning: 'sd_mount_sd1' defined but not used [-Wunused-function]
+   96 | static FRESULT sd_mount_sd1(void)
+      |                ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: kv260_lab3.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bsplib/lib -o "kv260_lab3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: kv260_lab3.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size kv260_lab3.elf  |tee "kv260_lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145000	   4848	  33284	 183132	  2cb5c	kv260_lab3.elf
+'Finished building: kv260_lab3.elf.size'
+' '
+13:36:13 **** Incremental Build of configuration Debug for project kv260_lab3_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55337 C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm standalone_domain C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/system.bif
+'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+sdcard_gen --xpfm C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/_ide/bitstream/design_1_wrapper.bit --elf C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image C:/Sadat_files/Current_Term/COMP3601/Lab_3/Lab3/kv260_lab3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
