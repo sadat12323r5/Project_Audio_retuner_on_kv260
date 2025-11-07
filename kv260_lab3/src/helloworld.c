@@ -34,12 +34,13 @@
 #include "ff.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /*** DMA device ***/
 #define DMA_DEV_ID              XPAR_AXIDMA_0_DEVICE_ID
 
 /*** Audio / file format ***/
-#define FS                      48000      // sample rate (Hz)
+#define FS                      41000      // sample rate (Hz)
 #define CHANNELS                1          // mono
 #define MIC_BITS                18         // useful MSBs from the I2S mic
 #define OUT_BITS                16         // write 16-bit PCM in the WAV
@@ -49,7 +50,7 @@
 #define BYTES_PER_SAMPLE        4          // PL streams 32-bit words
 #define BURST_BYTES             (BURST_SAMPLES * BYTES_PER_SAMPLE)
 
-#define SECONDS_TO_RECORD       3
+#define SECONDS_TO_RECORD       7
 #define TOTAL_SAMPLES           (FS * SECONDS_TO_RECORD)
 
 /*** Globals ***/
@@ -93,12 +94,12 @@ static void wav_header(uint8_t *h, uint32_t nsamples, uint32_t fs,
 }
 
 /*** Mount SD1 into g_fs ***/
-static FRESULT sd_mount_sd1(void)
-{
-    // Be clean: unmount first (in case of prior run)
-    f_mount(NULL, DRIVE, 1);
-    return f_mount(&g_fs, DRIVE, 1);
-}
+//static FRESULT sd_mount_sd1(void)
+//{
+//    // Be clean: unmount first (in case of prior run)
+//    f_mount(NULL, DRIVE, 1);
+//    return f_mount(&g_fs, DRIVE, 1);
+//}
 
 /*** Open WAV on SD1 and write placeholder header ***/
 static int sd_open_wav(FIL *fp, const char *filename,
@@ -144,6 +145,23 @@ static void sd_fix_header(FIL *fp, uint32_t nsamples, uint32_t fs,
     f_write(fp, hdr, sizeof(hdr), &bw);
 }
 
+/*** Reverses the order of all the bits of an unsigned 16-bit value ***/
+uint16_t swap_bits_u16(uint16_t word) {
+	uint16_t ret = 0;
+	for (int i = 0; i < sizeof(uint16_t) * 8; i++) {
+		if ((0b1 << i) & word) {
+			ret |= 1 << (sizeof(uint16_t) * 8 - 1 - i);
+		}
+	}
+	return ret;
+}
+
+///*** Swaps the endian-ness of an unsigned 16-bit value ***/
+// uint16_t swap_endian_u16(uint16_t word) {
+// 	return ((word & 0xFF) << 8)  |
+// 			((word & 0xFF00) >> 8);
+// }
+
 int main(void)
 {
     xil_printf("Audio capture start...\r\n");
@@ -172,7 +190,7 @@ int main(void)
         return XST_FAILURE;
     }
 
-    xil_printf("Recording %d s @ %d Hz… speak now!\r\n", SECONDS_TO_RECORD, FS);
+    xil_printf("Recording %d s @ %d Hzï¿½ speak now!\r\n", SECONDS_TO_RECORD, FS);
 
     uint32_t samples_written = 0;
     while (samples_written < TOTAL_SAMPLES) {
@@ -190,9 +208,9 @@ int main(void)
         // 3) see fresh data
         Xil_DCacheInvalidateRange((UINTPTR)rx32, BURST_BYTES);
 
-        // 4) convert to 16-bit PCM
+        // 4) convert to 16-bit PCM (and swap endianess)
         for (int i = 0; i < BURST_SAMPLES; ++i) {
-            pcm16[i] = to_pcm16(rx32[i]);
+            pcm16[i] = swap_endian_ushort(to_pcm16(rx32[i]));
         }
 
         // 5) write to SD (respect final partial chunk)
@@ -208,6 +226,7 @@ int main(void)
         }
 
         samples_written += chunk;
+//        xil_printf("written %d samples\n", samples_written);
     }
 
     // Patch header and close
