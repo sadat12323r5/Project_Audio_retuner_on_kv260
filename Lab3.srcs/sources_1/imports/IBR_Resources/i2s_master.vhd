@@ -1,24 +1,26 @@
-library ieee;
+library ieee; 
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.ALL;
+ 
 library work;
 use work.aud_param.all;
-
+ 
 -- I2S master interface for the SPH0645LM4H MEMs mic
 -- useful links:
 --   - https://diyi0t.com/i2s-sound-tutorial-for-esp32/
---   - https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-q1microphone-breakout.pdf
+--   - https://cdn-learn.adafruit.com/downloads/pdf/adafruit-i2s-mems-microphone-breakout.pdf
 --   - https://cdn-shop.adafruit.com/product-files/3421/i2S+Datasheet.PDF
-
+ 
 entity i2s_master is
     generic (
         DATA_WIDTH : natural := 32;
-        PCM_PRECISION : natural := 18
+        PCM_PRECISION : natural := 18;
+        BCLK_DIV_CMP  : natural := 15
     );
     port (
         clk             : in  std_logic;
-        clk_1           : in  std_logic; -- 49.06MHz
-
+        clk_1            : in  std_logic;
+ 
         -- I2S interface to MEMs mic
         i2s_lrcl        : out std_logic;    -- left/right clk (word sel): 0 = left, 1 = right
         i2s_dout        : in  std_logic;    -- serial data: payload, msb first
@@ -27,84 +29,139 @@ entity i2s_master is
         -- FIFO interface to MEMs mic
         fifo_din        : out std_logic_vector(DATA_WIDTH - 1 downto 0);
         fifo_w_stb      : out std_logic;    -- Write strobe: 1 = ready to write, 0 = busy
-        fifo_full       : in  std_logic     -- 0 = not full, 1 = full
+        fifo_full       : in  std_logic     -- 1 = not full, 0 = full
     );
 end i2s_master;
-
+ 
 architecture Behavioral of i2s_master is
     --put your signals here
-    signal bclk, prev_word: std_ulogic := '0'; -- Bclk signal, start low
-    signal word, prev_bclk: std_ulogic := '1'; -- WS/lrcl, start high
-    signal ws_counter: unsigned (5 downto 0) := "000001"; -- counter for 4 bytes / 32 bclk clock cyles
-    signal bclk_counter: unsigned (5 downto 0) := "000000"; -- counter for 22 clk_1 cycles
-    signal readable: boolean := false; -- If false, in 32-64 bit range, true if in 0-32 bit range (first 3 states)
-    signal bit_count: integer := DATA_WIDTH - 1; -- Bitcount for shift register, counts down on every bclk so MSB is leftmost bit for FIFO Bufffer
-    signal fsm_state: integer := 0; -- State counter
-    
+    signal bclk_divider : integer := 0;     -- bclk divider counter
+    signal bclk         : std_logic := '0'; -- Local i2s_bclk signal
+    signal bit_count : integer := 0;
+    signal lrcl           : std_logic := '0';  -- Starting with left channel
+    signal lrclk_prev : std_logic := '0';
+ 
+    --fsm
+    type I2S_Data_State is (ClearData, ReadBit);
+    signal fsm_count : integer := 0;
+    signal data_state: I2S_Data_State := ReadBit;
+    signal data_source : std_logic_vector(DATA_WIDTH-1 downto 0):= (others => '0'); -- fifo data
+    signal last_readable    : std_logic := '0';
+    signal w_stb    : std_logic := '0';
+    signal last_data_sent    : std_logic := '0';
+
+ 
+    -- Checking for change in WS
+    signal current : std_logic := '0';
+    signal previous : std_logic := '0';
+    signal changed : std_logic := '0';
+ 
+    --fifo
+    type fifo_state_type is (write_data, reset, idle);
+    signal fifo_state: fifo_state_type := write_data;
+     
 begin
     -----------------------------------------------------------------------
     -- hint: write code for bclk clock generator:
     -----------------------------------------------------------------------
     --implementation...:
-    process(clk, bclk, readable)
+    process (clk)
     begin
-        if rising_edge(clk) then 
-            prev_bclk <= bclk;
-            prev_word <= word;
-            if readable = false then
-                bit_count <= DATA_WIDTH - 1;
+        if rising_edge(clk) then
+            -- Increment bclk divider
+            if bclk_divider < BCLK_DIV_CMP then
+                bclk_divider <= bclk_divider + 1;
+            else
+                bclk_divider <= 0;
+                bclk <= not bclk;
             end if;
-            case bclk_counter is
-                when "100011" =>
-                    prev_bclk <= bclk;
-                    bclk <= not(bclk);
-                    bclk_counter <= "000000";
-                    if bclk = '0' then
-                        bit_count <= bit_count - 1; -- Decrements every bclk
-                        if ws_counter = "100000" then 
-                            prev_word <= word;
-                            word <= not(word);
-                            ws_counter <= "000001";
-                         else
-                            ws_counter  <= ws_counter + 1;
-                         end if; 
-                    end if;
-                when others =>
-                    bclk_counter <= bclk_counter + 1;
-            end case;
-       end if;
-        i2s_lrcl <= word; -- Assign lrcl
-        i2s_bclk <= bclk; -- Assign bclk
+        end if;
     end process;
+ 
+    -- Assign the local bclk signal to the output port i2s_bclk
+    i2s_bclk <= bclk;
+ 
     ------------------------------------------------------------------------
-    -- hint: write code for I2S FSM
+    -- hint: write code for lrcl/ws clock generator:
     ------------------------------------------------------------------------
     --implementation...:
-    process(word, bit_count, clk)
+    process (bclk)
     begin
-       if rising_edge(clk) then
-           fifo_w_stb <= '0';
-           case fsm_state is
-                when 0 => 
-                    if bit_count < 0 then                 
-                        readable <= false;
-                    end if;
-                    if word = '0' and prev_word = '1' then -- Negative edge triggered flip flop to state 1 - falling edge always in 0-32 bit range
-                        readable <= true; -- In state 1, can read 18 bit bus
-                        fsm_state <= 1;        
-                    end if; 
-                when 1 =>
-                    if bit_count < 14 then -- 24 bit I2S
-                        fsm_state <= 2;
-                    end if;
-                    fifo_din(bit_count) <= i2s_dout; -- clk cycle, sync with handshake, send data to Fifo buffer    
-                when 2 =>       
-                    if fifo_full = '0' then -- Fifo buffer says not full
-                        fifo_w_stb <= '1'; -- Drive Fifo buffer with ready signal
-                        fsm_state <= 0;
-                    end if;
-                when others =>
-            end case;
-       end if;
+    if falling_edge(bclk) then
+            if bit_count < (DATA_WIDTH - 1) then
+                bit_count <= bit_count + 1;
+            else
+                bit_count <= 0;
+                lrcl <= not lrcl;  -- toggle every 32 BCLKs
+            end if;
+    end if;
     end process;
+ 
+    i2s_lrcl <= lrcl;
+    ------------------------------------------------------------------------
+    -- hint: write code for I2S FSM
+    -- Logic: Keep track of how many bclk cycles (one cycle transmit one bit)
+    ------------------------------------------------------------------------
+--    --implementation...:
+ 
+   process (bclk)
+   begin
+     if rising_edge(bclk) then
+            fsm_count <= fsm_count + 1;
+            case data_state is
+                when ReadBit =>
+                    if fsm_count < PCM_PRECISION  then
+                        data_source(DATA_WIDTH - 1 downto 0) <= i2s_dout & data_source(DATA_WIDTH - 1 downto 1);
+                        data_state <= ReadBit;
+                    else
+                        data_state <= ClearData;
+                    end if;
+                when ClearData =>
+                    if fsm_count = (DATA_WIDTH - 1) then 
+                        fsm_count <= 0;
+                        data_source(DATA_WIDTH - 1 downto 0)<= (others => '0');
+                        data_state <= ReadBit;
+                    else 
+                        data_state <= ClearData;
+                    end if;
+            end case;
+         end if;  
+   end process;
+ 
+    --------------------------------------------------
+    -- hint: write code for FIFO data handshake
+    --------------------------------------------------
+    -- hint: Useful link: https://encyclopedia2.thefreedictionary.com/Hand+shake+signal
+    --implementation...:
+ 
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            case fifo_state is
+                when idle =>
+                    fifo_w_stb <= '0';
+                    if data_state = ClearData then
+                        fifo_state <= write_data;
+                    else 
+                        fifo_state <= idle;
+                    end if;
+                when write_data => 
+                    if (fifo_full = '0' and lrcl = '0')then
+                        fifo_w_stb <= '1';
+                        fifo_din <= "00000000000000" & data_source(31 downto 14); --(17 downto 0) & "00000000000000";
+                    else 
+                        fifo_w_stb <= '0';
+                    end if;
+                    fifo_state <= reset;
+                when reset => 
+                    fifo_w_stb <= '0';
+                    if data_state = ClearData then
+                        fifo_state <= reset;
+                    else
+                        fifo_state <= idle;
+                    end if;
+              end case;
+          end if;
+      end process;
+
 end Behavioral;

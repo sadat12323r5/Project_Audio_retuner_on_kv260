@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\Sadat_files\Current_Term\COMP3601\lab3\kv260_lab3_platform\export\kv260_lab3_platform;C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\kv260_lab3_platform\export\kv260_lab3_platform"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\kv260_lab3_platform\export\kv260_lab3_platform"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\Sadat_files\Current_Term\COMP3601\lab3\kv260_lab3_platform\export\kv260_lab3_platform;C:\Sadat_files\Current_Term\COMP3601\Lab_3\Lab3\kv260_lab3_platform\export\kv260_lab3_platform;/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/kv260_lab3_platform;/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform"/>
 </section>

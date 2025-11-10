@@ -86,7 +86,7 @@ __root const u32 XPm_ConfigObject[] =
 
 
 	PM_CONFIG_SLAVE_SECTION_ID,	/* Section ID */
-	30,				/* Number of slaves */
+	31,				/* Number of slaves */
 
 	NODE_OCM_BANK_0,
 	PM_SLAVE_FLAG_IS_SHAREABLE,
@@ -160,6 +160,10 @@ __root const u32 XPm_ConfigObject[] =
 	PM_SLAVE_FLAG_IS_SHAREABLE,
 	PM_CONFIG_IPI_PSU_CORTEXA53_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_1_MASK, /* IPI Mask */
 
+	NODE_SD_1,
+	PM_SLAVE_FLAG_IS_SHAREABLE,
+	PM_CONFIG_IPI_PSU_CORTEXA53_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_1_MASK, /* IPI Mask */
+
 	NODE_GDMA,
 	PM_SLAVE_FLAG_IS_SHAREABLE,
 	PM_CONFIG_IPI_PSU_CORTEXA53_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_0_MASK | PM_CONFIG_IPI_PSU_CORTEXR5_1_MASK, /* IPI Mask */
@@ -217,7 +221,7 @@ __root const u32 XPm_ConfigObject[] =
 
 /* Prealloc for psu_cortexa53_0 */
 	PM_CONFIG_IPI_PSU_CORTEXA53_0_MASK,
-	10,
+	11,
 	NODE_DDR,
 	PM_MASTER_USING_SLAVE_MASK, /* Master is using Slave */
 	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Current Requirements */
@@ -249,6 +253,11 @@ __root const u32 XPm_ConfigObject[] =
 	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Default Requirements */
 
 	NODE_I2C_1,
+	PM_MASTER_USING_SLAVE_MASK, /* Master is using Slave */
+	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Current Requirements */
+	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Default Requirements */
+
+	NODE_SD_1,
 	PM_MASTER_USING_SLAVE_MASK, /* Master is using Slave */
 	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Current Requirements */
 	PM_CAP_ACCESS | PM_CAP_CONTEXT, /* Default Requirements */
