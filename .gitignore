@@ -1,0 +1,79 @@
+# =========================
+# Vivado / Vitis Common Junk
+# =========================
+*.jou
+*.log
+*.str
+*.backup.*
+*.tmp
+*.dmp
+*.rpt
+*.html
+*.wcfg
+*.wdb
+*.tcl.history
+*.xml
+*.csv
+
+# =========================
+# Vivado Project Directories
+# =========================
+*.cache/
+*.runs/
+*.sim/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.Xil/
+*.vivado/
+*.vivado.*
+
+# =========================
+# Vitis Workspace Files
+# =========================
+.metadata/
+RemoteSystemsTempFiles/
+.settings/
+.logs/
+*.launch
+*.importsummary
+*.cproject
+*.project
+*.classpath
+*.index
+*.trace
+*.markers
+
+# Ignore all Debug / Release folders (auto-built)
+**/Debug/
+**/Release/
+**/export/
+**/workspace/
+**/build/
+**/bsp/
+
+# =========================
+# OS and IDE Junk
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+.vscode/
+*.ipynb_checkpoints/
+*.idea/
+
+# =========================
+# Keep These (explicitly allow)
+# =========================
+!design_1_wrapper.xsa
+!Lab3.xpr
+!Lab3.srcs/
+!kv260_lab3/
+!kv260_lab3_platform/
+!kv260_lab3_system/
+!src/
+!include/
+!Makefile
+!README.md
