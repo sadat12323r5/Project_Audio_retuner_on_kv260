@@ -67,3 +67,12 @@ timestamp=[2025-11-10 10:59:49], mode=BUILD, duration=0:00:00.382, duration_ms=3
 timestamp=[2025-11-10 10:59:55], mode=BUILD, duration=0:00:05.438, duration_ms=5438, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
 timestamp=[2025-11-10 11:03:34], mode=BUILD, duration=0:00:00.381, duration_ms=381, data={name=kv260_lab3, configuration=Debug, clean_build=false}
 timestamp=[2025-11-10 11:03:40], mode=BUILD, duration=0:00:05.439, duration_ms=5439, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-11 09:47:06], mode=WORKBENCH_START, duration=0:00:09.092, duration_ms=9092, data={}
+timestamp=[2025-11-11 09:47:07], mode=WORKBENCH_UI_INIT, duration=0:00:01.178, duration_ms=1178, data={editors_count=6, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,kv260_lab3,kv260_lab3_platform,kv260_lab3_system}
+timestamp=[2025-11-11 09:47:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.396, duration_ms=396, data={}
+timestamp=[2025-11-11 09:51:05], mode=PLATFORM_GENERATION, duration=0:02:57.091, duration_ms=177091, data={name=kv260_lab3_platform}
+timestamp=[2025-11-11 09:52:01], mode=BUILD, duration=0:00:02.659, duration_ms=2659, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-11 09:52:16], mode=BUILD, duration=0:00:14.089, duration_ms=14089, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-11 10:11:48], mode=PLATFORM_GENERATION, duration=0:00:33.127, duration_ms=33127, data={name=kv260_lab3_platform}
+timestamp=[2025-11-11 10:12:38], mode=BUILD, duration=0:00:02.504, duration_ms=2504, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-11 10:12:52], mode=BUILD, duration=0:00:12.781, duration_ms=12781, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}

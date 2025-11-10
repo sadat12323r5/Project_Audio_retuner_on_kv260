@@ -45,3 +45,8 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform generate -domains standalone_domain,zynqmp_fsbl,zynqmp_pmufw 
+platform active {kv260_lab3_platform}
+platform config -updatehw {/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/v2.0.xsa}
+platform config -updatehw {C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/v2.0.xsa}
+platform generate -domains 
