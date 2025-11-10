@@ -40,13 +40,13 @@
 #define DMA_DEV_ID              XPAR_AXIDMA_0_DEVICE_ID
 
 /*** Audio / file format ***/
-#define FS                      41000      // sample rate (Hz)
+#define FS                      48000      // sample rate (Hz)
 #define CHANNELS                1          // mono
 #define MIC_BITS                18         // useful MSBs from the I2S mic
 #define OUT_BITS                16         // write 16-bit PCM in the WAV
 
 /*** Capture sizing ***/
-#define BURST_SAMPLES           1024       // per DMA transfer
+#define BURST_SAMPLES           256        // per DMA transfer
 #define BYTES_PER_SAMPLE        4          // PL streams 32-bit words
 #define BURST_BYTES             (BURST_SAMPLES * BYTES_PER_SAMPLE)
 
@@ -210,7 +210,9 @@ int main(void)
 
         // 4) convert to 16-bit PCM (and swap endianess)
         for (int i = 0; i < BURST_SAMPLES; ++i) {
-            pcm16[i] = swap_endian_ushort(to_pcm16(rx32[i]));
+//            pcm16[i] = to_pcm16(rx32[i]);
+//            pcm16[i] = swap_endian_u16(to_pcm16(rx32[i]));
+            pcm16[i] = swap_bits_u16(to_pcm16(rx32[i]));
         }
 
         // 5) write to SD (respect final partial chunk)

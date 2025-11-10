@@ -37,3 +37,11 @@ domain active {zynqmp_fsbl}
 bsp reload
 domain active {standalone_domain}
 bsp write
+platform active {kv260_lab3_platform}
+platform active {kv260_lab3_platform}
+platform config -updatehw {/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/v2.0.xsa}
+platform config -updatehw {/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/v2.0.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
