@@ -35,6 +35,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /*** DMA device ***/
 #define DMA_DEV_ID              XPAR_AXIDMA_0_DEVICE_ID
@@ -156,12 +157,6 @@ uint16_t swap_bits_u16(uint16_t word) {
 	return ret;
 }
 
-///*** Swaps the endian-ness of an unsigned 16-bit value ***/
-// uint16_t swap_endian_u16(uint16_t word) {
-// 	return ((word & 0xFF) << 8)  |
-// 			((word & 0xFF00) >> 8);
-// }
-
 int main(void)
 {
     xil_printf("Audio capture start...\r\n");
@@ -182,58 +177,67 @@ int main(void)
         return XST_FAILURE;
     }
 
-    // -------- Open WAV on SD1 --------
-    xil_printf("Opening %s/rec.wav ...\r\n", DRIVE);
-    FIL f; UINT bw;
-    if (sd_open_wav(&f, "rec.wav", TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0) {
-        xil_printf("Failed to open WAV on %s\r\n", DRIVE);
-        return XST_FAILURE;
-    }
+    while (1) {
+        // -------- Open WAV on SD1 --------
+        // -------- Generate file name --------
+        time_t now = time(NULL);
+        struct tm *time = localtime(&now);
 
-    xil_printf("Recording %d s @ %d Hz� speak now!\r\n", SECONDS_TO_RECORD, FS);
+        char filename[27];
+        
+        strftime(filename, sizeof(filename), "rec_%Y-%m-%d_%H-%M-%S.wav", time);
 
-    uint32_t samples_written = 0;
-    while (samples_written < TOTAL_SAMPLES) {
-        // 1) kick S2MM for one burst
-        Xil_DCacheFlushRange((UINTPTR)rx32, BURST_BYTES);
-        status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)rx32, BURST_BYTES, XAXIDMA_DEVICE_TO_DMA);
-        if (status != XST_SUCCESS) {
-            xil_printf("DMA transfer setup failed.\r\n");
-            break;
+        
+        xil_printf("Opening %s/rec.wav ...\r\n", DRIVE);
+        FIL f; UINT bw;
+        if (sd_open_wav(&f, filename, TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0) {
+            xil_printf("Failed to open WAV on %s\r\n", DRIVE);
+            return XST_FAILURE;
         }
 
-        // 2) wait for completion
-        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)) { /* spin */ }
+        xil_printf("Recording %d s @ %d Hz� speak now!\r\n", SECONDS_TO_RECORD, FS);
 
-        // 3) see fresh data
-        Xil_DCacheInvalidateRange((UINTPTR)rx32, BURST_BYTES);
+        uint32_t samples_written = 0;
+        while (samples_written < TOTAL_SAMPLES) {
+            // 1) kick S2MM for one burst
+            Xil_DCacheFlushRange((UINTPTR)rx32, BURST_BYTES);
+            status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)rx32, BURST_BYTES, XAXIDMA_DEVICE_TO_DMA);
+            if (status != XST_SUCCESS) {
+                xil_printf("DMA transfer setup failed.\r\n");
+                break;
+            }
 
-        // 4) convert to 16-bit PCM (and swap endianess)
-        for (int i = 0; i < BURST_SAMPLES; ++i) {
-//            pcm16[i] = to_pcm16(rx32[i]);
-//            pcm16[i] = swap_endian_u16(to_pcm16(rx32[i]));
-            pcm16[i] = swap_bits_u16(to_pcm16(rx32[i]));
-        }
+            // 2) wait for completion
+            while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)) { /* spin */ }
 
-        // 5) write to SD (respect final partial chunk)
-        uint32_t chunk = BURST_SAMPLES;
-        if (samples_written + chunk > TOTAL_SAMPLES)
-            chunk = TOTAL_SAMPLES - samples_written;
+            // 3) see fresh data
+            Xil_DCacheInvalidateRange((UINTPTR)rx32, BURST_BYTES);
 
-        FRESULT fr = f_write(&f, pcm16, chunk * sizeof(int16_t), &bw);
-        if (fr != FR_OK || bw != chunk * sizeof(int16_t)) {
-            xil_printf("f_write short fr=%d (bw=%u vs %u)\r\n",
-                       fr, (unsigned)bw, (unsigned)(chunk*sizeof(int16_t)));
-            break;
-        }
+            // 4) convert to 16-bit PCM (and swap bit order)
+            for (int i = 0; i < BURST_SAMPLES; ++i) {
+                pcm16[i] = swap_bits_u16(to_pcm16(rx32[i]));
+            }
 
-        samples_written += chunk;
-//        xil_printf("written %d samples\n", samples_written);
+            // 5) write to SD (respect final partial chunk)
+            uint32_t chunk = BURST_SAMPLES;
+            if (samples_written + chunk > TOTAL_SAMPLES)
+                chunk = TOTAL_SAMPLES - samples_written;
+
+            FRESULT fr = f_write(&f, pcm16, chunk * sizeof(int16_t), &bw);
+            if (fr != FR_OK || bw != chunk * sizeof(int16_t)) {
+                xil_printf("f_write short fr=%d (bw=%u vs %u)\r\n",
+                        fr, (unsigned)bw, (unsigned)(chunk*sizeof(int16_t)));
+                break;
+            }
+
+            samples_written += chunk;
+    //        xil_printf("written %d samples\n", samples_written);
     }
 
     // Patch header and close
     sd_fix_header(&f, samples_written, FS, OUT_BITS, CHANNELS);
     f_close(&f);
+    }
 
     // Optional: unmount now that we're done
     f_mount(NULL, DRIVE, 1);
