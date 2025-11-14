@@ -1,38 +1,25 @@
 /******************************************************************************
-* Copyright (C) 2014 - 2022 Xilinx, Inc.  All rights reserved.
-* Copyright (C) 2022 - 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+*
+* Copyright (C) 2021 Xilinx, Inc. All rights reserved.
+* Copyright (C) 2022 Advanced Micro Devices, Inc. All Rights Reserved.
 * SPDX-License-Identifier: MIT
+*
 ******************************************************************************/
-
 
 /*****************************************************************************/
 /**
 * @file sleep.h
 *
-*  This header file contains ARM Cortex A53,A9,R5,Microblaze specific sleep
-*  related APIs.
+*  This header file contains sleep related APIs.
 *
 * <pre>
 * MODIFICATION HISTORY :
 *
 * Ver   Who  Date	 Changes
 * ----- ---- -------- -------------------------------------------------------
-* 6.6   srm  11/02/17 Added processor specific sleep routines
-*								 function prototypes.
-* 7.7	sk   01/10/22 Typecast sleep declaration argument from unsigned int to
-* 		      u32 to fix misra_c_2012_directive_4_6 violation.
-* 7.7	sk   01/10/22 Modify the return type of sleep_R5 and usleep_R5 from
-* 		      unsigned to void to fix misra_c_2012_rule_17_7 violation.
-* 8.0	sk   03/02/22 Update usleep_R5 and usleep parameter types to fix misra_
-*		      c_2012_directive_4_6 violation.
-* 8.0	sk   03/17/22 Modify the return type of usleep_MB from int to void and
-*		      sleep_MB from unsigned to void to fix misra_c_2012_rule_
-*		      17_7 violation.
-* 8.0	sk   03/17/22 Modify sleep_MB parameter type from unsigned int to
-*		      u32 and usleep_MB parameter type from unsigned long to
-*		      ULONG to fix misra_c_2012_rule_4_6 violation.
-* 9.0   ml   03/03/23 Add description to fix doxygen warnings.
-* 9.1   mus  10/24/23 Add support for RISC-V.
+*  1.0  adk	 24/11/21 Initial release.
+*  1.2  adk	 22/12/22 Fixed doxygen style and indentation issues.
+*
 * </pre>
 *
 ******************************************************************************/
@@ -64,8 +51,9 @@ extern "C" {
 * @param            COND - Condition to checked (usually involves VALUE)
 * @param            TIMEOUT_US - timeout in micro seconds
 *
-* @return           0 - when the condition is met
-*                   -1 - when the condition is not met till the timeout period
+* @return
+*		    - 0 - when the condition is met
+*		    - 1 - when the condition is not met till the timeout period
 *
 * @note             none
 *
@@ -89,21 +77,8 @@ extern "C" {
 	(timeout>0) ? 0 : -1;  \
  }  )
 
-/************************** Function Prototypes ******************************/
-void usleep(ULONG useconds);
-void sleep(u32 seconds);
-void usleep_R5(ULONG useconds);
-void sleep_R5(u32 seconds);
-void usleep_MB(ULONG useconds);
-void sleep_MB(u32 seconds);
-int usleep_A53(unsigned long useconds);
-unsigned sleep_A53(unsigned int seconds);
-int usleep_A9(unsigned long useconds);
-unsigned sleep_A9(unsigned int seconds);
-void sleep_riscv(u32 seconds);
-void usleep_riscv(ULONG useconds);
-
-/*****************************************************************************/
+void usleep(unsigned long useconds);
+void sleep(unsigned int seconds);
 
 #ifdef __cplusplus
 }

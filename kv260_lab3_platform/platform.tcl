@@ -45,3 +45,16 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform active {kv260_lab3_platform}
+domain active {zynqmp_fsbl}
+bsp reload
+domain active {standalone_domain}
+bsp reload
+domain active {zynqmp_pmufw}
+bsp reload
+domain active {standalone_domain}
+bsp setlib -name xiltimer -ver 2.0
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate

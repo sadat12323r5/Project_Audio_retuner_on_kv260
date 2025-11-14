@@ -32,10 +32,10 @@
 #include "xstatus.h"
 #include "sleep.h"
 #include "ff.h"
+//#include "xiltimer.h"
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 /*** DMA device ***/
 #define DMA_DEV_ID              XPAR_AXIDMA_0_DEVICE_ID
@@ -177,18 +177,19 @@ int main(void)
         return XST_FAILURE;
     }
 
+    int num_files = 0;
+
     while (1) {
         // -------- Open WAV on SD1 --------
         // -------- Generate file name --------
-        time_t now = time(NULL);
-        struct tm *time = localtime(&now);
+//        time_t now = time(NULL);
+//        struct tm *time = localtime(&now);
 
-        char filename[27];
+        char filename[16];
         
-        strftime(filename, sizeof(filename), "rec_%Y-%m-%d_%H-%M-%S.wav", time);
-
+        snprintf(filename, sizeof(filename), "rec_%03d.wav", num_files);
         
-        xil_printf("Opening %s/rec.wav ...\r\n", DRIVE);
+        xil_printf("Opening %s/%s ...\r\n", DRIVE, filename);
         FIL f; UINT bw;
         if (sd_open_wav(&f, filename, TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0) {
             xil_printf("Failed to open WAV on %s\r\n", DRIVE);
@@ -220,8 +221,9 @@ int main(void)
 
             // 5) write to SD (respect final partial chunk)
             uint32_t chunk = BURST_SAMPLES;
-            if (samples_written + chunk > TOTAL_SAMPLES)
+            if (samples_written + chunk > TOTAL_SAMPLES) {
                 chunk = TOTAL_SAMPLES - samples_written;
+            }
 
             FRESULT fr = f_write(&f, pcm16, chunk * sizeof(int16_t), &bw);
             if (fr != FR_OK || bw != chunk * sizeof(int16_t)) {
@@ -232,17 +234,18 @@ int main(void)
 
             samples_written += chunk;
     //        xil_printf("written %d samples\n", samples_written);
+		}
+
+		// Patch header and close
+		sd_fix_header(&f, samples_written, FS, OUT_BITS, CHANNELS);
+		f_close(&f);
+		num_files++;
+
+		// Optional: unmount now that we're done
+//		f_mount(NULL, DRIVE, 1);
+
+		xil_printf("Saved %s/rec.wav (%lu samples). Pull SD and play it.\r\n", DRIVE, (unsigned long)samples_written);
     }
-
-    // Patch header and close
-    sd_fix_header(&f, samples_written, FS, OUT_BITS, CHANNELS);
-    f_close(&f);
-    }
-
-    // Optional: unmount now that we're done
-    f_mount(NULL, DRIVE, 1);
-
-    xil_printf("Saved %s/rec.wav (%lu samples). Pull SD and play it.\r\n", DRIVE, (unsigned long)samples_written);
-    return 0;
+	return 0;
 }
 
