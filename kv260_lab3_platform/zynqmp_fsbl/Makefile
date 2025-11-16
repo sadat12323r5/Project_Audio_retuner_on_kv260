@@ -4,15 +4,13 @@ CC := aarch64-none-elf-gcc
 CC_FLAGS :=  -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  
 CFLAGS := 
 BSP_FLAGS :=  -c
-LN_FLAGS := -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group                                                                                                     -n  -Wl,--gc-sections
+LN_FLAGS := -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group                                                                                                      -n  -Wl,--gc-sections
 
 c_SOURCES := $(wildcard *.c)
 S_SOURCES := $(wildcard *.S)
-s_SOURCES := $(wildcard *.s)
 INCLUDES := $(wildcard *.h)
 OBJS := $(patsubst %.c, %.o, $(c_SOURCES))
 OBJS += $(patsubst %.S, %.o, $(S_SOURCES))
-OBJS += $(patsubst %.s, %.o, $(s_SOURCES))
 LSCRIPT := -Tlscript.ld
 
 CURRENT_DIR = $(shell pwd)

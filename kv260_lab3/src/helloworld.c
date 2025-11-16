@@ -25,6 +25,14 @@
  * - Uses drive "1:" explicitly
  * - Writes 16-bit PCM WAV
  */
+/******************************************************************************
+* Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+/*
+ * Simple audio capture to WAV on SD1 using FatFs and AXI DMA (S2MM),
+ * then playback the same WAV to the speaker using AXI DMA (MM2S).
+ */
 
 #include "xaxidma.h"
 #include "xparameters.h"
@@ -55,8 +63,16 @@
 
 /*** Globals ***/
 static XAxiDma AxiDma;
+
+/* RX buffers (mic -> PS) */
 static uint32_t rx32[BURST_SAMPLES] __attribute__((aligned(64)));
 static int16_t  pcm16[BURST_SAMPLES];
+
+/* TX buffer (PS -> speaker)
+ * For each 16-bit sample we send TWO 32-bit words
+ * so L and R channels both get the same mono sample.
+ */
+static uint32_t tx32[BURST_SAMPLES * 2] __attribute__((aligned(64)));
 
 /*** FatFs globals (must persist while mounted) ***/
 static FATFS g_fs;
@@ -67,6 +83,14 @@ static inline int16_t to_pcm16(uint32_t w)
 {
     // Treat as signed in 32-bit, keep top OUT_BITS bits.
     return (int16_t)((int32_t)w >> (MIC_BITS - OUT_BITS));
+}
+
+/* I2S word format for speaker side: left-justify 16-bit sample
+ * into a 32-bit slot (matching your DATA_WIDTH=32 design).
+ */
+static inline uint32_t i2s_word_from_pcm16(int16_t s)
+{
+    return (uint32_t)((int32_t)s << 16);
 }
 
 /*** 44-byte WAV header ***/
@@ -92,14 +116,6 @@ static void wav_header(uint8_t *h, uint32_t nsamples, uint32_t fs,
     h[36]='d';h[37]='a';h[38]='t';h[39]='a';
     h[40]= dataSize  &255; h[41]=(dataSize>>8)&255; h[42]=(dataSize>>16)&255; h[43]=(dataSize>>24)&255;
 }
-
-/*** Mount SD1 into g_fs ***/
-//static FRESULT sd_mount_sd1(void)
-//{
-//    // Be clean: unmount first (in case of prior run)
-//    f_mount(NULL, DRIVE, 1);
-//    return f_mount(&g_fs, DRIVE, 1);
-//}
 
 /*** Open WAV on SD1 and write placeholder header ***/
 static int sd_open_wav(FIL *fp, const char *filename,
@@ -147,26 +163,20 @@ static void sd_fix_header(FIL *fp, uint32_t nsamples, uint32_t fs,
 
 /*** Reverses the order of all the bits of an unsigned 16-bit value ***/
 uint16_t swap_bits_u16(uint16_t word) {
-	uint16_t ret = 0;
-	for (int i = 0; i < sizeof(uint16_t) * 8; i++) {
-		if ((0b1 << i) & word) {
-			ret |= 1 << (sizeof(uint16_t) * 8 - 1 - i);
-		}
-	}
-	return ret;
+    uint16_t ret = 0;
+    for (int i = 0; i < sizeof(uint16_t) * 8; i++) {
+        if ((0b1 << i) & word) {
+            ret |= 1 << (sizeof(uint16_t) * 8 - 1 - i);
+        }
+    }
+    return ret;
 }
-
-///*** Swaps the endian-ness of an unsigned 16-bit value ***/
-// uint16_t swap_endian_u16(uint16_t word) {
-// 	return ((word & 0xFF) << 8)  |
-// 			((word & 0xFF00) >> 8);
-// }
 
 int main(void)
 {
     xil_printf("Audio capture start...\r\n");
 
-    // -------- Init DMA (simple mode) --------
+    /* -------- Init DMA (simple mode) -------- */
     XAxiDma_Config *Cfg = XAxiDma_LookupConfig(DMA_DEV_ID);
     if (!Cfg) {
         xil_printf("No DMA config found.\r\n");
@@ -182,7 +192,7 @@ int main(void)
         return XST_FAILURE;
     }
 
-    // -------- Open WAV on SD1 --------
+    /* -------- Open WAV on SD1 for recording -------- */
     xil_printf("Opening %s/rec.wav ...\r\n", DRIVE);
     FIL f; UINT bw;
     if (sd_open_wav(&f, "rec.wav", TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0) {
@@ -190,32 +200,33 @@ int main(void)
         return XST_FAILURE;
     }
 
-    xil_printf("Recording %d s @ %d Hz� speak now!\r\n", SECONDS_TO_RECORD, FS);
+    xil_printf("Recording %d s @ %d Hz - speak now!\r\n", SECONDS_TO_RECORD, FS);
 
     uint32_t samples_written = 0;
     while (samples_written < TOTAL_SAMPLES) {
-        // 1) kick S2MM for one burst
+        /* 1) kick S2MM for one burst */
         Xil_DCacheFlushRange((UINTPTR)rx32, BURST_BYTES);
-        status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)rx32, BURST_BYTES, XAXIDMA_DEVICE_TO_DMA);
+        status = XAxiDma_SimpleTransfer(&AxiDma,
+                                        (UINTPTR)rx32,
+                                        BURST_BYTES,
+                                        XAXIDMA_DEVICE_TO_DMA);
         if (status != XST_SUCCESS) {
             xil_printf("DMA transfer setup failed.\r\n");
             break;
         }
 
-        // 2) wait for completion
+        /* 2) wait for completion on S2MM channel */
         while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)) { /* spin */ }
 
-        // 3) see fresh data
+        /* 3) see fresh data */
         Xil_DCacheInvalidateRange((UINTPTR)rx32, BURST_BYTES);
 
-        // 4) convert to 16-bit PCM (and swap endianess)
+        /* 4) convert to 16-bit PCM (and bit-swap) */
         for (int i = 0; i < BURST_SAMPLES; ++i) {
-//            pcm16[i] = to_pcm16(rx32[i]);
-//            pcm16[i] = swap_endian_u16(to_pcm16(rx32[i]));
             pcm16[i] = swap_bits_u16(to_pcm16(rx32[i]));
         }
 
-        // 5) write to SD (respect final partial chunk)
+        /* 5) write to SD (respect final partial chunk) */
         uint32_t chunk = BURST_SAMPLES;
         if (samples_written + chunk > TOTAL_SAMPLES)
             chunk = TOTAL_SAMPLES - samples_written;
@@ -228,17 +239,78 @@ int main(void)
         }
 
         samples_written += chunk;
-//        xil_printf("written %d samples\n", samples_written);
     }
 
-    // Patch header and close
+    /* Patch header and close recording */
     sd_fix_header(&f, samples_written, FS, OUT_BITS, CHANNELS);
     f_close(&f);
 
-    // Optional: unmount now that we're done
+    xil_printf("Saved %s/rec.wav (%lu samples).\r\n",
+               DRIVE, (unsigned long)samples_written);
+
+    /********************************************************
+     *                SPEAKER PLAYBACK PART
+     ********************************************************/
+    xil_printf("\r\n====================================\r\n");
+    xil_printf("  Playing back rec.wav to speaker...\r\n");
+    xil_printf("====================================\r\n");
+
+    /* File handle for playback */
+    FIL fplay;
+    UINT br;
+    FRESULT fr2;
+
+    /* SD is already mounted at this point (from record path).
+       If you ever unmount earlier, re-mount here. */
+    fr2 = f_open(&fplay, "0:/rec.wav", FA_READ);
+    xil_printf("f_open playback -> %d\r\n", fr2);
+    if (fr2 == FR_OK) {
+        /* Skip 44-byte WAV header */
+        f_lseek(&fplay, 44);
+
+        while (1) {
+            /* Read a burst of 16-bit samples from SD */
+            fr2 = f_read(&fplay, pcm16, BURST_SAMPLES * sizeof(int16_t), &br);
+            if (fr2 != FR_OK || br == 0) break;
+
+            int samples = br / (int)sizeof(int16_t);
+
+            /* Expand mono PCM16 -> two 32-bit I2S words per sample
+               (L and R get the same value). */
+            for (int i = 0; i < samples; ++i) {
+                uint32_t w = i2s_word_from_pcm16(pcm16[i]);
+                tx32[2*i]   = w;   // left
+                tx32[2*i+1] = w;   // right
+            }
+
+            int tx_words = samples * 2;  // 2 words per sample
+
+            /* Flush cache before DMA reads TX buffer */
+            Xil_DCacheFlushRange((UINTPTR)tx32, tx_words * sizeof(uint32_t));
+
+            /* Kick MM2S channel */
+            status = XAxiDma_SimpleTransfer(&AxiDma,
+                                            (UINTPTR)tx32,
+                                            tx_words * sizeof(uint32_t),
+                                            XAXIDMA_DMA_TO_DEVICE);
+            if (status != XST_SUCCESS) {
+                xil_printf("TX DMA transfer setup failed (%d)\r\n", status);
+                break;
+            }
+
+            /* Wait for MM2S to finish */
+            while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) { /* spin */ }
+        }
+
+        f_close(&fplay);
+        xil_printf("Playback finished.\r\n");
+    } else {
+        xil_printf("Could not re-open rec.wav for playback (fr=%d)\r\n", fr2);
+    }
+
+    /* Finally, unmount SD card */
     f_mount(NULL, DRIVE, 1);
 
-    xil_printf("Saved %s/rec.wav (%lu samples). Pull SD and play it.\r\n", DRIVE, (unsigned long)samples_written);
+    xil_printf("Done. You can pull the SD card now.\r\n");
     return 0;
 }
-

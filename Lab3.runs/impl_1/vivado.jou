@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
 # Vivado v2024.1 (64-bit)
-# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Nov 10 19:07:56 2025
-# Process ID: 22534
-# Current directory: /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1
-# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1/design_1_wrapper.vdi
-# Journal file: /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1/vivado.jou
-# Running On        :fpga.balthazar
-# Platform          :unknown
-# Operating System  :unknown
-# Processor Detail  :AMD Ryzen 7 5700X 8-Core Processor
-# CPU Frequency     :3715.374 MHz
-# CPU Physical cores:8
-# CPU Logical cores :16
-# Host memory       :33559 MB
-# Swap memory       :8589 MB
-# Total Virtual     :42149 MB
-# Available Virtual :35318 MB
+# Start of session at: Sun Nov 16 17:53:42 2025
+# Process ID: 42792
+# Current directory: C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.runs/impl_1\vivado.jou
+# Running On        :S-K
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14877 MB
+# Swap memory       :26843 MB
+# Total Virtual     :41720 MB
+# Available Virtual :10554 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
