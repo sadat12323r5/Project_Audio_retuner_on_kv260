@@ -96,32 +96,40 @@ int frequency_to_midi_note(float frequency) {
     return (int)(12.0f * log2_val + 69.0f + 0.5f);  // +0.5 for rounding
 }
 
-// Helper function to find closest octave of a note to a target frequency
-float find_closest_octave_frequency(float target_freq, int reference_note_class) {
-    // reference_note_class is the note class (0-11) from the reference pitch
-    // Find the octave that puts this note class closest to target_freq
+// Helper function to find target frequency based on reference comparison
+float find_closest_target_frequency(float recorded_freq, int reference_note_class, float reference_freq) {
+    // If recorded > reference, shift DOWN to next lower occurrence of note class
+    // If recorded < reference, shift UP to next higher occurrence of note class
     
-    float best_freq = 0;
-    float min_ratio_diff = 999.0f;
+    float target_freq = 0;
     
-    // Try octaves from MIDI 12 (C1) to MIDI 108 (C8)
-    for (int octave = 1; octave <= 8; octave++) {
-        int midi_note = reference_note_class + (octave * 12);
-        if (midi_note >= 12 && midi_note <= 108) {  // Valid MIDI range
-            float freq = get_note_frequency(midi_note);
-            float ratio = freq / target_freq;
-            
-            // Prefer ratios close to 1.0 (minimal change)
-            float ratio_diff = (ratio > 1.0f) ? (ratio - 1.0f) : (1.0f - ratio);
-            
-            if (ratio_diff < min_ratio_diff) {
-                min_ratio_diff = ratio_diff;
-                best_freq = freq;
+    if (recorded_freq > reference_freq) {
+        // Recorded is higher than reference, so shift DOWN to next lower occurrence
+        for (int octave = 8; octave >= 1; octave--) {
+            int midi_note = reference_note_class + (octave * 12);
+            if (midi_note >= 12 && midi_note <= 108) {  // Valid MIDI range
+                float freq = get_note_frequency(midi_note);
+                if (freq < recorded_freq) {
+                    target_freq = freq;
+                    break;  // Found first occurrence below recorded frequency
+                }
+            }
+        }
+    } else {
+        // Recorded is lower than reference, so shift UP to next higher occurrence
+        for (int octave = 1; octave <= 8; octave++) {
+            int midi_note = reference_note_class + (octave * 12);
+            if (midi_note >= 12 && midi_note <= 108) {  // Valid MIDI range
+                float freq = get_note_frequency(midi_note);
+                if (freq > recorded_freq) {
+                    target_freq = freq;
+                    break;  // Found first occurrence above recorded frequency
+                }
             }
         }
     }
     
-    return best_freq;
+    return target_freq;
 }
 
 /*** Utilities ***/
@@ -762,38 +770,58 @@ int main(void)
                                 int ref_midi = frequency_to_midi_note(ref_result.pitch);
                                 int ref_note_class = ref_midi % 12;  // Note class (0-11): C, C#, D, etc.
                                 
-                                // Find the closest octave of this note to the recorded pitch
-                                float target_freq = find_closest_octave_frequency(recorded_pitch, ref_note_class);
-                                int target_midi = frequency_to_midi_note(target_freq);
+                                // Find target frequency based on comparison with reference
+                                float target_freq = find_closest_target_frequency(recorded_pitch, ref_note_class, ref_result.pitch);
                                 
-                                const char* notes[] = {"C", "C#", "D", "D#", "E", "F",
-                                                       "F#", "G", "G#", "A", "A#", "B"};
-                                int ref_noteIndex = ref_midi % 12;
-                                int ref_octave = (ref_midi / 12) - 1;
-                                int target_noteIndex = target_midi % 12;
-                                int target_octave = (target_midi / 12) - 1;
-                                
-                                xil_printf("  Musical Note: %s%d (MIDI %d)\\r\\n", notes[ref_noteIndex], ref_octave, ref_midi);
-                                xil_printf("  Note Class: %s\\r\\n", notes[ref_note_class]);
-                                
-                                // Calculate pitch shift ratio to closest octave
-                                target_pitch_ratio = target_freq / recorded_pitch;
-                                
-                                xil_printf("\\n=== Pitch Shift Analysis ===\\r\\n");
-                                int target_freq_int = (int)target_freq;
-                                int target_freq_dec = (int)((target_freq - target_freq_int) * 100);
-                                xil_printf("Target frequency: %d.%02d Hz (%s%d)\\r\\n", 
-                                          target_freq_int, target_freq_dec, notes[target_noteIndex], target_octave);
-                                
-                                int ratio_int = (int)(target_pitch_ratio * 100);
-                                xil_printf("Pitch shift ratio: %d.%02d\\r\\n", ratio_int/100, ratio_int%100);
-                                
-                                if (target_pitch_ratio > 1.05f) {
-                                    xil_printf("Direction: SHIFT UP to closest %s\\r\\n", notes[ref_note_class]);
-                                } else if (target_pitch_ratio < 0.95f) {
-                                    xil_printf("Direction: SHIFT DOWN to closest %s\\r\\n", notes[ref_note_class]);
+                                if (target_freq > 0) {
+                                    int target_midi = frequency_to_midi_note(target_freq);
+                                    
+                                    const char* notes[] = {"C", "C#", "D", "D#", "E", "F",
+                                                           "F#", "G", "G#", "A", "A#", "B"};
+                                    int ref_noteIndex = ref_midi % 12;
+                                    int ref_octave = (ref_midi / 12) - 1;
+                                    int target_noteIndex = target_midi % 12;
+                                    int target_octave = (target_midi / 12) - 1;
+                                    
+                                    xil_printf("  Musical Note: %s%d (MIDI %d)\\r\\n", notes[ref_noteIndex], ref_octave, ref_midi);
+                                    xil_printf("  Note Class: %s\\r\\n", notes[ref_note_class]);
+                                    
+                                    // Calculate pitch shift ratio to closest occurrence
+                                    target_pitch_ratio = target_freq / recorded_pitch;
+                                    
+                                    xil_printf("\\n=== Pitch Shift Analysis ===\\r\\n");
+                                    int recorded_freq_int = (int)recorded_pitch;
+                                    int recorded_freq_dec = (int)((recorded_pitch - recorded_freq_int) * 100);
+                                    int ref_freq_int = (int)ref_result.pitch;
+                                    int ref_freq_dec = (int)((ref_result.pitch - ref_freq_int) * 100);
+                                    int target_freq_int = (int)target_freq;
+                                    int target_freq_dec = (int)((target_freq - target_freq_int) * 100);
+                                    
+                                    xil_printf("Recorded: %d.%02d Hz\\r\\n", recorded_freq_int, recorded_freq_dec);
+                                    xil_printf("Reference: %d.%02d Hz\\r\\n", ref_freq_int, ref_freq_dec);
+                                    xil_printf("Target: %d.%02d Hz (%s%d)\\r\\n", 
+                                              target_freq_int, target_freq_dec, notes[target_noteIndex], target_octave);
+                                    
+                                    int ratio_int = (int)(target_pitch_ratio * 100);
+                                    xil_printf("Pitch shift ratio: %d.%02d\\r\\n", ratio_int/100, ratio_int%100);
+                                    
+                                    // Calculate distances to show which direction was chosen
+                                    if (recorded_pitch > ref_result.pitch) {
+                                        float distance = recorded_pitch - target_freq;
+                                        int dist_int = (int)distance;
+                                        int dist_dec = (int)((distance - dist_int) * 100);
+                                        xil_printf("Direction: SHIFT DOWN by %d.%02d Hz (recorded > reference)\\r\\n", 
+                                                  dist_int, dist_dec);
+                                    } else {
+                                        float distance = target_freq - recorded_pitch;
+                                        int dist_int = (int)distance;
+                                        int dist_dec = (int)((distance - dist_int) * 100);
+                                        xil_printf("Direction: SHIFT UP by %d.%02d Hz (recorded < reference)\\r\\n", 
+                                                  dist_int, dist_dec);
+                                    }
                                 } else {
-                                    xil_printf("Direction: MINIMAL CHANGE (already close to %s)\\r\\n", notes[ref_note_class]);
+                                    xil_printf("Error: Could not find valid target frequency\\r\\n");
+                                    target_pitch_ratio = 1.0f;
                                 }
                             } else {
                                 xil_printf("No pitch detected in reference file e.wav\r\n");
@@ -818,10 +846,15 @@ int main(void)
             }
 
         else if (state == 4) {
-            Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR + AXI_GPIO_LED_OFFSET, 1);
-            usleep(50000);  // 50ms on
-            Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR + AXI_GPIO_LED_OFFSET, 0);
-            usleep(50000);  // 50ms off
+            // Blink LED faster during processing to show activity
+            static int blink_counter = 0;
+            blink_counter++;
+            if (blink_counter % 20 == 0) {  // Every 20th iteration
+                Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR + AXI_GPIO_LED_OFFSET, 1);
+                usleep(25000);  // 25ms on
+                Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR + AXI_GPIO_LED_OFFSET, 0);
+                usleep(25000);  // 25ms off
+            }
             
             // Run phase vocoder once
             static int vocoder_done = 0;
@@ -842,13 +875,56 @@ int main(void)
                     xil_printf("Loaded audio: %d samples at %d Hz\r\n", 
                                input_audio->length, input_audio->sample_rate);
                     
-                    xil_printf("Applying phase vocoder pitch shift (ratio: 1.20)...\r\n");
+                    // Check if pitch shift ratio is reasonable
+                    int ratio_int = (int)(pitch_shift_ratio * 100);
+                    xil_printf("Pitch shift ratio: %d.%02d\r\n", ratio_int/100, ratio_int%100);
+                    
+                    if (pitch_shift_ratio > 3.0f || pitch_shift_ratio < 0.3f) {
+                        xil_printf("WARNING: Large pitch shift ratio detected!\r\n");
+                        xil_printf("This may cause memory issues or long processing time\r\n");
+                        if (pitch_shift_ratio > 2.0f) {
+                            pitch_shift_ratio = 2.0f;  // Limit to 2x max
+                            xil_printf("Limiting ratio to 2.00 for stability\r\n");
+                        } else if (pitch_shift_ratio < 0.5f) {
+                            pitch_shift_ratio = 0.5f;  // Limit to 0.5x min
+                            xil_printf("Limiting ratio to 0.50 for stability\r\n");
+                        }
+                    }
+                    
+                    // Estimate output size
+                    int estimated_output = (int)(input_audio->length * pitch_shift_ratio);
+                    xil_printf("Estimated output size: %d samples (~%d KB)\r\n", 
+                               estimated_output, (estimated_output * sizeof(float)) / 1024);
+                    
+                    if (estimated_output > 200000) {
+                        xil_printf("WARNING: Output size very large, may cause memory issues!\r\n");
+                    }
+                    
+                    xil_printf("Starting phase vocoder processing...\r\n");
+                    
+                    // Add a simple progress indicator
+                    xil_printf("Processing frames...");
                     AudioBuffer* output_audio = phase_vocoder_pitch_shift(input_audio, pitch_shift_ratio);
                     
+                    xil_printf("\r\nPhase vocoder call completed.\r\n");
+                    
                     if (!output_audio) {
-                        xil_printf("Phase vocoder processing failed (out of memory)\r\n");
+                        xil_printf("Phase vocoder processing failed (out of memory or processing error)\r\n");
+                        xil_printf("Possible causes:\r\n");
+                        xil_printf("  1. Insufficient heap memory\r\n");
+                        xil_printf("  2. Pitch shift ratio too extreme\r\n");
+                        xil_printf("  3. Input audio too long\r\n");
+                        xil_printf("Try reducing recording time or pitch shift ratio\r\n");
                     } else {
                         xil_printf("Phase vocoder complete: %d output samples\r\n", output_audio->length);
+                        
+                        // Validate output
+                        if (output_audio->length <= 0) {
+                            xil_printf("ERROR: Invalid output length!\r\n");
+                        } else if (output_audio->length > 300000) {
+                            xil_printf("WARNING: Very large output, truncating to 300000 samples\r\n");
+                            output_audio->length = 300000;  // Truncate if too large
+                        }
                         
                         xil_printf("Saving pitch-shifted audio...\r\n");
                         if (save_wav_to_sd("shifted.wav", output_audio) == 0) {
