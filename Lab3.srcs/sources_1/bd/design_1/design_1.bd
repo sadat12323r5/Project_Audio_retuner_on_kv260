@@ -4774,7 +4774,7 @@
           "boundary_crc": "0x0"
         },
         "interface_ports": {
-          "axis": {
+          "s_axis": {
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0",
@@ -4822,21 +4822,21 @@
             },
             "port_maps": {
               "TDATA": {
-                "physical_name": "axis_tdata",
+                "physical_name": "s_axis_tdata",
                 "direction": "I",
                 "left": "31",
                 "right": "0"
               },
               "TLAST": {
-                "physical_name": "axis_tlast",
+                "physical_name": "s_axis_tlast",
                 "direction": "I"
               },
               "TVALID": {
-                "physical_name": "axis_tvalid",
+                "physical_name": "s_axis_tvalid",
                 "direction": "I"
               },
               "TREADY": {
-                "physical_name": "axis_tready",
+                "physical_name": "s_axis_tready",
                 "direction": "O"
               }
             }
@@ -5052,7 +5052,7 @@
             "direction": "I",
             "parameters": {
               "ASSOCIATED_BUSIF": {
-                "value": "axis:s00_axi",
+                "value": "s_axis:s00_axi",
                 "value_src": "constant"
               },
               "ASSOCIATED_RESET": {
@@ -5079,13 +5079,13 @@
               }
             }
           },
-          "i2s_bclk": {
+          "i2s_bclk_speaker": {
             "direction": "O"
           },
-          "i2s_lrcl": {
+          "i2s_lrcl_speaker": {
             "direction": "O"
           },
-          "i2s_dout": {
+          "i2s_din_speaker": {
             "direction": "O"
           },
           "s00_axi_aclk": {
@@ -5129,7 +5129,7 @@
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "axi_dma_0/M_AXIS_MM2S",
-          "amplifier_pipeline_0/axis"
+          "amplifier_pipeline_0/s_axis"
         ]
       },
       "axi_dma_0_M_AXI_MM2S": {
@@ -5190,19 +5190,19 @@
     "nets": {
       "amplifier_pipeline_0_i2s_bclk": {
         "ports": [
-          "amplifier_pipeline_0/i2s_bclk",
+          "amplifier_pipeline_0/i2s_bclk_speaker",
           "pmod_i2s2_bclk"
         ]
       },
       "amplifier_pipeline_0_i2s_dout": {
         "ports": [
-          "amplifier_pipeline_0/i2s_dout",
+          "amplifier_pipeline_0/i2s_din_speaker",
           "pmod_i2s2_dout"
         ]
       },
       "amplifier_pipeline_0_i2s_lrcl": {
         "ports": [
-          "amplifier_pipeline_0/i2s_lrcl",
+          "amplifier_pipeline_0/i2s_lrcl_speaker",
           "pmod_i2s2_lrclk"
         ]
       },
@@ -5249,10 +5249,10 @@
           "audio_pipeline_0/rst",
           "audio_pipeline_0/s00_axi_aresetn",
           "axi_gpio_0/S_AXI_ARESETN",
-          "amplifier_pipeline_0/rst",
           "ps8_0_axi_periph/M03_ARESETN",
-          "amplifier_pipeline_0/s00_axi_aresetn",
-          "ps8_0_axi_periph/S01_ARESETN"
+          "ps8_0_axi_periph/S01_ARESETN",
+          "amplifier_pipeline_0/rst",
+          "amplifier_pipeline_0/s00_axi_aresetn"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -5272,12 +5272,12 @@
           "audio_pipeline_0/clk",
           "audio_pipeline_0/s00_axi_aclk",
           "axi_gpio_0/S_AXI_ACLK",
-          "amplifier_pipeline_0/clk",
           "axi_dma_0/m_axi_mm2s_aclk",
           "ps8_0_axi_periph/M03_ACLK",
-          "amplifier_pipeline_0/s00_axi_aclk",
           "ps8_0_axi_periph/S01_ACLK",
-          "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk"
+          "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
+          "amplifier_pipeline_0/clk",
+          "amplifier_pipeline_0/s00_axi_aclk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

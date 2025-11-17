@@ -1,18 +1,18 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.552817",
-   "Default View_TopLeft":"-33,-291",
+   "Default View_ScaleFactor":"0.898054",
+   "Default View_TopLeft":"1494,246",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port port-id_pmod_i2s_lrclk -pg 1 -lvl 5 -x 1680 -y -150 -defaultsOSRD -top
-preplace port port-id_pmod_i2s_bclk -pg 1 -lvl 5 -x 1650 -y -150 -defaultsOSRD -top
+preplace port port-id_pmod_i2s_lrclk -pg 1 -lvl 5 -x 1680 -y -160 -defaultsOSRD -top
+preplace port port-id_pmod_i2s_bclk -pg 1 -lvl 5 -x 1650 -y -160 -defaultsOSRD -top
 preplace port port-id_pmod_i2s_dout -pg 1 -lvl 0 -x -50 -y 900 -defaultsOSRD
 preplace port port-id_pmod_btn_sw1 -pg 1 -lvl 7 -x 2370 -y 940 -defaultsOSRD -bot
-preplace port port-id_pmod_led_d1 -pg 1 -lvl 8 -x 2620 -y 740 -defaultsOSRD
-preplace port port-id_pmod_i2s2_bclk -pg 1 -lvl 8 -x 2620 -y 530 -defaultsOSRD
-preplace port port-id_pmod_i2s2_lrclk -pg 1 -lvl 8 -x 2620 -y 560 -defaultsOSRD
-preplace port port-id_pmod_i2s2_dout -pg 1 -lvl 8 -x 2620 -y 590 -defaultsOSRD
+preplace port port-id_pmod_led_d1 -pg 1 -lvl 8 -x 2640 -y 740 -defaultsOSRD
+preplace port port-id_pmod_i2s2_bclk -pg 1 -lvl 8 -x 2640 -y 530 -defaultsOSRD
+preplace port port-id_pmod_i2s2_lrclk -pg 1 -lvl 8 -x 2640 -y 560 -defaultsOSRD
+preplace port port-id_pmod_i2s2_dout -pg 1 -lvl 8 -x 2640 -y 590 -defaultsOSRD
 preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -x 920 -y 290 -defaultsOSRD
 preplace inst axi_dma_0 -pg 1 -lvl 6 -x 2120 -y 290 -defaultsOSRD
 preplace inst audio_pipeline_0 -pg 1 -lvl 5 -x 1750 -y -10 -defaultsOSRD
@@ -21,30 +21,30 @@ preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 160 -y 280 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 490 -y 270 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 2470 -y 740 -defaultsOSRD
 preplace inst amplifier_pipeline_0 -pg 1 -lvl 7 -x 2470 -y 560 -defaultsOSRD
-preplace netloc audio_pipeline_0_i2s_bclk 1 5 1 1880 -130n
-preplace netloc audio_pipeline_0_i2s_lrcl 1 5 1 1890 -140n
-preplace netloc axi_gpio_0_LED_OUT 1 7 1 NJ 740
-preplace netloc pmod_btn_sw1_1 1 6 1 2340 730n
-preplace netloc pmod_i2s_dout_1 1 0 5 -30J 0 NJ 0 NJ 0 NJ 0 NJ
-preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 6 360 400 NJ 400 1280 190 1620 190 1940 420 2310
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 7 -10 180 340 180 630 180 1270 180 1610 180 1950 440 2300
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 4 -10 390 NJ 390 NJ 390 1210
-preplace netloc amplifier_pipeline_0_i2s_dout 1 7 1 2600J 580n
-preplace netloc amplifier_pipeline_0_i2s_bclk 1 7 1 2600J 530n
+preplace netloc amplifier_pipeline_0_i2s_bclk 1 7 1 2620J 530n
+preplace netloc amplifier_pipeline_0_i2s_dout 1 7 1 2620J 580n
 preplace netloc amplifier_pipeline_0_i2s_lrcl 1 7 1 NJ 560
+preplace netloc audio_pipeline_0_i2s_bclk 1 5 1 1880 -140n
+preplace netloc audio_pipeline_0_i2s_lrcl 1 5 1 1890 -150n
+preplace netloc axi_gpio_0_LED_OUT 1 7 1 NJ 740
+preplace netloc pmod_btn_sw1_1 1 6 1 2320 730n
+preplace netloc pmod_i2s_dout_1 1 0 5 -30J 0 NJ 0 NJ 0 NJ 0 NJ
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 6 360 400 NJ 400 1280 190 1620 190 1940 420 2290
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 7 -10 180 340 180 630 180 1270 180 1610 180 1950 440 2280
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 4 -10 390 NJ 390 NJ 390 1210
 preplace netloc audio_pipeline_0_axis 1 5 1 1960 -30n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 6 1 2320 270n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 6 350 160 NJ 160 NJ 160 NJ 160 NJ 160 2280
 preplace netloc axi_dma_0_M_AXI_S2MM 1 1 6 360 170 NJ 170 NJ 170 NJ 170 NJ 170 2320
 preplace netloc axi_smc_M00_AXI 1 2 1 620 250n
 preplace netloc ps8_0_axi_periph_M00_AXI 1 4 1 1560 -60n
 preplace netloc ps8_0_axi_periph_M01_AXI 1 4 2 1580 240 NJ
-preplace netloc ps8_0_axi_periph_M02_AXI 1 4 3 NJ 410 NJ 410 2330
+preplace netloc ps8_0_axi_periph_M02_AXI 1 4 3 NJ 410 NJ 410 2310
+preplace netloc ps8_0_axi_periph_M03_AXI 1 4 3 NJ 430 NJ 430 2300
 preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 N 250
-preplace netloc axi_dma_0_M_AXI_MM2S 1 1 6 350 160 NJ 160 NJ 160 NJ 160 NJ 160 2280
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 6 1 2340 270n
-preplace netloc ps8_0_axi_periph_M03_AXI 1 4 3 NJ 430 NJ 430 2320
 preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 3 1 N 270
-levelinfo -pg 1 -50 160 490 920 1420 1750 2120 2470 2620
-pagesize -pg 1 -db -bbox -sgen -200 -290 2780 1080
+levelinfo -pg 1 -50 160 490 920 1420 1750 2120 2470 2640
+pagesize -pg 1 -db -bbox -sgen -200 -300 2800 1080
 "
 }
 {

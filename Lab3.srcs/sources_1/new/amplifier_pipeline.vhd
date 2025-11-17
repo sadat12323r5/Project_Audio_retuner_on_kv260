@@ -17,7 +17,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -36,26 +35,27 @@ entity amplifier_pipeline is
         C_S00_AXI_ADDR_WIDTH : integer := 5
     );
     port(
-        clk  : in  std_logic;  -- audio / AXIS clock
-        rst  : in  std_logic;  -- active-low reset (same convention as before)
+        -- Fabric clock & reset (same clock as AXI DMA)
+        clk   : in  std_logic;
+        rst   : in  std_logic;       -- active low, like your other block
 
         --------------------------------------------------
-        -- AXI4-Stream INPUT from DMA (MM2S)
+        -- AXI4-Stream slave from DMA MM2S (speaker path)
         --------------------------------------------------
-        axis_tdata   : in  std_logic_vector(DATA_WIDTH-1 downto 0);
-        axis_tvalid  : in  std_logic;
-        axis_tready  : out std_logic;
-        axis_tlast   : in  std_logic;    -- currently unused, but keep for AXIS compliance
+        s_axis_tdata  : in  std_logic_vector(DATA_WIDTH-1 downto 0);
+        s_axis_tvalid : in  std_logic;
+        s_axis_tready : out std_logic;
+        s_axis_tlast  : in  std_logic;
 
         --------------------------------------------------
-        -- I2S to speaker (OUTPUTS)
+        -- I2S to PMOD speaker
         --------------------------------------------------
-        i2s_bclk     : out std_logic;
-        i2s_lrcl     : out std_logic;
-        i2s_dout     : out std_logic;    -- serial data going TO codec / amp
+        i2s_bclk_speaker : out std_logic;
+        i2s_lrcl_speaker : out std_logic;
+        i2s_din_speaker  : out std_logic;
 
         --------------------------------------------------
-        -- Control interface (AXI4-Lite)
+        -- AXI-Lite control
         --------------------------------------------------
         s00_axi_aclk    : in  std_logic;
         s00_axi_aresetn : in  std_logic;
@@ -81,138 +81,129 @@ entity amplifier_pipeline is
     );
 end amplifier_pipeline;
 
-architecture Behavioural of amplifier_pipeline is
+architecture Behavioral of amplifier_pipeline is
 
     --------------------------------------------------
-    -- FIFO for SPEAKER path: AXIS -> FIFO -> I2S TX
+    -- Control registers
     --------------------------------------------------
-    signal sig_fifo_rst        : std_logic;
-    signal sig_fifo_wr         : std_logic;
-    signal sig_fifo_rd         : std_logic;
-    signal sig_fifo_full       : std_logic;
-    signal sig_fifo_empty      : std_logic;
-    signal sig_fifo_data_w     : std_logic_vector(DATA_WIDTH-1 downto 0);
-    signal sig_fifo_data_r     : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal sig_control_reg    : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal sig_status_reg     : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal sig_gain_reg       : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal sig_speaker_enable : std_logic := '0';   -- bit 0
 
     --------------------------------------------------
-    -- Control interface (AXI4-Lite)
+    -- FIFO (AXIS -> FIFO -> I2S)
     --------------------------------------------------
-    signal sig_control_reg     : std_logic_vector(DATA_WIDTH-1 downto 0);
-    signal sig_status_reg      : std_logic_vector(DATA_WIDTH-1 downto 0);
-    signal sig_gain_reg        : std_logic_vector(DATA_WIDTH-1 downto 0);
-    signal sig_speaker_enable  : std_logic := '1';  -- simple enable bit (default ON)
-
-    -- Internal tready (can be gated by enable)
-    signal axis_tready_int     : std_logic;
+    signal fifo_rst_s     : std_logic;
+    signal fifo_wr_s      : std_logic;
+    signal fifo_rd_s      : std_logic;
+    signal fifo_full_s    : std_logic;
+    signal fifo_empty_s   : std_logic;
+    signal fifo_din_s     : std_logic_vector(DATA_WIDTH-1 downto 0);
+    signal fifo_dout_s    : std_logic_vector(DATA_WIDTH-1 downto 0);
+    
+    signal axis_tready_s_int : std_logic;
 
 begin
-
-    --------------------------------------------------------------------
-    -- Status register constant
-    --------------------------------------------------------------------
+    ----------------------------------------------------------------
+    -- Status constant (just like your other core)
+    ----------------------------------------------------------------
     sig_status_reg <= x"0CA7CAFE";
 
-    --------------------------------------------------------------------
-    -- AXI-Lite control bus
-    --------------------------------------------------------------------
+    ----------------------------------------------------------------
+    -- AXI-Lite control interface
+    ----------------------------------------------------------------
     inst_ctrl_bus : ctrl_bus
-    generic map (
+    generic map(
         C_S_AXI_DATA_WIDTH => C_S00_AXI_DATA_WIDTH,
         C_S_AXI_ADDR_WIDTH => C_S00_AXI_ADDR_WIDTH
     )
-    port map (
-        cb_control_reg  => sig_control_reg,
-        cb_status_reg   => sig_status_reg,
-        cb_gain_reg     => sig_gain_reg,
+    port map(
+        cb_control_reg => sig_control_reg,
+        cb_status_reg  => sig_status_reg,
+        cb_gain_reg    => sig_gain_reg,
 
-        S_AXI_ACLK      => s00_axi_aclk,
-        S_AXI_ARESETN   => s00_axi_aresetn,
-        S_AXI_AWADDR    => s00_axi_awaddr,
-        S_AXI_AWPROT    => s00_axi_awprot,
-        S_AXI_AWVALID   => s00_axi_awvalid,
-        S_AXI_AWREADY   => s00_axi_awready,
-        S_AXI_WDATA     => s00_axi_wdata,
-        S_AXI_WSTRB     => s00_axi_wstrb,
-        S_AXI_WVALID    => s00_axi_wvalid,
-        S_AXI_WREADY    => s00_axi_wready,
-        S_AXI_BRESP     => s00_axi_bresp,
-        S_AXI_BVALID    => s00_axi_bvalid,
-        S_AXI_BREADY    => s00_axi_bready,
-        S_AXI_ARADDR    => s00_axi_araddr,
-        S_AXI_ARPROT    => s00_axi_arprot,
-        S_AXI_ARVALID   => s00_axi_arvalid,
-        S_AXI_ARREADY   => s00_axi_arready,
-        S_AXI_RDATA     => s00_axi_rdata,
-        S_AXI_RRESP     => s00_axi_rresp,
-        S_AXI_RVALID    => s00_axi_rvalid,
-        S_AXI_RREADY    => s00_axi_rready
+        S_AXI_ACLK     => s00_axi_aclk,
+        S_AXI_ARESETN  => s00_axi_aresetn,
+        S_AXI_AWADDR   => s00_axi_awaddr,
+        S_AXI_AWPROT   => s00_axi_awprot,
+        S_AXI_AWVALID  => s00_axi_awvalid,
+        S_AXI_AWREADY  => s00_axi_awready,
+        S_AXI_WDATA    => s00_axi_wdata,
+        S_AXI_WSTRB    => s00_axi_wstrb,
+        S_AXI_WVALID   => s00_axi_wvalid,
+        S_AXI_WREADY   => s00_axi_wready,
+        S_AXI_BRESP    => s00_axi_bresp,
+        S_AXI_BVALID   => s00_axi_bvalid,
+        S_AXI_BREADY   => s00_axi_bready,
+        S_AXI_ARADDR   => s00_axi_araddr,
+        S_AXI_ARPROT   => s00_axi_arprot,
+        S_AXI_ARVALID  => s00_axi_arvalid,
+        S_AXI_ARREADY  => s00_axi_arready,
+        S_AXI_RDATA    => s00_axi_rdata,
+        S_AXI_RRESP    => s00_axi_rresp,
+        S_AXI_RVALID   => s00_axi_rvalid,
+        S_AXI_RREADY   => s00_axi_rready
     );
 
-    -- Optional: use bit 1 of control_reg as speaker enable
-    process (sig_control_reg)
-    begin
-        sig_speaker_enable <= sig_control_reg(1);  -- 1 = enable, 0 = mute/stop
-    end process;
 
-    --------------------------------------------------------------------
-    -- FIFO reset (active high)
-    -- rst is active-low, so invert it. If board reset is asserted (rst='0'),
-    -- this goes '1' and clears the FIFO.
-    --------------------------------------------------------------------
-    sig_fifo_rst <= not rst;
+    -- FIFO reset (FIFO expects active-high reset)
+    fifo_rst_s <= not rst;  -- de-assert when rst='1'
 
-    --------------------------------------------------------------------
-    -- AXIS SLAVE → FIFO write side (speaker path)
-    --------------------------------------------------------------------
-    -- Ready when FIFO not full and speaker enabled
-    axis_tready_int <= (not sig_fifo_full) and sig_speaker_enable;
-    axis_tready     <= axis_tready_int;
+    ----------------------------------------------------------------
+    -- AXI-Stream slave side (from DMA)
+    ----------------------------------------------------------------
+    -- backpressure when FIFO is full or speaker disabled
+    axis_tready_s_int  <= '1' when (fifo_full_s = '0')
+                      else '0';
+                      
+    s_axis_tready <= axis_tready_s_int;
 
-    -- Write to FIFO on valid & ready
-    sig_fifo_wr     <= axis_tvalid and axis_tready_int;
-    sig_fifo_data_w <= axis_tdata;
+    fifo_din_s     <= s_axis_tdata;
+    fifo_wr_s      <= s_axis_tvalid and axis_tready_s_int;
 
-    --------------------------------------------------------------------
-    -- FIFO instance (shared clock, simple depth)
-    --------------------------------------------------------------------
-    inst_fifo : fifo
-    generic map (
+    ----------------------------------------------------------------
+    -- FIFO instance
+    ----------------------------------------------------------------
+    inst_fifo_speaker : fifo
+    generic map(
         data_width => DATA_WIDTH,
         fifo_depth => FIFO_DEPTH
     )
-    port map (
+    port map(
         clkw  => clk,
         clkr  => clk,
-        rst   => sig_fifo_rst,
+        rst   => fifo_rst_s,
 
-        wr    => sig_fifo_wr,
-        din   => sig_fifo_data_w,
-        full  => sig_fifo_full,
+        wr    => fifo_wr_s,
+        din   => fifo_din_s,
+        full  => fifo_full_s,
 
-        rd    => sig_fifo_rd,
-        dout  => sig_fifo_data_r,
-        empty => sig_fifo_empty
+        rd    => fifo_rd_s,
+        dout  => fifo_dout_s,
+        empty => fifo_empty_s
     );
 
-    --------------------------------------------------------------------
-    -- I2S Transmitter: pulls from FIFO and drives speaker pins
-    --------------------------------------------------------------------
-    inst_i2s_transmitter : entity work.i2s_transmitter
-    generic map (
+    ----------------------------------------------------------------
+    -- I2S transmitter (drains FIFO)
+    ----------------------------------------------------------------
+    inst_i2s_tx : entity work.i2s_transmitter
+    generic map(
         DATA_WIDTH    => DATA_WIDTH,
         PCM_PRECISION => PCM_PRECISION,
-        BCLK_HALF     => 16            -- adjust if you need exact fs
+        BCLK_HALF     => 16  -- same as before
     )
-    port map (
+    port map(
         clk        => clk,
 
-        i2s_lrcl   => i2s_lrcl,
-        i2s_din    => i2s_dout,
-        i2s_bclk   => i2s_bclk,
+        i2s_lrcl   => i2s_lrcl_speaker,
+        i2s_din    => i2s_din_speaker,
+        i2s_bclk   => i2s_bclk_speaker,
 
-        fifo_data  => sig_fifo_data_r,
-        fifo_r_stb => sig_fifo_rd,
-        fifo_empty => sig_fifo_empty
+        fifo_data  => fifo_dout_s,
+        fifo_r_stb => fifo_rd_s,
+        fifo_empty => fifo_empty_s
     );
 
-end Behavioural;
+end Behavioral;
+

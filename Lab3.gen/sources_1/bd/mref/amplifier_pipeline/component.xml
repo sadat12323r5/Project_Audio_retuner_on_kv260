@@ -6,7 +6,7 @@
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
-      <spirit:name>axis</spirit:name>
+      <spirit:name>s_axis</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -16,7 +16,7 @@
             <spirit:name>TDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>axis_tdata</spirit:name>
+            <spirit:name>s_axis_tdata</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -24,7 +24,7 @@
             <spirit:name>TLAST</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>axis_tlast</spirit:name>
+            <spirit:name>s_axis_tlast</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -32,7 +32,7 @@
             <spirit:name>TVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>axis_tvalid</spirit:name>
+            <spirit:name>s_axis_tvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -40,7 +40,7 @@
             <spirit:name>TREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>axis_tready</spirit:name>
+            <spirit:name>s_axis_tready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -263,7 +263,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">axis:s00_axi</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">s_axis:s00_axi</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_RESET</spirit:name>
@@ -319,7 +319,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4123b8d5</spirit:value>
+            <spirit:value>cc4e3b4d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -332,7 +332,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4123b8d5</spirit:value>
+            <spirit:value>cc4e3b4d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -373,7 +373,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>axis_tdata</spirit:name>
+        <spirit:name>s_axis_tdata</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -393,7 +393,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>axis_tvalid</spirit:name>
+        <spirit:name>s_axis_tvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -406,7 +406,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>axis_tready</spirit:name>
+        <spirit:name>s_axis_tready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -419,7 +419,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>axis_tlast</spirit:name>
+        <spirit:name>s_axis_tlast</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -435,7 +435,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>i2s_bclk</spirit:name>
+        <spirit:name>i2s_bclk_speaker</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -448,7 +448,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>i2s_lrcl</spirit:name>
+        <spirit:name>i2s_lrcl_speaker</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -461,7 +461,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>i2s_dout</spirit:name>
+        <spirit:name>i2s_din_speaker</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -929,7 +929,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-11-16T06:06:26Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-11-17T04:23:16Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>

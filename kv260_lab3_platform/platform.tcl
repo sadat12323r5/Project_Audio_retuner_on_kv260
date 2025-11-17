@@ -48,3 +48,9 @@ platform generate
 platform active {kv260_lab3_platform}
 platform config -updatehw {C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_wrapper.xsa}
 platform generate -domains standalone_domain,zynqmp_fsbl,zynqmp_pmufw 
+platform generate -domains standalone_domain,zynqmp_fsbl,zynqmp_pmufw 
+platform active {kv260_lab3_platform}
+platform config -updatehw {C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_2_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_2_wrapper.xsa}
+platform generate -domains 

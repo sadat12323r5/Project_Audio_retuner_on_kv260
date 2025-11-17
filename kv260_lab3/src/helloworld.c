@@ -127,27 +127,20 @@ static int sd_open_wav(FIL *fp, const char *filename,
     uint8_t hdr[44];
     char path[64];
 
-    xil_printf("unmount %s...\r\n", DRIVE);
     f_mount(NULL, DRIVE, 1);
 
-    xil_printf("mount %s...\r\n", DRIVE);
     fr = f_mount(&g_fs, DRIVE, 1);
-    xil_printf("f_mount -> %d\r\n", fr);
+
     if (fr != FR_OK) return -1;
 
     snprintf(path, sizeof(path), "%s/%s", DRIVE, filename);
-    xil_printf("f_open %s...\r\n", path);
     fr = f_open(fp, path, FA_CREATE_ALWAYS | FA_WRITE);
-    xil_printf("f_open -> %d\r\n", fr);
     if (fr != FR_OK) return -1;
 
     wav_header(hdr, nsamples, fs, bits, ch);
-    xil_printf("write header 44 bytes...\r\n");
     fr = f_write(fp, hdr, sizeof(hdr), &bw);
-    xil_printf("f_write hdr -> fr=%d bw=%u\r\n", fr, (unsigned)bw);
     if (fr != FR_OK || bw != sizeof(hdr)) { f_close(fp); return -1; }
 
-    xil_printf("header ok\r\n");
     return 0;
 }
 

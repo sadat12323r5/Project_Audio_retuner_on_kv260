@@ -222,7 +222,6 @@ vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.v" \
-"../../../bd/design_1/sim/design_1.v" \
 "../../../bd/design_1/ip/design_1_amplifier_pipeline_0_0/sim/design_1_amplifier_pipeline_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_31  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
@@ -242,6 +241,7 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

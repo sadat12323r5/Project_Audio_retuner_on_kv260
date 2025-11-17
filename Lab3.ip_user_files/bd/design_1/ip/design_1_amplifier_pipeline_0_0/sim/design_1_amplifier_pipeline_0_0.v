@@ -57,13 +57,13 @@
 module design_1_amplifier_pipeline_0_0 (
   clk,
   rst,
-  axis_tdata,
-  axis_tvalid,
-  axis_tready,
-  axis_tlast,
-  i2s_bclk,
-  i2s_lrcl,
-  i2s_dout,
+  s_axis_tdata,
+  s_axis_tvalid,
+  s_axis_tready,
+  s_axis_tlast,
+  i2s_bclk_speaker,
+  i2s_lrcl_speaker,
+  i2s_din_speaker,
   s00_axi_aclk,
   s00_axi_aresetn,
   s00_axi_awaddr,
@@ -87,24 +87,24 @@ module design_1_amplifier_pipeline_0_0 (
   s00_axi_rready
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF axis:s00_axi, ASSOCIATED_RESET rst, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF s_axis:s00_axi, ASSOCIATED_RESET rst, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
 input wire rst;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TDATA" *)
-input wire [31 : 0] axis_tdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TVALID" *)
-input wire axis_tvalid;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TREADY" *)
-output wire axis_tready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis TLAST" *)
-input wire axis_tlast;
-output wire i2s_bclk;
-output wire i2s_lrcl;
-output wire i2s_dout;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TDATA" *)
+input wire [31 : 0] s_axis_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TVALID" *)
+input wire s_axis_tvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TREADY" *)
+output wire s_axis_tready;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis TLAST" *)
+input wire s_axis_tlast;
+output wire i2s_bclk_speaker;
+output wire i2s_lrcl_speaker;
+output wire i2s_din_speaker;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK" *)
 input wire s00_axi_aclk;
@@ -163,13 +163,13 @@ input wire s00_axi_rready;
   ) inst (
     .clk(clk),
     .rst(rst),
-    .axis_tdata(axis_tdata),
-    .axis_tvalid(axis_tvalid),
-    .axis_tready(axis_tready),
-    .axis_tlast(axis_tlast),
-    .i2s_bclk(i2s_bclk),
-    .i2s_lrcl(i2s_lrcl),
-    .i2s_dout(i2s_dout),
+    .s_axis_tdata(s_axis_tdata),
+    .s_axis_tvalid(s_axis_tvalid),
+    .s_axis_tready(s_axis_tready),
+    .s_axis_tlast(s_axis_tlast),
+    .i2s_bclk_speaker(i2s_bclk_speaker),
+    .i2s_lrcl_speaker(i2s_lrcl_speaker),
+    .i2s_din_speaker(i2s_din_speaker),
     .s00_axi_aclk(s00_axi_aclk),
     .s00_axi_aresetn(s00_axi_aresetn),
     .s00_axi_awaddr(s00_axi_awaddr),

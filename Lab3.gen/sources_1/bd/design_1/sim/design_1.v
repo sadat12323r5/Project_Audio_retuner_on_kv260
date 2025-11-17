@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Sun Nov 16 17:38:58 2025
+//Date        : Mon Nov 17 15:23:36 2025
 //Host        : S-K running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -267,14 +267,10 @@ module design_1
   assign pmod_i2s_lrclk = audio_pipeline_0_i2s_lrcl;
   assign pmod_led_d1 = axi_gpio_0_LED_OUT;
   design_1_amplifier_pipeline_0_0 amplifier_pipeline_0
-       (.axis_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
-        .axis_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
-        .axis_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
-        .axis_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
-        .clk(zynq_ultra_ps_e_0_pl_clk0),
-        .i2s_bclk(amplifier_pipeline_0_i2s_bclk),
-        .i2s_dout(amplifier_pipeline_0_i2s_dout),
-        .i2s_lrcl(amplifier_pipeline_0_i2s_lrcl),
+       (.clk(zynq_ultra_ps_e_0_pl_clk0),
+        .i2s_bclk_speaker(amplifier_pipeline_0_i2s_bclk),
+        .i2s_din_speaker(amplifier_pipeline_0_i2s_dout),
+        .i2s_lrcl_speaker(amplifier_pipeline_0_i2s_lrcl),
         .rst(rst_ps8_0_99M_peripheral_aresetn),
         .s00_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s00_axi_araddr(ps8_0_axi_periph_M03_AXI_ARADDR[4:0]),
@@ -296,7 +292,11 @@ module design_1
         .s00_axi_wdata(ps8_0_axi_periph_M03_AXI_WDATA),
         .s00_axi_wready(ps8_0_axi_periph_M03_AXI_WREADY),
         .s00_axi_wstrb(ps8_0_axi_periph_M03_AXI_WSTRB),
-        .s00_axi_wvalid(ps8_0_axi_periph_M03_AXI_WVALID));
+        .s00_axi_wvalid(ps8_0_axi_periph_M03_AXI_WVALID),
+        .s_axis_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
+        .s_axis_tlast(axi_dma_0_M_AXIS_MM2S_TLAST),
+        .s_axis_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
+        .s_axis_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID));
   design_1_audio_pipeline_0_0 audio_pipeline_0
        (.axis_tdata(audio_pipeline_0_axis_TDATA),
         .axis_tlast(audio_pipeline_0_axis_TLAST),

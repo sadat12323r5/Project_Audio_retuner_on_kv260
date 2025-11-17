@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 16 17:39:08 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 17 15:23:43 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kv260_som:part0:1.4" DEVICE="xck26" NAME="design_1" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -9,19 +9,19 @@
         <CONNECTION INSTANCE="axi_gpio_0" PORT="BUTTON"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="pmod_i2s2_bclk" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_bclk">
+    <PORT DIR="O" NAME="pmod_i2s2_bclk" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_bclk_speaker">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_bclk"/>
+        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_bclk_speaker"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="pmod_i2s2_dout" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_dout">
+    <PORT DIR="O" NAME="pmod_i2s2_dout" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_din_speaker">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_dout"/>
+        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_din_speaker"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="pmod_i2s2_lrclk" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_lrcl">
+    <PORT DIR="O" NAME="pmod_i2s2_lrclk" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_lrcl_speaker">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_lrcl"/>
+        <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="i2s_lrcl_speaker"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="pmod_i2s_bclk" SIGIS="undef" SIGNAME="audio_pipeline_0_i2s_bclk">
@@ -68,42 +68,22 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xA0001FFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="axis_tlast" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="axis_tready" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="axis_tvalid" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT CLKFREQUENCY="99999001" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="i2s_bclk" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_bclk">
+        <PORT DIR="O" NAME="i2s_bclk_speaker" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_bclk_speaker">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="pmod_i2s2_bclk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="i2s_dout" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_dout">
+        <PORT DIR="O" NAME="i2s_din_speaker" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_din_speaker">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="pmod_i2s2_dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="i2s_lrcl" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_lrcl">
+        <PORT DIR="O" NAME="i2s_lrcl_speaker" SIGIS="undef" SIGNAME="amplifier_pipeline_0_i2s_lrcl_speaker">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="pmod_i2s2_lrclk"/>
           </CONNECTIONS>
@@ -218,9 +198,29 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M03_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_dma_0" PORT="m_axis_mm2s_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="axi_dma_0_M_AXIS_MM2S" NAME="axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axi_dma_0_M_AXIS_MM2S" NAME="s_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_zynq_ultra_ps_e_0_0_pl_clk0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
@@ -235,10 +235,10 @@
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="TDATA" PHYSICAL="axis_tdata"/>
-            <PORTMAP LOGICAL="TLAST" PHYSICAL="axis_tlast"/>
-            <PORTMAP LOGICAL="TREADY" PHYSICAL="axis_tready"/>
-            <PORTMAP LOGICAL="TVALID" PHYSICAL="axis_tvalid"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps8_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="s00_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -1589,24 +1589,24 @@
             <CONNECTION INSTANCE="axi_smc" PORT="S00_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="m_axis_mm2s_tdata" RIGHT="0" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tdata">
+        <PORT DIR="O" LEFT="31" NAME="m_axis_mm2s_tdata" RIGHT="0" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="axis_tdata"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_mm2s_tlast" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_mm2s_tlast" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="axis_tlast"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_mm2s_tready" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tready">
+        <PORT DIR="I" NAME="m_axis_mm2s_tready" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="axis_tready"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_mm2s_tvalid" SIGIS="undef" SIGNAME="amplifier_pipeline_0_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_mm2s_tvalid" SIGIS="undef" SIGNAME="amplifier_pipeline_0_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="axis_tvalid"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="mm2s_introut" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
@@ -3417,11 +3417,6 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="S00_AXI_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_arvalid"/>
@@ -3475,11 +3470,6 @@
         <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="15" NAME="S00_AXI_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -3622,11 +3612,6 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp1_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="S01_AXI_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp1_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S01_AXI_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp1_arvalid"/>
@@ -3680,11 +3665,6 @@
         <PORT DIR="I" LEFT="2" NAME="S01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp1_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="15" NAME="S01_AXI_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp1_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S01_AXI_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awvalid">
@@ -3781,7 +3761,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="S00_AXI_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="S00_AXI_awburst"/>
@@ -3793,7 +3772,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="S00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S00_AXI_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="S00_AXI_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="S00_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
@@ -3913,7 +3891,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="S01_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S01_AXI_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S01_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="S01_AXI_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S01_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="S01_AXI_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="S01_AXI_awburst"/>
@@ -3925,7 +3902,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="S01_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S01_AXI_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S01_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="S01_AXI_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="S01_AXI_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="S01_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S01_AXI_bready"/>
@@ -3989,10 +3965,10 @@
             <CONNECTION INSTANCE="audio_pipeline_0" PORT="rst"/>
             <CONNECTION INSTANCE="audio_pipeline_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="S_AXI_ARESETN"/>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="rst"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_ARESETN"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="rst"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
@@ -4015,10 +3991,10 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_LPS_OCM" RANGE="0x1000000" USAGE="register"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_QSPI" RANGE="0x20000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_QSPI" RANGE="0x20000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="C_DP_USE_AUDIO" VALUE="0"/>
@@ -5803,11 +5779,6 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp0_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="maxigp0_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arvalid"/>
@@ -5861,11 +5832,6 @@
         <PORT DIR="O" LEFT="2" NAME="maxigp0_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp0_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="maxigp0_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -5998,11 +5964,6 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_AXI_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp1_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_AXI_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="maxigp1_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_AXI_arvalid"/>
@@ -6056,11 +6017,6 @@
         <PORT DIR="O" LEFT="2" NAME="maxigp1_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_AXI_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp1_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_AXI_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="maxigp1_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S01_AXI_awvalid">
@@ -6169,12 +6125,12 @@
             <CONNECTION INSTANCE="audio_pipeline_0" PORT="clk"/>
             <CONNECTION INSTANCE="audio_pipeline_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="S_AXI_ACLK"/>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_dma_0" PORT="m_axi_mm2s_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M03_ACLK"/>
-            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_ACLK"/>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxihpm1_fpd_aclk"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="clk"/>
+            <CONNECTION INSTANCE="amplifier_pipeline_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="99999001" DIR="O" NAME="pl_clk1" SIGIS="clk"/>
@@ -6399,7 +6355,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="maxigp0_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="maxigp0_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="maxigp0_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="maxigp0_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="maxigp0_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="maxigp0_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="maxigp0_awburst"/>
@@ -6411,7 +6366,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="maxigp0_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="maxigp0_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="maxigp0_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="maxigp0_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="maxigp0_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="maxigp0_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="maxigp0_bready"/>
@@ -6473,7 +6427,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="maxigp1_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="maxigp1_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="maxigp1_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="maxigp1_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="maxigp1_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="maxigp1_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="maxigp1_awburst"/>
@@ -6485,7 +6438,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="maxigp1_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="maxigp1_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="maxigp1_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="maxigp1_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="maxigp1_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="maxigp1_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="maxigp1_bready"/>

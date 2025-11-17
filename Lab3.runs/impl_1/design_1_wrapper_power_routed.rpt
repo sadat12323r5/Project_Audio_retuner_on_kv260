@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Sun Nov 16 17:49:47 2025
+| Date             : Mon Nov 17 15:33:08 2025
 | Host             : S-K running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.018 |        4 |       --- |             --- |
-| CLB Logic                |     0.022 |    24356 |       --- |             --- |
+| CLB Logic                |     0.022 |    24332 |       --- |             --- |
 |   LUT as Distributed RAM |     0.014 |     4774 |     57600 |            8.29 |
-|   LUT as Logic           |     0.006 |     6530 |    117120 |            5.58 |
+|   LUT as Logic           |     0.006 |     6527 |    117120 |            5.57 |
 |   Register               |    <0.001 |     9127 |    234240 |            3.90 |
 |   LUT as Shift Register  |    <0.001 |      221 |     57600 |            0.38 |
 |   CARRY8                 |    <0.001 |       74 |     14640 |            0.51 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   Others                 |     0.000 |      545 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      604 |    117120 |            0.52 |
-| Signals                  |     0.009 |    17441 |       --- |             --- |
+| Signals                  |     0.009 |    17425 |       --- |             --- |
 | Block RAM                |    <0.001 |        2 |       144 |            1.39 |
 | I/O                      |     0.010 |        8 |       189 |            4.23 |
 | PS8                      |     2.417 |        1 |       --- |             --- |
