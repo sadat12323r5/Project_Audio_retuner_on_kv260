@@ -91,3 +91,36 @@ timestamp=[2025-11-17 15:41:45], mode=BUILD, duration=0:00:01.587, duration_ms=1
 timestamp=[2025-11-17 15:41:58], mode=BUILD, duration=0:00:11.793, duration_ms=11793, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
 timestamp=[2025-11-17 15:53:26], mode=BUILD, duration=0:00:01.585, duration_ms=1585, data={name=kv260_lab3, configuration=Debug, clean_build=false}
 timestamp=[2025-11-17 15:53:39], mode=BUILD, duration=0:00:12.661, duration_ms=12661, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 17:10:45], mode=PLATFORM_GENERATION, duration=0:00:31.735, duration_ms=31735, data={name=kv260_lab3_platform}
+timestamp=[2025-11-17 17:11:07], mode=BUILD, duration=0:00:02.535, duration_ms=2535, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 17:11:22], mode=BUILD, duration=0:00:13.552, duration_ms=13552, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:32:13], mode=BUILD, duration=0:00:00.811, duration_ms=811, data={name=kv260_lab3, configuration=Debug, clean_build=true}
+timestamp=[2025-11-17 18:32:16], mode=BUILD, duration=0:00:03.063, duration_ms=3063, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:32:32], mode=BUILD, duration=0:00:14.881, duration_ms=14881, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:36:19], mode=BUILD, duration=0:00:02.211, duration_ms=2211, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:36:34], mode=BUILD, duration=0:00:14.287, duration_ms=14287, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:44:21], mode=BUILD, duration=0:00:01.596, duration_ms=1596, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:44:34], mode=BUILD, duration=0:00:11.865, duration_ms=11865, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:50:56], mode=BUILD, duration=0:00:01.649, duration_ms=1649, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:51:09], mode=BUILD, duration=0:00:11.871, duration_ms=11871, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:57:50], mode=BUILD, duration=0:00:01.596, duration_ms=1596, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 18:58:03], mode=BUILD, duration=0:00:11.817, duration_ms=11817, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 19:27:33], mode=PLATFORM_GENERATION, duration=0:00:42.504, duration_ms=42504, data={name=kv260_lab3_platform}
+timestamp=[2025-11-17 19:27:51], mode=BUILD, duration=0:00:02.612, duration_ms=2612, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 19:28:05], mode=BUILD, duration=0:00:12.507, duration_ms=12507, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:53:05], mode=BUILD, duration=0:00:00.462, duration_ms=462, data={name=kv260_lab3, configuration=Debug, clean_build=true}
+timestamp=[2025-11-17 21:53:05], mode=BUILD, duration=0:00:00.599, duration_ms=599, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:53:27], mode=BUILD, duration=0:00:00.588, duration_ms=588, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:53:41], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:53:59], mode=BUILD, duration=0:00:00.563, duration_ms=563, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:54:19], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:54:36], mode=BUILD, duration=0:00:00.581, duration_ms=581, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:54:55], mode=BUILD, duration=0:00:02.019, duration_ms=2019, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 21:55:08], mode=BUILD, duration=0:00:12.811, duration_ms=12811, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:00:02], mode=BUILD, duration=0:00:01.607, duration_ms=1607, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:00:16], mode=BUILD, duration=0:00:13.051, duration_ms=13051, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:00:32], mode=BUILD, duration=0:00:01.576, duration_ms=1576, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:00:44], mode=BUILD, duration=0:00:11.949, duration_ms=11949, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:49:53], mode=PLATFORM_GENERATION, duration=0:00:31.706, duration_ms=31706, data={name=kv260_lab3_platform}
+timestamp=[2025-11-17 22:50:58], mode=BUILD, duration=0:00:02.371, duration_ms=2371, data={name=kv260_lab3, configuration=Debug, clean_build=false}
+timestamp=[2025-11-17 22:51:12], mode=BUILD, duration=0:00:13.193, duration_ms=13193, data={name=kv260_lab3_system, configuration=Debug, clean_build=false}

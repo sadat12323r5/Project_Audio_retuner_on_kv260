@@ -1,4 +1,4 @@
-15:53:26 **** Incremental Build of configuration Debug for project kv260_lab3_system ****
+22:50:59 **** Incremental Build of configuration Debug for project kv260_lab3_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 51651 C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm standalone_domain C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
@@ -8,9 +8,9 @@ operable program or batch file.
 operable program or batch file.
 '\gnuwin\bin\' is not recognized as an internal or external command,
 operable program or batch file.
-sdcard_gen --xpfm C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit --elf C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
-creating BOOT.BIN using C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+sdcard_gen --xpfm C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_1_wrapper.bit --elf C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_1_wrapper.bit
 Running C:/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-15:53:39 Build Finished (took 12s.649ms)
+22:51:12 Build Finished (took 13s.179ms)
 

@@ -1,0 +1,40 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE8CE35CEFBC6969E",
+      "design_src": "SBD",
+      "device": "xck26-sfvc784-2LV-c",
+      "name": "bd_36cd_0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2024.1"
+    },
+    "design_tree": {},
+    "interface_ports": {
+      "SLOT_0_AXIS": {
+        "mode": "Monitor",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "SLOT_0_AXIS"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "resetn"
+          }
+        }
+      },
+      "resetn": {
+        "type": "rst",
+        "direction": "I"
+      }
+    }
+  }
+}

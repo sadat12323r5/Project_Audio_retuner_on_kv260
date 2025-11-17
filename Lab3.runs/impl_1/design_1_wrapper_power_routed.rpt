@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Mon Nov 17 15:33:08 2025
+| Date             : Mon Nov 17 22:44:31 2025
 | Host             : S-K running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.800        |
+| Total On-Chip Power (W)  | 2.808        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.476        |
-| Device Static (W)        | 0.323        |
+| Dynamic (W)              | 2.484        |
+| Device Static (W)        | 0.324        |
 | Effective TJA (C/W)      | 2.3          |
 | Max Ambient (C)          | 78.5         |
 | Junction Temperature (C) | 31.5         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.018 |        4 |       --- |             --- |
-| CLB Logic                |     0.022 |    24332 |       --- |             --- |
-|   LUT as Distributed RAM |     0.014 |     4774 |     57600 |            8.29 |
-|   LUT as Logic           |     0.006 |     6527 |    117120 |            5.57 |
-|   Register               |    <0.001 |     9127 |    234240 |            3.90 |
-|   LUT as Shift Register  |    <0.001 |      221 |     57600 |            0.38 |
-|   CARRY8                 |    <0.001 |       74 |     14640 |            0.51 |
+| Clocks                   |     0.023 |        5 |       --- |             --- |
+| CLB Logic                |     0.023 |    28662 |       --- |             --- |
+|   LUT as Distributed RAM |     0.014 |     4794 |     57600 |            8.32 |
+|   LUT as Logic           |     0.007 |     7780 |    117120 |            6.64 |
+|   LUT as Shift Register  |    <0.001 |      344 |     57600 |            0.60 |
+|   Register               |    <0.001 |    11448 |    234240 |            4.89 |
+|   CARRY8                 |    <0.001 |       96 |     14640 |            0.66 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |      545 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |      604 |    117120 |            0.52 |
-| Signals                  |     0.009 |    17425 |       --- |             --- |
-| Block RAM                |    <0.001 |        2 |       144 |            1.39 |
+|   Others                 |     0.000 |      806 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      608 |    117120 |            0.52 |
+| Signals                  |     0.010 |    20621 |       --- |             --- |
+| Block RAM                |     0.001 |      3.5 |       144 |            2.43 |
 | I/O                      |     0.010 |        8 |       189 |            4.23 |
 | PS8                      |     2.417 |        1 |       --- |             --- |
-| Static Power             |     0.323 |          |           |                 |
+| Static Power             |     0.324 |          |           |                 |
 |   PS Static              |     0.000 |          |           |                 |
-|   PL Static              |     0.323 |          |           |                 |
-| Total                    |     2.800 |          |           |                 |
+|   PL Static              |     0.324 |          |           |                 |
+| Total                    |     2.808 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,9 +79,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.720 |     0.156 |       0.069 |      0.087 |       NA    | Unspecified | NA         |
+| Vccint          |       0.720 |     0.166 |       0.079 |      0.087 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.036 |       0.000 |      0.036 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.002 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.075 |       0.000 |      0.075 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.032 |       0.001 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.009 |       0.002 |      0.007 |       NA    | Unspecified | NA         |
@@ -150,11 +150,12 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+----------+--------------------------------------------------------+-----------------+
-| Clock    | Domain                                                 | Constraint (ns) |
-+----------+--------------------------------------------------------+-----------------+
-| clk_pl_0 | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] |            10.0 |
-+----------+--------------------------------------------------------+-----------------+
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-----------------+
+| Clock                                                                                               | Domain                                                             | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-----------------+
+| clk_pl_0                                                                                            | design_1_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]             |            10.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK |            50.0 |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -166,19 +167,25 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_1_wrapper         |     2.476 |
-|   design_1_i             |     2.467 |
+| design_1_wrapper         |     2.484 |
+|   dbg_hub                |     0.001 |
+|     inst                 |     0.001 |
+|       BSCANID.u_xsdbm_id |     0.001 |
+|   design_1_i             |     2.473 |
 |     amplifier_pipeline_0 |     0.004 |
 |       inst               |     0.004 |
 |     audio_pipeline_0     |     0.003 |
 |       inst               |     0.003 |
-|     axi_dma_0            |     0.003 |
-|       U0                 |     0.003 |
-|     axi_smc              |     0.029 |
-|       inst               |     0.029 |
+|     axi_dma_0            |     0.004 |
+|       U0                 |     0.004 |
+|     axi_smc              |     0.030 |
+|       inst               |     0.030 |
 |     ps8_0_axi_periph     |     0.009 |
 |       s00_couplers       |     0.004 |
 |       s01_couplers       |     0.004 |
+|       xbar               |     0.001 |
+|     system_ila_0         |     0.005 |
+|       inst               |     0.005 |
 |     zynq_ultra_ps_e_0    |     2.418 |
 |       inst               |     2.418 |
 +--------------------------+-----------+

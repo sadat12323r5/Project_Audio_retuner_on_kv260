@@ -17,6 +17,9 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-- amplifier_pipeline : DMA MM2S AXI-Stream -> FIFO -> I2S transmitter (speaker)
+----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -37,7 +40,7 @@ entity amplifier_pipeline is
     port(
         -- Fabric clock & reset (same clock as AXI DMA)
         clk   : in  std_logic;
-        rst   : in  std_logic;       -- active low, like your other block
+        rst   : in  std_logic;       -- active low
 
         --------------------------------------------------
         -- AXI4-Stream slave from DMA MM2S (speaker path)
@@ -89,7 +92,7 @@ architecture Behavioral of amplifier_pipeline is
     signal sig_control_reg    : std_logic_vector(DATA_WIDTH-1 downto 0);
     signal sig_status_reg     : std_logic_vector(DATA_WIDTH-1 downto 0);
     signal sig_gain_reg       : std_logic_vector(DATA_WIDTH-1 downto 0);
-    signal sig_speaker_enable : std_logic := '0';   -- bit 0
+    signal sig_speaker_enable : std_logic := '0';   -- bit 0 (unused for now)
 
     --------------------------------------------------
     -- FIFO (AXIS -> FIFO -> I2S)
@@ -101,12 +104,15 @@ architecture Behavioral of amplifier_pipeline is
     signal fifo_empty_s   : std_logic;
     signal fifo_din_s     : std_logic_vector(DATA_WIDTH-1 downto 0);
     signal fifo_dout_s    : std_logic_vector(DATA_WIDTH-1 downto 0);
-    
+
     signal axis_tready_s_int : std_logic;
+
+    -- internal copy of BCLK so we can use it as FIFO read clock and drive the pin
+    signal i2s_bclk_int  : std_logic;
 
 begin
     ----------------------------------------------------------------
-    -- Status constant (just like your other core)
+    -- Status constant
     ----------------------------------------------------------------
     sig_status_reg <= x"0CA7CAFE";
 
@@ -146,33 +152,33 @@ begin
         S_AXI_RREADY   => s00_axi_rready
     );
 
-
+    ----------------------------------------------------------------
     -- FIFO reset (FIFO expects active-high reset)
-    fifo_rst_s <= not rst;  -- de-assert when rst='1'
+    ----------------------------------------------------------------
+    fifo_rst_s <= not rst;  -- rst is active-low at top level
 
     ----------------------------------------------------------------
     -- AXI-Stream slave side (from DMA)
     ----------------------------------------------------------------
-    -- backpressure when FIFO is full or speaker disabled
-    axis_tready_s_int  <= '1' when (fifo_full_s = '0')
-                      else '0';
-                      
-    s_axis_tready <= axis_tready_s_int;
+    -- Backpressure when FIFO is full (you can also AND this with sig_speaker_enable later)
+    axis_tready_s_int <= '1' when fifo_full_s = '0' else '0';
+    s_axis_tready     <= axis_tready_s_int;
 
-    fifo_din_s     <= s_axis_tdata;
-    fifo_wr_s      <= s_axis_tvalid and axis_tready_s_int;
+    fifo_din_s <= s_axis_tdata;
+    fifo_wr_s  <= s_axis_tvalid and axis_tready_s_int;
+    -- s_axis_tlast currently ignored (stream is just continuous data)
 
     ----------------------------------------------------------------
-    -- FIFO instance
+    -- FIFO instance (write: clk, read: I2S BCLK domain)
     ----------------------------------------------------------------
     inst_fifo_speaker : fifo
     generic map(
-        data_width => DATA_WIDTH,
-        fifo_depth => FIFO_DEPTH
+        DATA_WIDTH => DATA_WIDTH,
+        FIFO_DEPTH => FIFO_DEPTH
     )
     port map(
         clkw  => clk,
-        clkr  => clk,
+        clkr  => i2s_bclk_int,   -- 🔑 read side runs in BCLK domain
         rst   => fifo_rst_s,
 
         wr    => fifo_wr_s,
@@ -191,19 +197,21 @@ begin
     generic map(
         DATA_WIDTH    => DATA_WIDTH,
         PCM_PRECISION => PCM_PRECISION,
-        BCLK_HALF     => 16  -- same as before
+        BCLK_HALF     => 16        -- 100 MHz / (2*16) ≈ 3.125 MHz BCLK
     )
     port map(
         clk        => clk,
 
         i2s_lrcl   => i2s_lrcl_speaker,
         i2s_din    => i2s_din_speaker,
-        i2s_bclk   => i2s_bclk_speaker,
+        i2s_bclk   => i2s_bclk_int,
 
         fifo_data  => fifo_dout_s,
         fifo_r_stb => fifo_rd_s,
         fifo_empty => fifo_empty_s
     );
 
-end Behavioral;
+    -- Drive external BCLK pin from internal BCLK
+    i2s_bclk_speaker <= i2s_bclk_int;
 
+end Behavioral;

@@ -1,9 +1,14 @@
-15:53:24 **** Incremental Build of configuration Debug for project kv260_lab3 ****
+22:50:55 **** Incremental Build of configuration Debug for project kv260_lab3 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: kv260_lab3.elf'
 'Invoking: ARM v8 gcc linker'
@@ -13,9 +18,9 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Sadat_files/Academics/Cur
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size kv260_lab3.elf  |tee "kv260_lab3.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 145544	   4848	  30756	 181148	  2c39c	kv260_lab3.elf
+ 145368	   4848	  30740	 180956	  2c2dc	kv260_lab3.elf
 'Finished building: kv260_lab3.elf.size'
 ' '
 
-15:53:26 Build Finished (took 1s.575ms)
+22:50:58 Build Finished (took 2s.355ms)
 
