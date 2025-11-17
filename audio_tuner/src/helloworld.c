@@ -44,7 +44,7 @@
       
 /*** AXI GPIO for LED and Switch ***/
 #define AXI_GPIO_LED_OFFSET     0x00  // LED channel offset
-#define AXI_GPIO_SW_OFFSET      0x08  // Switch channel offset
+#define AXI_GPIO_SW_OFFSET      0x04  // Switch channel offset
 
 /*** Audio / file format ***/
 #define FS                      48000      // sample rate (Hz) - MUST match your I2S hardware config
@@ -64,6 +64,7 @@
 static XAxiDma AxiDma;
 static uint32_t rx32[BURST_SAMPLES] __attribute__((aligned(64)));
 static int16_t  pcm16[BURST_SAMPLES];
+static float target_pitch_ratio = 1.0f;  // Global pitch shift ratio
 
 /*** FatFs globals (must persist while mounted) ***/
 static FATFS g_fs;
@@ -78,6 +79,50 @@ typedef struct {
     int bufferSize;            // Buffer size used for analysis
     int actualStartSample;     // Actual start sample used
 } PitchResult;
+
+// Helper function to get frequency of a specific musical note
+float get_note_frequency(int midi_note) {
+    // A4 = MIDI note 69 = 440 Hz
+    // Frequency = 440 * 2^((midi_note - 69) / 12)
+    float semitones_from_a4 = (float)(midi_note - 69);
+    return 440.0f * powf(2.0f, semitones_from_a4 / 12.0f);
+}
+
+// Helper function to find closest MIDI note to a frequency
+int frequency_to_midi_note(float frequency) {
+    if (frequency <= 0) return -1;
+    // MIDI note = 12 * log2(f/440) + 69
+    float log2_val = logf(frequency / 440.0f) / logf(2.0f);
+    return (int)(12.0f * log2_val + 69.0f + 0.5f);  // +0.5 for rounding
+}
+
+// Helper function to find closest octave of a note to a target frequency
+float find_closest_octave_frequency(float target_freq, int reference_note_class) {
+    // reference_note_class is the note class (0-11) from the reference pitch
+    // Find the octave that puts this note class closest to target_freq
+    
+    float best_freq = 0;
+    float min_ratio_diff = 999.0f;
+    
+    // Try octaves from MIDI 12 (C1) to MIDI 108 (C8)
+    for (int octave = 1; octave <= 8; octave++) {
+        int midi_note = reference_note_class + (octave * 12);
+        if (midi_note >= 12 && midi_note <= 108) {  // Valid MIDI range
+            float freq = get_note_frequency(midi_note);
+            float ratio = freq / target_freq;
+            
+            // Prefer ratios close to 1.0 (minimal change)
+            float ratio_diff = (ratio > 1.0f) ? (ratio - 1.0f) : (1.0f - ratio);
+            
+            if (ratio_diff < min_ratio_diff) {
+                min_ratio_diff = ratio_diff;
+                best_freq = freq;
+            }
+        }
+    }
+    
+    return best_freq;
+}
 
 /*** Utilities ***/
 static inline int16_t to_pcm16(uint32_t w)
@@ -250,18 +295,86 @@ static int detect_pitch_from_sd(const char *filename, int startSample, int numSa
     
     xil_printf("Read %u samples, analyzing pitch...\r\n", br / sizeof(int16_t));
     
+    // Debug: Check audio data
+    int samples_read = br / sizeof(int16_t);
+    if (samples_read != numSamples) {
+        xil_printf("WARNING: Expected %d samples, got %d\r\n", numSamples, samples_read);
+    }
+    
+    // Debug: Check audio levels
+    int16_t min_val = 32767, max_val = -32768;
+    int zero_count = 0;
+    for (int i = 0; i < samples_read; i++) {
+        if (audioBuffer[i] < min_val) min_val = audioBuffer[i];
+        if (audioBuffer[i] > max_val) max_val = audioBuffer[i];
+        if (audioBuffer[i] == 0) zero_count++;
+    }
+    
+    xil_printf("Audio range: %d to %d (zeros: %d/%d)\r\n", 
+               min_val, max_val, zero_count, samples_read);
+    
+    if (max_val - min_val < 100) {
+        xil_printf("WARNING: Very low audio signal amplitude!\r\n");
+    }
+    if (zero_count > samples_read / 2) {
+        xil_printf("WARNING: More than 50%% silence detected!\r\n");
+    }
+    
     // Initialize Yin for pitch detection
     xil_printf("Initializing Yin algorithm...\r\n");
+    xil_printf("  Buffer size: %d samples\r\n", numSamples);
+    xil_printf("  Threshold: %.3f\r\n", threshold);
+    xil_printf("  Sample rate: %d Hz\r\n", result->sampleRate);
     Yin yin;
     Yin_init(&yin, numSamples, threshold);
     xil_printf("Yin initialized, detecting pitch...\r\n");
     
     // Detect pitch
     float pitch = Yin_getPitch(&yin, audioBuffer);
-    xil_printf("Pitch detection complete: %.2f Hz\r\n", pitch);
+    float confidence = Yin_getProbability(&yin);
+    
+    xil_printf("Pitch detection complete:\r\n");
+    xil_printf("  Raw pitch: %.2f Hz\r\n", pitch);
+    xil_printf("  Confidence: %.3f (%.1f%%)\r\n", confidence, confidence * 100.0f);
+    xil_printf("  Threshold: %.3f\r\n", threshold);
+    
+    // Debug: Check if pitch is valid
+    if (pitch <= 0) {
+        xil_printf("DEBUG: No valid pitch detected\r\n");
+        if (confidence < threshold) {
+            xil_printf("DEBUG: Confidence %.3f below threshold %.3f\r\n", confidence, threshold);
+            xil_printf("DEBUG: Try lowering threshold or using different audio section\r\n");
+        }
+    } else {
+        xil_printf("DEBUG: Valid pitch detected: %.2f Hz\r\n", pitch);
+    }
     
     result->pitch = pitch;
-    result->confidence = Yin_getProbability(&yin);
+    result->confidence = confidence;
+    
+    // If no pitch detected, try with more lenient threshold
+    if (pitch <= 0 && threshold > 0.05f) {
+        xil_printf("\r\nDEBUG: Retrying with lower threshold...\r\n");
+        float new_threshold = threshold * 0.5f;  // Half the threshold
+        
+        // Re-initialize Yin with new threshold
+        free(yin.yinBuffer);
+        Yin_init(&yin, numSamples, new_threshold);
+        
+        pitch = Yin_getPitch(&yin, audioBuffer);
+        confidence = Yin_getProbability(&yin);
+        
+        xil_printf("Retry results:\r\n");
+        xil_printf("  Pitch: %.2f Hz\r\n", pitch);
+        xil_printf("  Confidence: %.3f (%.1f%%)\r\n", confidence, confidence * 100.0f);
+        xil_printf("  New threshold: %.3f\r\n", new_threshold);
+        
+        if (pitch > 0) {
+            result->pitch = pitch;
+            result->confidence = confidence;
+            xil_printf("DEBUG: Success with lower threshold!\r\n");
+        }
+    }
     
     // Cleanup
     xil_printf("Cleaning up...\r\n");
@@ -574,49 +687,136 @@ int main(void)
             
             // Run pitch detection once
             static int pitch_done = 0;
+            static float recorded_pitch = 0;
+            static float reference_pitch = 0;
+            
             if (!pitch_done) {
                 xil_printf("\r\n=== Starting Pitch Detection ===\r\n");
-                PitchResult result;
+                
+                // Detect pitch from recorded audio
+                PitchResult rec_result;
                 int startSample = 22050;
                 int numSamples = 1024;
                 float threshold = 0.15;
                 
-                if (detect_pitch_from_sd("rec.wav", startSample, numSamples, threshold, &result) == 0) {
-                    xil_printf("\n=== Pitch Detection Results ===\r\n");
-                    xil_printf("Sample Rate:      %d Hz\r\n", result.sampleRate);
-                    xil_printf("Start Sample:     %d\r\n", result.actualStartSample);
-                    xil_printf("Samples Analyzed: %d\r\n", result.numSamples);
+                xil_printf("Analyzing recorded audio (rec.wav)...\r\n");
+                if (detect_pitch_from_sd("rec.wav", startSample, numSamples, threshold, &rec_result) == 0) {
+                    xil_printf("\n=== Recorded Audio Pitch ===\r\n");
+                    xil_printf("Sample Rate:      %d Hz\r\n", rec_result.sampleRate);
+                    xil_printf("Start Sample:     %d\r\n", rec_result.actualStartSample);
+                    xil_printf("Samples Analyzed: %d\r\n", rec_result.numSamples);
                     
-                    if (result.pitch > 0) {
-                        xil_printf("\nPitch Detected!\r\n");
-                        int freq_int = (int)result.pitch;
-                        int freq_dec = (int)((result.pitch - freq_int) * 100);
+                    if (rec_result.pitch > 0) {
+                        recorded_pitch = rec_result.pitch;
+                        xil_printf("\nRecorded Pitch Detected!\r\n");
+                        int freq_int = (int)rec_result.pitch;
+                        int freq_dec = (int)((rec_result.pitch - freq_int) * 100);
                         xil_printf("  Frequency:   %d.%02d Hz\r\n", freq_int, freq_dec);
                         
-                        int conf_int = (int)(result.confidence * 100);
+                        int conf_int = (int)(rec_result.confidence * 100);
                         xil_printf("  Confidence:  %d%%\r\n", conf_int);
                         
-                        // Calculate musical note
-                        if (result.pitch > 20 && result.pitch < 4200) {
+                        // Calculate musical note for recorded audio
+                        if (rec_result.pitch > 20 && rec_result.pitch < 4200) {
                             const char* notes[] = {"C", "C#", "D", "D#", "E", "F",
                                                    "F#", "G", "G#", "A", "A#", "B"};
-                            float log2_val = logf(result.pitch / 440.0f) / logf(2.0f);
-                            int midiNote = (int)(12 * log2_val + 69);
-                            int noteIndex = midiNote % 12;
-                            int octave = (midiNote / 12) - 1;
-                            xil_printf("  Musical Note: %s%d\r\n", notes[noteIndex], octave);
+                            int rec_midi = frequency_to_midi_note(rec_result.pitch);
+                            int noteIndex = rec_midi % 12;
+                            int octave = (rec_midi / 12) - 1;
+                            xil_printf("  Musical Note: %s%d (MIDI %d)\r\n", notes[noteIndex], octave, rec_midi);
+                        }
+                        
+                        xil_printf("\r\nAnalyzing reference audio (e.wav)...\r\n");
+                        PitchResult ref_result;
+                        
+                        // Try different start positions for e.wav
+                        int ref_detected = 0;
+                        int start_positions[] = {0, 11025, 22050, 88200};  // 0s, 0.25s, 0.5s, 1s at 44.1kHz
+                        int num_positions = sizeof(start_positions) / sizeof(start_positions[0]);
+                        
+                        for (int pos = 0; pos < num_positions && !ref_detected; pos++) {
+                            int test_start = start_positions[pos];
+                            xil_printf("Trying start position: %d samples (%.2fs)\r\n", 
+                                      test_start, (float)test_start / 48000.0f);
+                            
+                            if (detect_pitch_from_sd("e.wav", test_start, numSamples, threshold, &ref_result) == 0) {
+                                if (ref_result.pitch > 0) {
+                                    ref_detected = 1;
+                                    xil_printf("SUCCESS: Found pitch at position %d\r\n", test_start);
+                                    break;
+                                }
+                            }
+                        }
+                        
+                        if (ref_detected) {
+                                reference_pitch = ref_result.pitch;
+                                xil_printf("\n=== Reference Audio Pitch ===\r\n");
+                                int ref_freq_int = (int)ref_result.pitch;
+                                int ref_freq_dec = (int)((ref_result.pitch - ref_freq_int) * 100);
+                                xil_printf("  Frequency:   %d.%02d Hz\r\n", ref_freq_int, ref_freq_dec);
+                                
+                                int ref_conf_int = (int)(ref_result.confidence * 100);
+                                xil_printf("  Confidence:  %d%%\r\n", ref_conf_int);
+                                
+                                // Find closest musical note to reference pitch
+                                int ref_midi = frequency_to_midi_note(ref_result.pitch);
+                                int ref_note_class = ref_midi % 12;  // Note class (0-11): C, C#, D, etc.
+                                
+                                // Find the closest octave of this note to the recorded pitch
+                                float target_freq = find_closest_octave_frequency(recorded_pitch, ref_note_class);
+                                int target_midi = frequency_to_midi_note(target_freq);
+                                
+                                const char* notes[] = {"C", "C#", "D", "D#", "E", "F",
+                                                       "F#", "G", "G#", "A", "A#", "B"};
+                                int ref_noteIndex = ref_midi % 12;
+                                int ref_octave = (ref_midi / 12) - 1;
+                                int target_noteIndex = target_midi % 12;
+                                int target_octave = (target_midi / 12) - 1;
+                                
+                                xil_printf("  Musical Note: %s%d (MIDI %d)\\r\\n", notes[ref_noteIndex], ref_octave, ref_midi);
+                                xil_printf("  Note Class: %s\\r\\n", notes[ref_note_class]);
+                                
+                                // Calculate pitch shift ratio to closest octave
+                                target_pitch_ratio = target_freq / recorded_pitch;
+                                
+                                xil_printf("\\n=== Pitch Shift Analysis ===\\r\\n");
+                                int target_freq_int = (int)target_freq;
+                                int target_freq_dec = (int)((target_freq - target_freq_int) * 100);
+                                xil_printf("Target frequency: %d.%02d Hz (%s%d)\\r\\n", 
+                                          target_freq_int, target_freq_dec, notes[target_noteIndex], target_octave);
+                                
+                                int ratio_int = (int)(target_pitch_ratio * 100);
+                                xil_printf("Pitch shift ratio: %d.%02d\\r\\n", ratio_int/100, ratio_int%100);
+                                
+                                if (target_pitch_ratio > 1.05f) {
+                                    xil_printf("Direction: SHIFT UP to closest %s\\r\\n", notes[ref_note_class]);
+                                } else if (target_pitch_ratio < 0.95f) {
+                                    xil_printf("Direction: SHIFT DOWN to closest %s\\r\\n", notes[ref_note_class]);
+                                } else {
+                                    xil_printf("Direction: MINIMAL CHANGE (already close to %s)\\r\\n", notes[ref_note_class]);
+                                }
+                            } else {
+                                xil_printf("No pitch detected in reference file e.wav\r\n");
+                                xil_printf("DEBUG: Tried %d different start positions\r\n", num_positions);
+                                xil_printf("DEBUG: File may be silent, too noisy, or non-tonal\r\n");
+                                target_pitch_ratio = 1.0f;  // No change if reference not detected
+                            }
+                        } else {
+                            xil_printf("Error: Could not read reference file e.wav at any position\r\n");
+                            target_pitch_ratio = 1.0f;  // No change if file not found
                         }
                     } else {
-                        xil_printf("\nNo pitch detected.\r\n");
+                        xil_printf("\nNo pitch detected in recorded audio.\r\n");
+                        target_pitch_ratio = 1.0f;
                     }
                 } else {
-                    xil_printf("Error: Failed to detect pitch from WAV file\r\n");
+                    xil_printf("Error: Failed to detect pitch from recorded audio\r\n");
+                    target_pitch_ratio = 1.0f;
                 }
                 pitch_done = 1;
                 state++;  // Auto-advance
             }
-        }
-        // State 4: Phase vocoder (LED medium blink)
+
         else if (state == 4) {
             Xil_Out32(XPAR_AXI_GPIO_0_BASEADDR + AXI_GPIO_LED_OFFSET, 1);
             usleep(50000);  // 50ms on
@@ -628,7 +828,12 @@ int main(void)
             if (!vocoder_done) {
                 xil_printf("\r\n=== Starting Phase Vocoder Pitch Shift ===\r\n");
                 
-                float pitch_shift_ratio = 1.2f;
+                // Use the calculated pitch ratio from state 3
+                float pitch_shift_ratio = target_pitch_ratio;
+                
+                int ratio_int = (int)(pitch_shift_ratio * 100);
+                xil_printf("Applying calculated pitch shift ratio: %d.%02d\r\n", ratio_int/100, ratio_int%100);
+                
                 AudioBuffer* input_audio = load_wav_from_sd("rec.wav");
                 
                 if (!input_audio) {
