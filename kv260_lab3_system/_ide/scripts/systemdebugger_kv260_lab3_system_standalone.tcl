@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
-set bp_59_28_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_40_23_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_59_28_fsbl_bp
+bpremove $bp_40_23_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
