@@ -8,12 +8,31 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Tue Nov 18 12:11:30 2025
+  **** Start of session at: Wed Nov 19 07:58:12 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 523.930 ; gain = 196.934
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 522.848 ; gain = 197.113
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Nov 19 07:58:41 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 524.055 ; gain = 195.957
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -29,9 +48,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 37564
+INFO: [Synth 8-7075] Helper process launched with PID 38456
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1999.281 ; gain = 401.246
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1996.672 ; gain = 399.641
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_5_3.v:2470]
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
@@ -76,23 +95,39 @@ INFO: [Synth 8-638] synthesizing module 'audio_pipeline' [C:/Sadat_files/Academi
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'ctrl_bus' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd:5' bound to instance 'inst_ctrl_bus' of component 'ctrl_bus' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:97]
+INFO: [Synth 8-3491] module 'ctrl_bus' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd:5' bound to instance 'inst_ctrl_bus' of component 'ctrl_bus' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:106]
 WARNING: [Synth 8-5640] Port 'clk_1' is missing in component declaration [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/params.vhd:8]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter PCM_PRECISION bound to: 18 - type: integer 
-INFO: [Synth 8-3491] module 'i2s_master' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd:14' bound to instance 'inst_i2s_master' of component 'i2s_master' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:136]
+INFO: [Synth 8-3491] module 'i2s_master' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd:14' bound to instance 'inst_i2s_master' of component 'i2s_master' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:145]
 INFO: [Synth 8-638] synthesizing module 'i2s_master' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd:36]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter PCM_PRECISION bound to: 18 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'i2s_master' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd:36]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter FIFO_DEPTH bound to: 12 - type: integer 
-INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd:5' bound to instance 'inst_fifo' of component 'fifo' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:156]
+INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd:5' bound to instance 'inst_fifo' of component 'fifo' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:165]
 INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd:23]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter FIFO_DEPTH bound to: 12 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'fifo' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd:23]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'fir4_lowpass' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/fir4_lowpass.vhd:40]
+	Parameter SAMPLE_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fir4_lowpass' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/fir4_lowpass.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'envelope_follower' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/envelope_follower.vhd:42]
+	Parameter SAMPLE_WIDTH bound to: 24 - type: integer 
+	Parameter SHIFT_ATTACK bound to: 3 - type: integer 
+	Parameter SHIFT_RELEASE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'envelope_follower' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/envelope_follower.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dynamics_core' [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/dynamics_core.vhd:52]
+	Parameter SAMPLE_WIDTH bound to: 24 - type: integer 
+	Parameter GATE_LEVEL bound to: 32768 - type: integer 
+	Parameter BOOST_LEVEL bound to: 262144 - type: integer 
+	Parameter COMP_LEVEL bound to: 1048576 - type: integer 
+	Parameter BOOST_SHIFT bound to: 1 - type: integer 
+	Parameter COMP_SHIFT bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dynamics_core' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/dynamics_core.vhd:52]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:253]
 INFO: [Synth 8-256] done synthesizing module 'audio_pipeline' (0#1) [C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd:64]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_pipeline_0_0' (0#1) [c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_audio_pipeline_0_0/synth/design_1_audio_pipeline_0_0.v:53]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/synth/design_1_axi_dma_0_0.vhd:128]
@@ -941,18 +976,18 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_5_3_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2524.238 ; gain = 926.203
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2524.848 ; gain = 927.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2524.238 ; gain = 926.203
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2524.848 ; gain = 927.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2524.238 ; gain = 926.203
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2524.848 ; gain = 927.816
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2549.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2554.070 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1042,17 +1077,17 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 58 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2944.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2947.664 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 38 instances were transformed.
   FDR => FDRE: 36 instances
   SRL16 => SRL16E: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.518 . Memory (MB): peak = 2944.273 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.537 . Memory (MB): peak = 2947.664 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2944.273 ; gain = 1346.238
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2947.664 ; gain = 1350.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -1060,7 +1095,7 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2944.273 ; gain = 1346.238
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2947.664 ; gain = 1350.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1145,7 +1180,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2944.273 ; gain = 1346.238
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2947.664 ; gain = 1350.633
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'fifo_state_reg' in module 'i2s_master'
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
@@ -1298,7 +1333,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2944.273 ; gain = 1346.238
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 2947.664 ; gain = 1350.633
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1309,6 +1344,8 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   40 Bit       Adders := 4     
 	   2 Input   32 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 1     
+	   3 Input   24 Bit       Adders := 1     
 	   2 Input   16 Bit       Adders := 6     
 	   3 Input   14 Bit       Adders := 1     
 	   2 Input   13 Bit       Adders := 5     
@@ -1356,7 +1393,9 @@ Detailed RTL Component Info :
 	               33 Bit    Registers := 1     
 	               32 Bit    Registers := 46    
 	               29 Bit    Registers := 8     
+	               28 Bit    Registers := 1     
 	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
 	               23 Bit    Registers := 2     
 	               19 Bit    Registers := 2     
 	               18 Bit    Registers := 5     
@@ -1370,10 +1409,10 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 22    
 	                6 Bit    Registers := 72    
 	                5 Bit    Registers := 58    
-	                4 Bit    Registers := 113   
+	                4 Bit    Registers := 114   
 	                3 Bit    Registers := 73    
 	                2 Bit    Registers := 93    
-	                1 Bit    Registers := 1220  
+	                1 Bit    Registers := 1221  
 +---RAMs : 
 	             128K Bit	(4096 X 32 bit)          RAMs := 1     
 	               4K Bit	(128 X 39 bit)          RAMs := 1     
@@ -1395,6 +1434,7 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit        Muxes := 35    
 	   8 Input   32 Bit        Muxes := 12    
 	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 4     
 	   2 Input   23 Bit        Muxes := 3     
 	   2 Input   16 Bit        Muxes := 7     
 	   2 Input   14 Bit        Muxes := 7     
@@ -1430,7 +1470,7 @@ Detailed RTL Component Info :
 	   4 Input    1 Bit        Muxes := 70    
 	   7 Input    1 Bit        Muxes := 45    
 	  12 Input    1 Bit        Muxes := 5     
-	   2 Input    1 Bit        Muxes := 505   
+	   2 Input    1 Bit        Muxes := 506   
 	   3 Input    1 Bit        Muxes := 35    
 	   8 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -1499,7 +1539,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:21 ; elapsed = 00:02:28 . Memory (MB): peak = 2944.273 ; gain = 1346.238
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:40 ; elapsed = 00:02:52 . Memory (MB): peak = 2947.664 ; gain = 1350.633
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1547,7 +1587,7 @@ Distributed RAM: Preliminary Mapping Report (see note below)
 |design_1_i/axi_smc/inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                          | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 160             | RAM32M16 x 12  | 
 |design_1_i/axi_smc/inst/i_0/\s01_nodes/s01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                         | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 140             | RAM32M16 x 10  | 
 |design_1_i/axi_smc/inst/i_0/\s01_nodes/s01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                          | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 168             | RAM32M16 x 12  | 
-|design_1_i/i_0/audio_pipeline_0                                                                                                                                                                                                                           | inst/inst_fifo/mem_reg                                                        | Implied        | 4 K x 32             | RAM64M8 x 320  | 
+|design_1_i/i_0/audio_pipeline_0                                                                                                                                                                                                                           | inst/inst_fifo/mem_reg                                                        | Implied        | 4 K x 24             | RAM64M8 x 256  | 
 |design_1_i/i_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M16 x 1   | 
 |design_1_i/i_0/ps8_0_axi_periph/\s00_couplers/auto_ds /inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 9               | RAM32M16 x 1   | 
 |design_1_i/i_0/ps8_0_axi_periph/\s00_couplers/auto_ds /inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst                                                                                 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 29              | RAM32M16 x 3   | 
@@ -1565,7 +1605,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:32 ; elapsed = 00:02:42 . Memory (MB): peak = 3882.789 ; gain = 2284.754
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:52 ; elapsed = 00:03:06 . Memory (MB): peak = 3886.453 ; gain = 2289.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1573,7 +1613,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:40 ; elapsed = 00:02:50 . Memory (MB): peak = 4058.625 ; gain = 2460.590
+Finished Timing Optimization : Time (s): cpu = 00:03:01 ; elapsed = 00:03:16 . Memory (MB): peak = 4063.199 ; gain = 2466.168
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6057] Memory: "inst/inst_fifo_speaker/mem_reg" defined in module: "design_1_i/i_0/amplifier_pipeline_0" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
 ---------------------------------------------------------------------------------
@@ -1615,7 +1655,7 @@ Distributed RAM: Final Mapping Report
 |design_1_i/axi_smc/inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                          | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 160             | RAM32M16 x 12  | 
 |design_1_i/axi_smc/inst/i_0/\s01_nodes/s01_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                         | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 140             | RAM32M16 x 10  | 
 |design_1_i/axi_smc/inst/i_0/\s01_nodes/s01_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                                                          | gen_wr_a.gen_word_narrow.mem_reg                                              | User Attribute | 32 x 168             | RAM32M16 x 12  | 
-|design_1_i/i_0/audio_pipeline_0                                                                                                                                                                                                                           | inst/inst_fifo/mem_reg                                                        | Implied        | 4 K x 32             | RAM64M8 x 320  | 
+|design_1_i/i_0/audio_pipeline_0                                                                                                                                                                                                                           | inst/inst_fifo/mem_reg                                                        | Implied        | 4 K x 24             | RAM64M8 x 256  | 
 |design_1_i/i_0/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg                                              | Implied        | 16 x 9               | RAM32M16 x 1   | 
 |design_1_i/i_0/ps8_0_axi_periph/\s00_couplers/auto_ds /inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst                                                                 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 9               | RAM32M16 x 1   | 
 |design_1_i/i_0/ps8_0_axi_periph/\s00_couplers/auto_ds /inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst                                                                                 | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 29              | RAM32M16 x 3   | 
@@ -1636,7 +1676,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_13_top.
 INFO: [Synth 8-7052] The timing for the instance design_1_i/amplifier_pipeline_0/inst/inst_fifo_speaker/mem_reg_uram_0 (implemented as a Ultra RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:48 ; elapsed = 00:02:58 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Technology Mapping : Time (s): cpu = 00:03:11 ; elapsed = 00:03:27 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1856,37 +1896,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ipshared/14b9/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1911]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:52 ; elapsed = 00:03:03 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished IO Insertion : Time (s): cpu = 00:03:16 ; elapsed = 00:03:33 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:53 ; elapsed = 00:03:03 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:16 ; elapsed = 00:03:33 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:54 ; elapsed = 00:03:05 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:18 ; elapsed = 00:03:35 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:54 ; elapsed = 00:03:05 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:18 ; elapsed = 00:03:35 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:55 ; elapsed = 00:03:05 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:19 ; elapsed = 00:03:35 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:55 ; elapsed = 00:03:05 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:19 ; elapsed = 00:03:35 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1930,13 +1970,13 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BUFG     |     1|
 |2     |BUFG_PS  |     2|
-|3     |CARRY8   |    70|
-|4     |LUT1     |   644|
-|5     |LUT2     |   718|
-|6     |LUT3     |  1830|
-|7     |LUT4     |   946|
-|8     |LUT5     |  1417|
-|9     |LUT6     |  2409|
+|3     |CARRY8   |    95|
+|4     |LUT1     |   654|
+|5     |LUT2     |   852|
+|6     |LUT3     |  1847|
+|7     |LUT4     |   993|
+|8     |LUT5     |  1371|
+|9     |LUT6     |  2487|
 |10    |MUXF7    |   148|
 |11    |MUXF8    |    73|
 |12    |PS8      |     1|
@@ -1953,24 +1993,24 @@ Report Cell Usage:
 |23    |FDCE     |   251|
 |24    |FDPE     |    66|
 |25    |FDR      |    16|
-|26    |FDRE     |  8560|
+|26    |FDRE     |  8800|
 |27    |FDSE     |   250|
 |28    |IBUF     |     2|
 |29    |OBUF     |     6|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:55 ; elapsed = 00:03:05 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:19 ; elapsed = 00:03:35 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5703 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:36 . Memory (MB): peak = 4068.730 ; gain = 2050.660
-Synthesis Optimization Complete : Time (s): cpu = 00:02:55 ; elapsed = 00:03:06 . Memory (MB): peak = 4068.730 ; gain = 2470.695
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:24 ; elapsed = 00:03:05 . Memory (MB): peak = 4073.293 ; gain = 2053.445
+Synthesis Optimization Complete : Time (s): cpu = 00:03:20 ; elapsed = 00:03:36 . Memory (MB): peak = 4073.293 ; gain = 2476.262
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 4068.730 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 594 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.604 . Memory (MB): peak = 4073.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 619 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4068.730 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4073.293 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 303 instances were transformed.
   BUFG => BUFGCE: 1 instance 
@@ -1983,12 +2023,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M8 => RAM64M8 (RAMD64E(x8)): 192 instances
   SRL16 => SRL16E: 2 instances
 
-Synth Design complete | Checksum: 6c8644ef
+Synth Design complete | Checksum: 1d3cd54
 INFO: [Common 17-83] Releasing license: Synthesis
-601 Infos, 507 Warnings, 0 Critical Warnings and 0 Errors encountered.
+607 Infos, 507 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:10 ; elapsed = 00:03:22 . Memory (MB): peak = 4068.730 ; gain = 3481.762
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 4068.730 ; gain = 0.000
+synth_design: Time (s): cpu = 00:03:35 ; elapsed = 00:03:54 . Memory (MB): peak = 4073.293 ; gain = 3487.188
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4073.293 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 18 12:15:10 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 19 08:02:54 2025...

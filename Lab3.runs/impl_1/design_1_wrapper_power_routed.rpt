@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Tue Nov 18 12:20:56 2025
+| Date             : Wed Nov 19 08:07:59 2025
 | Host             : S-K running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.017 |        4 |       --- |             --- |
-| CLB Logic                |     0.022 |    20675 |       --- |             --- |
+| CLB Logic                |     0.022 |    21185 |       --- |             --- |
 |   LUT as Distributed RAM |     0.014 |     2214 |     57600 |            3.84 |
-|   LUT as Logic           |     0.006 |     5885 |    117120 |            5.02 |
-|   Register               |    <0.001 |     9108 |    234240 |            3.89 |
-|   LUT as Shift Register  |    <0.001 |      221 |     57600 |            0.38 |
-|   CARRY8                 |    <0.001 |       70 |     14640 |            0.48 |
+|   LUT as Logic           |     0.006 |     6107 |    117120 |            5.21 |
+|   Register               |    <0.001 |     9348 |    234240 |            3.99 |
+|   LUT as Shift Register  |    <0.001 |      219 |     57600 |            0.38 |
+|   CARRY8                 |    <0.001 |       95 |     14640 |            0.65 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |      544 |       --- |             --- |
+|   Others                 |     0.000 |      548 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      221 |    117120 |            0.19 |
-| Signals                  |     0.009 |    15051 |       --- |             --- |
+| Signals                  |     0.009 |    15399 |       --- |             --- |
 | Block RAM                |    <0.001 |        2 |       144 |            1.39 |
 | URAM                     |    <0.001 |        1 |        64 |            1.56 |
 | I/O                      |     0.010 |        8 |       189 |            4.23 |
@@ -169,8 +169,8 @@ Table of Contents
 +-----------------------+-----------+
 | design_1_wrapper      |     2.475 |
 |   design_1_i          |     2.466 |
-|     audio_pipeline_0  |     0.003 |
-|       inst            |     0.003 |
+|     audio_pipeline_0  |     0.004 |
+|       inst            |     0.004 |
 |     axi_dma_0         |     0.004 |
 |       U0              |     0.004 |
 |     axi_smc           |     0.030 |

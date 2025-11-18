@@ -226,7 +226,6 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Lab3.gen/sources_1/bd/desi
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.v" \
 "../../../bd/design_1/ip/design_1_amplifier_pipeline_0_0/sim/design_1_amplifier_pipeline_0_0.v" \
-"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work axi_protocol_converter_v2_1_31  -v2k5 "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_17 -l zynq_ultra_ps_e_vip_v1_0_17 -l xil_defaultlib -l lib_pkg_v1_0_4 -l fifo_generator_v13_2_10 -l lib_fifo_v1_0_19 -l lib_srl_fifo_v1_0_4 -l lib_cdc_v1_0_3 -l axi_datamover_v5_1_33 -l axi_sg_v4_1_18 -l axi_dma_v7_1_32 -l generic_baseblocks_v2_1_2 -l axi_register_slice_v2_1_31 -l axi_data_fifo_v2_1_30 -l axi_crossbar_v2_1_32 -l proc_sys_reset_v5_0_15 -l xlconstant_v1_1_9 -l smartconnect_v1_0 -l axi_protocol_converter_v2_1_31 -l axi_clock_converter_v2_1_30 -l blk_mem_gen_v8_4_8 -l axi_dwidth_converter_v2_1_31 \
 "../../../../Lab3.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -245,6 +244,7 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Lab3.gen/sources_1/bd/desi
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_1/sim/design_1_auto_ds_1.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

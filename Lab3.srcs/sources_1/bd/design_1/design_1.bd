@@ -5246,13 +5246,13 @@
           "ps8_0_axi_periph/M01_ARESETN",
           "axi_smc/aresetn",
           "ps8_0_axi_periph/M02_ARESETN",
-          "audio_pipeline_0/rst",
-          "audio_pipeline_0/s00_axi_aresetn",
           "axi_gpio_0/S_AXI_ARESETN",
           "ps8_0_axi_periph/M03_ARESETN",
           "ps8_0_axi_periph/S01_ARESETN",
           "amplifier_pipeline_0/rst",
-          "amplifier_pipeline_0/s00_axi_aresetn"
+          "amplifier_pipeline_0/s00_axi_aresetn",
+          "audio_pipeline_0/rst",
+          "audio_pipeline_0/s00_axi_aresetn"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -5269,15 +5269,15 @@
           "axi_smc/aclk",
           "zynq_ultra_ps_e_0/saxihpc0_fpd_aclk",
           "ps8_0_axi_periph/M02_ACLK",
-          "audio_pipeline_0/clk",
-          "audio_pipeline_0/s00_axi_aclk",
           "axi_gpio_0/S_AXI_ACLK",
           "axi_dma_0/m_axi_mm2s_aclk",
           "ps8_0_axi_periph/M03_ACLK",
           "ps8_0_axi_periph/S01_ACLK",
           "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
           "amplifier_pipeline_0/clk",
-          "amplifier_pipeline_0/s00_axi_aclk"
+          "amplifier_pipeline_0/s00_axi_aclk",
+          "audio_pipeline_0/clk",
+          "audio_pipeline_0/s00_axi_aclk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

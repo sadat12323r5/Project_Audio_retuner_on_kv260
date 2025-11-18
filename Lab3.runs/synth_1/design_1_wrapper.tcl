@@ -57,7 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param bd.open.in_stealth_mode 2
+set_param bd.open.in_stealth_mode 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -78,6 +78,9 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 read_vhdl -library xil_defaultlib {
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/params.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/fir4_lowpass.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/envelope_follower.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/dynamics_core.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
