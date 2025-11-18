@@ -227,21 +227,21 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.v" \
 "../../../bd/design_1/ip/design_1_amplifier_pipeline_0_0/sim/design_1_amplifier_pipeline_0_0.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/sim/bd_36cd.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/sim/bd_36cd_ila_lib_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_0/sim/bd_36cd_0_ila_lib_0.v" \
 
 vlog -work gigantic_mux  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/8745/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../Lab3.gen/sources_1/bd/design_1/ipshared/7215/hdl/gigantic_mux_v1_0_cntr.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/8745/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_1/bd_36cd_g_inst_0_gigantic_mux.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_1/sim/bd_36cd_g_inst_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_1/bd_36cd_0_g_inst_0_gigantic_mux.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_1/sim/bd_36cd_0_g_inst_0.v" \
 
 vlog -work axis_protocol_checker_v2_0_15  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/8745/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2acc/hdl/axis_protocol_checker_v2_0_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/8745/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_2/sim/bd_36cd_slot_0_apcs_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_2/sim/bd_36cd_0_slot_0_apcs_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/sim/bd_36cd_0.v" \
 "../../../bd/design_1/ip/design_1_system_ila_0_1/sim/design_1_system_ila_0_1.v" \
 
 vlog -work axi_protocol_converter_v2_1_31  -incr -mfcu  "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/a317/hdl" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/c783/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/8745/hdl/verilog" "+incdir+../../../../Lab3.gen/sources_1/bd/design_1/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \

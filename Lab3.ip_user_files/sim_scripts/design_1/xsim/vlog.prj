@@ -36,11 +36,11 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/includ
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.v" \
 "../../../bd/design_1/ip/design_1_amplifier_pipeline_0_0/sim/design_1_amplifier_pipeline_0_0.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/sim/bd_36cd.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/sim/bd_36cd_ila_lib_0.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_1/bd_36cd_g_inst_0_gigantic_mux.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_1/sim/bd_36cd_g_inst_0.v" \
-"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_2/sim/bd_36cd_slot_0_apcs_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_0/sim/bd_36cd_0_ila_lib_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_1/bd_36cd_0_g_inst_0_gigantic_mux.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_1/sim/bd_36cd_0_g_inst_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/ip/ip_2/sim/bd_36cd_0_slot_0_apcs_0.v" \
+"../../../bd/design_1/ip/design_1_system_ila_0_1/bd_1/sim/bd_36cd_0.v" \
 "../../../bd/design_1/ip/design_1_system_ila_0_1/sim/design_1_system_ila_0_1.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \

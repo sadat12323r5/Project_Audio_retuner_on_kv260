@@ -23,17 +23,18 @@ use ieee.numeric_std.all;
 
 entity i2s_transmitter is
     generic (
-        DATA_WIDTH    : natural := 32;   -- bits per I2S sample word (per channel window)
-        PCM_PRECISION : natural := 18;   -- not used here, kept for compatibility
+        DATA_WIDTH    : natural := 32;   -- bits per I2S sample word
+        PCM_PRECISION : natural := 18;   -- kept for compatibility, unused
         -- BCLK generator: clk / (2 * BCLK_HALF) ≈ desired BCLK
-        -- e.g. for clk=100MHz, BCLK_HALF=16 -> ~3.125 MHz (close to 3.072 MHz @48k, 32b, 2ch)
+        -- e.g. clk=100MHz, BCLK_HALF=16 -> ~3.125 MHz
         BCLK_HALF     : natural := 16
     );
     port (
-        clk        : in  std_logic;
+        clk        : in  std_logic;      -- fabric clock (same as FIFO / AXI)
+        rst        : in  std_logic;      -- active-high synchronous reset
 
         -- I²S outputs
-        i2s_lrcl   : out std_logic;      -- 0=Left, 1=Right (word select)
+        i2s_lrcl   : out std_logic;      -- 0 = Left, 1 = Right (word select)
         i2s_din    : out std_logic;      -- serial data (MSB first)
         i2s_bclk   : out std_logic;      -- bit clock
 
@@ -44,101 +45,154 @@ entity i2s_transmitter is
     );
 end i2s_transmitter;
 
-architecture Behavioral of i2s_transmitter is
-    -- -------------------------
-    -- BCLK generator (from clk)
-    -- -------------------------
-    signal bclk_cnt     : unsigned(15 downto 0) := (others => '0');
-    signal bclk         : std_logic := '0';
+architecture rtl of i2s_transmitter is
 
-    -- LRCLK: toggles every 32 BCLK rising edges (32 bits per channel)
-    signal lr_cnt       : unsigned(5 downto 0) := (others => '0');   -- 0..31
+    ------------------------------------------------------------------------
+    -- BCLK generator state
+    ------------------------------------------------------------------------
+    signal bclk_cnt  : unsigned(15 downto 0) := (others => '0');  -- big enough
+    signal bclk      : std_logic := '0';
+    signal bclk_rise : std_logic := '0';  -- 1 clk-cycle pulse on BCLK rising edge
+
+    ------------------------------------------------------------------------
+    -- LRCLK + per-channel bit counting
+    ------------------------------------------------------------------------
+    -- LRCLK toggles every 32 BCLK rising edges:
+    -- 32 bits left, 32 bits right  => full LR frame = 64 BCLKs
     signal lrclk        : std_logic := '0';
+    signal lr_bclk_cnt  : unsigned(5 downto 0) := (others => '0');  -- 0..31
 
-    -- I²S shift control
-    signal bit_idx      : unsigned(5 downto 0) := (others => '0');   -- 31..0
-    signal msb_hold     : std_logic := '1';      -- 1-bit MSB delay after LR edge (I²S rule)
-    signal sample_buf   : std_logic_vector(DATA_WIDTH-1 downto 0) := (others => '0');
+    ------------------------------------------------------------------------
+    -- I²S shifter state
+    ------------------------------------------------------------------------
+    signal bit_idx     : unsigned(5 downto 0) := (others => '0');   -- 0..31
+    signal msb_hold    : std_logic := '0';      -- 1-BCLK MSB delay after LR edge
+    signal sample_buf  : std_logic_vector(DATA_WIDTH-1 downto 0) := (others => '0');
+    signal i2s_din_reg : std_logic := '0';
 
-    -- edge detect
-    signal lrclk_d      : std_logic := '0';
 begin
+
+    ------------------------------------------------------------------------
     -- Drive outputs
+    ------------------------------------------------------------------------
     i2s_bclk <= bclk;
     i2s_lrcl <= lrclk;
+    i2s_din  <= i2s_din_reg;
 
-    ----------------------------------------------------------------
-    -- Generate BCLK from fabric clk: toggle every BCLK_HALF cycles
-    ----------------------------------------------------------------
+    ------------------------------------------------------------------------
+    -- Main sequential process: everything in 'clk' domain
+    ------------------------------------------------------------------------
     process (clk)
+        variable new_channel : std_logic;
+        variable idx_int     : integer;
     begin
         if rising_edge(clk) then
-            if bclk_cnt = to_unsigned(BCLK_HALF-1, bclk_cnt'length) then
-                bclk_cnt <= (others => '0');
-                bclk     <= not bclk;
-            else
-                bclk_cnt <= bclk_cnt + 1;
-            end if;
-        end if;
-    end process;
+            if rst = '1' then
+                ----------------------------------------------------------------
+                -- Reset all internal state
+                ----------------------------------------------------------------
+                bclk_cnt    <= (others => '0');
+                bclk        <= '0';
+                bclk_rise   <= '0';
 
-    --------------------------------------------------------------
-    -- LRCLK: toggle every 32 rising edges of BCLK
-    -- (Don't clock logic on bclk directly in real silicon-use CE.
-    --  Here we keep your style; it's acceptable for this small block.)
-    --------------------------------------------------------------
-    process (bclk)
-    begin
-        if rising_edge(bclk) then
-            if lr_cnt = to_unsigned(31, lr_cnt'length) then
-                lr_cnt <= (others => '0');
-                lrclk  <= not lrclk;
-            else
-                lr_cnt <= lr_cnt + 1;
-            end if;
-        end if;
-    end process;
+                lrclk       <= '0';
+                lr_bclk_cnt <= (others => '0');
 
-    --------------------------------------------------------------
-    -- I²S shifter with MSB delay and LR-aligned fetch
-    --------------------------------------------------------------
-    process (bclk)
-    begin
-        if rising_edge(bclk) then
-            -- default
-            fifo_r_stb <= '0';
+                bit_idx     <= (others => '0');
+                msb_hold    <= '0';
+                sample_buf  <= (others => '0');
 
-            -- detect LRCLK edge (start of a new channel window)
-            lrclk_d <= lrclk;
-            if lrclk_d /= lrclk then
-                -- New channel frame starts: load a fresh word and arm MSB delay
-                bit_idx  <= to_unsigned(31, bit_idx'length);
-                msb_hold <= '1';
-
-                if fifo_empty = '0' then
-                    sample_buf <= fifo_data;  -- grab next 32-bit word
-                    fifo_r_stb <= '1';        -- one pop per channel frame
-                else
-                    -- no data -> send zeros this frame
-                    sample_buf <= (others => '0');
-                end if;
+                fifo_r_stb  <= '0';
+                i2s_din_reg <= '0';
 
             else
-                -- within a channel frame
-                if msb_hold = '1' then
-                    -- enforce the one-BCLK MSB delay after LRCLK toggle
-                    msb_hold <= '0';
-                else
-                    -- shift through remaining bits
-                    if bit_idx /= to_unsigned(0, bit_idx'length) then
-                        bit_idx <= bit_idx - 1;
+                ----------------------------------------------------------------
+                -- Default strobes
+                ----------------------------------------------------------------
+                fifo_r_stb <= '0';
+                bclk_rise  <= '0';
+                new_channel := '0';
+
+                ----------------------------------------------------------------
+                -- BCLK generator: toggle every BCLK_HALF cycles
+                ----------------------------------------------------------------
+                if bclk_cnt = to_unsigned(BCLK_HALF-1, bclk_cnt'length) then
+                    bclk_cnt <= (others => '0');
+
+                    -- use old bclk value to detect rising edge
+                    if bclk = '0' then
+                        bclk      <= '1';
+                        bclk_rise <= '1';   -- this is a rising edge
+                    else
+                        bclk      <= '0';   -- falling edge
                     end if;
+                else
+                    bclk_cnt <= bclk_cnt + 1;
                 end if;
-            end if;
 
-            -- Output current bit (MSB first)
-            i2s_din <= sample_buf(to_integer(bit_idx));
-        end if;
+                ----------------------------------------------------------------
+                -- On each BCLK rising edge: update LRCLK, shifter, FIFO pops
+                ----------------------------------------------------------------
+                if bclk_rise = '1' then
+                    ------------------------------------------------------------
+                    -- LRCLK: toggle every 32 BCLK rising edges
+                    ------------------------------------------------------------
+                    if lr_bclk_cnt = to_unsigned(31, lr_bclk_cnt'length) then
+                        lr_bclk_cnt <= (others => '0');
+                        lrclk       <= not lrclk;  -- new channel window (L/R)
+                        new_channel := '1';
+                    else
+                        lr_bclk_cnt <= lr_bclk_cnt + 1;
+                    end if;
+
+                    --------------------------------------------------------
+                    -- I²S shifter w/ MSB delay and LR-aligned fetch
+                    --------------------------------------------------------
+                    if new_channel = '1' then
+                        -- Start of a left or right channel frame
+                        bit_idx  <= to_unsigned(DATA_WIDTH-1, bit_idx'length);
+                        msb_hold <= '1';
+
+                        if fifo_empty = '0' then
+                            sample_buf <= fifo_data;
+                            fifo_r_stb <= '1';  -- one pop per channel frame
+                        else
+                            sample_buf <= (others => '0');
+                        end if;
+
+                        -- Do NOT update i2s_din_reg here: enforce MSB delay
+
+                    else
+                        -- Within current channel frame
+                        if msb_hold = '1' then
+                            -- 1-BCLK delay after LR edge: now output MSB
+                            msb_hold <= '0';
+
+                            idx_int := to_integer(bit_idx);
+                            if idx_int >= 0 and idx_int < DATA_WIDTH then
+                                i2s_din_reg <= sample_buf(idx_int);
+                            else
+                                i2s_din_reg <= '0';
+                            end if;
+
+                        else
+                            -- Shift through remaining bits
+                            idx_int := to_integer(bit_idx);
+                            if idx_int >= 0 and idx_int < DATA_WIDTH then
+                                i2s_din_reg <= sample_buf(idx_int);
+                            else
+                                i2s_din_reg <= '0';
+                            end if;
+
+                            if bit_idx /= to_unsigned(0, bit_idx'length) then
+                                bit_idx <= bit_idx - 1;
+                            end if;
+                        end if;
+                    end if;
+                end if; -- bclk_rise
+            end if; -- rst
+        end if; -- rising_edge(clk)
     end process;
 
-end Behavioral;
+end rtl;
+

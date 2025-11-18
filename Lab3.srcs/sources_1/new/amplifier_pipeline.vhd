@@ -169,25 +169,24 @@ begin
     -- s_axis_tlast currently ignored (stream is just continuous data)
 
     ----------------------------------------------------------------
-    -- FIFO instance (write: clk, read: I2S BCLK domain)
+    -- FIFO instance
     ----------------------------------------------------------------
-    inst_fifo_speaker : fifo
+    inst_fifo_speaker : entity work.fifo_speaker
     generic map(
         DATA_WIDTH => DATA_WIDTH,
         FIFO_DEPTH => FIFO_DEPTH
     )
     port map(
-        clkw  => clk,
-        clkr  => i2s_bclk_int,   -- 🔑 read side runs in BCLK domain
+        clkw  => clk,      -- same clock
+        clkr  => clk,      -- same clock (for now)
         rst   => fifo_rst_s,
 
         wr    => fifo_wr_s,
-        din   => fifo_din_s,
-        full  => fifo_full_s,
-
         rd    => fifo_rd_s,
+        din   => fifo_din_s,
         dout  => fifo_dout_s,
-        empty => fifo_empty_s
+        empty => fifo_empty_s,
+        full  => fifo_full_s
     );
 
     ----------------------------------------------------------------
@@ -197,10 +196,11 @@ begin
     generic map(
         DATA_WIDTH    => DATA_WIDTH,
         PCM_PRECISION => PCM_PRECISION,
-        BCLK_HALF     => 16        -- 100 MHz / (2*16) ≈ 3.125 MHz BCLK
+        BCLK_HALF     => 16   -- as before
     )
     port map(
         clk        => clk,
+        rst        => fifo_rst_s,         -- active-high reset (same as FIFO)
 
         i2s_lrcl   => i2s_lrcl_speaker,
         i2s_din    => i2s_din_speaker,
