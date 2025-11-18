@@ -30923,3 +30923,1370 @@ C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Pro
 C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
 
 TRACE::2025-11-17.22:49:52::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:31:54::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:31:54::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:31:54::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:31:54::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:31:54::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:31:54::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:31:54::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWReader::Active system found as  kv260_lab3_platform
+TRACE::2025-11-18.12:32:05::SCWReader::Handling sysconfig kv260_lab3_platform
+TRACE::2025-11-18.12:32:05::SCWDomain::checking for install qemu data   : 
+TRACE::2025-11-18.12:32:05::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-11-18.12:32:05::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-11-18.12:32:05::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWReader::Boot application domain added for zynqmp_fsbl
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-11-18.12:32:05::SCWMssOS::No sw design opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::mss exists loading the mss file  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::Opened the sw design from mss  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::Adding the swdes entry C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2025-11-18.12:32:05::SCWMssOS::updating the scw layer about changes
+TRACE::2025-11-18.12:32:05::SCWMssOS::Opened the sw design.  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS:: library already available in sw design:  xilsecure:5.3
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS:: library already available in sw design:  xilpm:5.2
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:05::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:05::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:05::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:05::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWReader::No isolation master present  
+TRACE::2025-11-18.12:32:06::SCWDomain::checking for install qemu data   : 
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWReader::Boot application domain added for zynqmp_pmufw
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::No sw design opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::mss exists loading the mss file  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Opened the sw design from mss  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Adding the swdes entry C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2025-11-18.12:32:06::SCWMssOS::updating the scw layer about changes
+TRACE::2025-11-18.12:32:06::SCWMssOS::Opened the sw design.  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS:: library already available in sw design:  xilfpga:6.6
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS:: library already available in sw design:  xilsecure:5.3
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS:: library already available in sw design:  xilskey:7.6
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWReader::No isolation master present  
+TRACE::2025-11-18.12:32:06::SCWDomain::checking for install qemu data   : 
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-11-18.12:32:06::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2024.1/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::No sw design opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::mss exists loading the mss file  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Opened the sw design from mss  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Adding the swdes entry C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2025-11-18.12:32:06::SCWMssOS::updating the scw layer about changes
+TRACE::2025-11-18.12:32:06::SCWMssOS::Opened the sw design.  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-11-18.12:32:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-11-18.12:32:06::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:06::SCWReader::No isolation master present  
+TRACE::2025-11-18.12:32:13::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:13::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:13::SCWPlatform:: Platform location is C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa
+TRACE::2025-11-18.12:32:13::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:13::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Doing hw sync for the mss in domain: zynqmp_fsbl
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:20::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Doing hw sync for the mss in domain: zynqmp_pmufw
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:20::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_1_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:20::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/tempdsa/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::update - Opened existing hwdb design_1_wrapper_0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:20::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed hw sync for the mss in domain: zynqmp_fsbl
+TRACE::2025-11-18.12:32:20::SCWMssOS::Removing the swdes entry for  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed hw sync for the mss in domain: zynqmp_pmufw
+TRACE::2025-11-18.12:32:20::SCWMssOS::Removing the swdes entry for  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:20::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2025-11-18.12:32:20::SCWMssOS::Removing the swdes entry for  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:20::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:20::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-11-18.12:32:26::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2025-11-18.12:32:26::SCWMssOS::Writing the mss file completed C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:26::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2025-11-18.12:32:26::SCWMssOS::Writing the mss file completed C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:26::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2025-11-18.12:32:26::SCWMssOS::Writing the mss file completed C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:26::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:26::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:26::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:26::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:26::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:26::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:32:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:26::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:26::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:26::SCWWriter::formatted JSON is {
+	"platformName":	"kv260_lab3_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"kv260_lab3_platform",
+	"platHandOff":	"C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/speaker_2_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  ",
+	"pmufwExtraCompilerFlags":	"-MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"kv260_lab3_platform",
+	"systems":	[{
+			"systemName":	"kv260_lab3_platform",
+			"systemDesc":	"kv260_lab3_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"kv260_lab3_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"0bf2999340dfd935a35b235d35647fb81",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2", "xilsecure:5.3", "xilpm:5.2"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"xilsecure":	{
+							"tpm_support":	"true",
+							"libOptionNames":	["tpm_support"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs", "xilsecure"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"33089acf9c68e0444145947eac8f3e2d1",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:6.6", "xilsecure:5.3", "xilskey:7.6"],
+					"libOptions":	{
+						"psu_pmu_0":	{
+							"extra_compiler_flags":	"-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns  -Os -flto -ffat-lto-objects",
+							"libOptionNames":	["extra_compiler_flags"]
+						},
+						"libsContainingOptions":	["psu_pmu_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"875ff0dedf1950d216cd7ba11d7b72131",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-11-18.12:32:34::SCWPlatform::Started generating the artifacts platform kv260_lab3_platform
+TRACE::2025-11-18.12:32:34::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-11-18.12:32:34::SCWPlatform::Started generating the artifacts for system configuration kv260_lab3_platform
+LOG::2025-11-18.12:32:34::SCWSystem::Checking the domain zynqmp_fsbl
+LOG::2025-11-18.12:32:34::SCWSystem::Doing application build for :  zynqmp_fsbl
+TRACE::2025-11-18.12:32:34::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-11-18.12:32:34::SCWDomain::Skipping the build for domain :  zynqmp_fsbl
+LOG::2025-11-18.12:32:34::SCWSystem::Checking the domain zynqmp_pmufw
+LOG::2025-11-18.12:32:34::SCWSystem::Doing application build for :  zynqmp_pmufw
+TRACE::2025-11-18.12:32:34::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-11-18.12:32:34::SCWDomain::Skipping the build for domain :  zynqmp_pmufw
+LOG::2025-11-18.12:32:34::SCWSystem::Checking the domain standalone_domain
+LOG::2025-11-18.12:32:34::SCWSystem::Not a boot domain 
+LOG::2025-11-18.12:32:34::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-11-18.12:32:34::SCWDomain::Generating domain artifcats
+TRACE::2025-11-18.12:32:34::SCWMssOS::Generating standalone artifcats
+TRACE::2025-11-18.12:32:34::SCWMssOS::Copying the qemu file from  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt To C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/qemu/
+TRACE::2025-11-18.12:32:34::SCWMssOS::Copying the qemu file from  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt To C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/qemu/
+TRACE::2025-11-18.12:32:34::SCWMssOS::Copying the qemu file from  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt To C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/qemu/
+TRACE::2025-11-18.12:32:34::SCWMssOS::Copying the qemu file from  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt To C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/qemu/
+TRACE::2025-11-18.12:32:34::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-11-18.12:32:34::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:34::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:34::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:34::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:32:34::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:32:34::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:32:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:32:34::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:32:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:32:34::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:34::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:32:34::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:34::SCWMssOS::Completed writing the mss file at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2025-11-18.12:32:34::SCWMssOS::Mss edits present, copying mssfile into export location C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:32:34::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2025-11-18.12:32:38::SCWMssOS::doing bsp build ... 
+TRACE::2025-11-18.12:32:38::SCWMssOS::System Command Ran  C: & cd  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp & make 
+TRACE::2025-11-18.12:32:39::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/axidma_v9_18/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/axidma_v9_18/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_11/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/axipmon_v6_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2025-11-18.12:32:39::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2025-11-18.12:32:39::SCWMssOS::bute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_6/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_10/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/clockps_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aar
+TRACE::2025-11-18.12:32:39::SCWMssOS::ch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loo
+TRACE::2025-11-18.12:32:39::SCWMssOS::p-distribute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2025-11-18.12:32:39::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2025-11-18.12:32:39::SCWMssOS::istribute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_15/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/csudma_v1_15/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_6/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_13/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpiops_v3_13/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/gpio_v4_11/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpio_v4_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-11-18.12:32:39::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2025-11-18.12:32:39::SCWMssOS::e-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_19/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/iicps_v3_19/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-11-18.12:32:39::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2025-11-18.12:32:39::SCWMssOS::te-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_15/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/ipipsu_v2_15/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:39::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:39::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_19/src"
+
+TRACE::2025-11-18.12:32:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/qspipsu_v1_19/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2025-11-18.12:32:39::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2025-11-18.12:32:39::SCWMssOS::bute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_7/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/resetps_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:40::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:40::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_14/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/rtcpsu_v1_14/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:40::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:40::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/scugic_v5_3/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/scugic_v5_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-11-18.12:32:40::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2025-11-18.12:32:40::SCWMssOS::te-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/sdps_v4_3/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/sdps_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:40::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:40::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/spips_v3_10/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/spips_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-11-18.12:32:40::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2025-11-18.12:32:40::SCWMssOS::te-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/standalone_v9_1/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/standalone_v9_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2025-11-18.12:32:40::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2025-11-18.12:32:40::SCWMssOS::ribute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_10/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2025-11-18.12:32:40::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2025-11-18.12:32:40::SCWMssOS::ribute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_19/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/ttcps_v3_19/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-11-18.12:32:40::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2025-11-18.12:32:40::SCWMssOS::te-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_14/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/uartps_v3_14/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:40::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:40::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/wdtps_v3_7/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/wdtps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-11-18.12:32:40::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2025-11-18.12:32:40::SCWMssOS::e-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/xilffs_v5_2/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilffs_v5_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2025-11-18.12:32:40::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2025-11-18.12:32:40::SCWMssOS::te-patterns"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_18/src"
+
+TRACE::2025-11-18.12:32:40::SCWMssOS::make -C psu_cortexa53_0/libsrc/zdma_v1_18/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-11-18.12:32:40::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2025-11-18.12:32:40::SCWMssOS::e-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/axidma_v9_18/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/axidma_v9_18/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:45::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:45::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_11/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/axipmon_v6_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-11-18.12:32:45::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2025-11-18.12:32:45::SCWMssOS::e-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_6/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/clockps_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:45::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:45::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_10/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2025-11-18.12:32:45::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2025-11-18.12:32:45::SCWMssOS::istribute-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2025-11-18.12:32:45::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2025-11-18.12:32:45::SCWMssOS::ribute-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_15/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/csudma_v1_15/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:45::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:45::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_6/src"
+
+TRACE::2025-11-18.12:32:45::SCWMssOS::make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:45::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:45::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:46::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_13/src"
+
+TRACE::2025-11-18.12:32:46::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpiops_v3_13/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:46::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:46::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:46::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/gpio_v4_11/src"
+
+TRACE::2025-11-18.12:32:46::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpio_v4_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+TRACE::2025-11-18.12:32:46::SCWMssOS::as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-p
+TRACE::2025-11-18.12:32:46::SCWMssOS::atterns"
+
+TRACE::2025-11-18.12:32:47::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_19/src"
+
+TRACE::2025-11-18.12:32:47::SCWMssOS::make -C psu_cortexa53_0/libsrc/iicps_v3_19/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-11-18.12:32:47::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2025-11-18.12:32:47::SCWMssOS::patterns"
+
+TRACE::2025-11-18.12:32:47::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_15/src"
+
+TRACE::2025-11-18.12:32:47::SCWMssOS::make -C psu_cortexa53_0/libsrc/ipipsu_v2_15/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:47::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:47::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_19/src"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::make -C psu_cortexa53_0/libsrc/qspipsu_v1_19/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2025-11-18.12:32:48::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2025-11-18.12:32:48::SCWMssOS::e-patterns"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_7/src"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::make -C psu_cortexa53_0/libsrc/resetps_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:48::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:48::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_14/src"
+
+TRACE::2025-11-18.12:32:48::SCWMssOS::make -C psu_cortexa53_0/libsrc/rtcpsu_v1_14/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:48::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:48::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:49::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/scugic_v5_3/src"
+
+TRACE::2025-11-18.12:32:49::SCWMssOS::make -C psu_cortexa53_0/libsrc/scugic_v5_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-11-18.12:32:49::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2025-11-18.12:32:49::SCWMssOS::patterns"
+
+TRACE::2025-11-18.12:32:49::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/sdps_v4_3/src"
+
+TRACE::2025-11-18.12:32:49::SCWMssOS::make -C psu_cortexa53_0/libsrc/sdps_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-a
+TRACE::2025-11-18.12:32:49::SCWMssOS::s" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-pa
+TRACE::2025-11-18.12:32:49::SCWMssOS::tterns"
+
+TRACE::2025-11-18.12:32:50::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/spips_v3_10/src"
+
+TRACE::2025-11-18.12:32:50::SCWMssOS::make -C psu_cortexa53_0/libsrc/spips_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-11-18.12:32:50::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2025-11-18.12:32:50::SCWMssOS::patterns"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/standalone_v9_1/src"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::make -C psu_cortexa53_0/libsrc/standalone_v9_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:55::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_10/src"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2025-11-18.12:32:55::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2025-11-18.12:32:55::SCWMssOS::ute-patterns"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_19/src"
+
+TRACE::2025-11-18.12:32:55::SCWMssOS::make -C psu_cortexa53_0/libsrc/ttcps_v3_19/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-11-18.12:32:55::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2025-11-18.12:32:55::SCWMssOS::patterns"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_14/src"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/uartps_v3_14/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+TRACE::2025-11-18.12:32:56::SCWMssOS::f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2025-11-18.12:32:56::SCWMssOS::-patterns"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/wdtps_v3_7/src"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/wdtps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+TRACE::2025-11-18.12:32:56::SCWMssOS::as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-p
+TRACE::2025-11-18.12:32:56::SCWMssOS::atterns"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/xilffs_v5_2/src"
+
+TRACE::2025-11-18.12:32:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilffs_v5_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+TRACE::2025-11-18.12:32:56::SCWMssOS::-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2025-11-18.12:32:56::SCWMssOS::patterns"
+
+TRACE::2025-11-18.12:32:57::SCWMssOS::"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_18/src"
+
+TRACE::2025-11-18.12:32:57::SCWMssOS::make -C psu_cortexa53_0/libsrc/zdma_v1_18/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+TRACE::2025-11-18.12:32:57::SCWMssOS::as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribute-p
+TRACE::2025-11-18.12:32:57::SCWMssOS::atterns"
+
+TRACE::2025-11-18.12:33:05::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2025-11-18.12:33:05::SCWMssOS::make --no-print-directory archive
+
+TRACE::2025-11-18.12:33:05::SCWMssOS::aarch64-none-elf-ar -r  psu_cortexa53_0/lib/libxil.a psu_cortexa53_0/lib/_exit.o psu_cortexa53_0/lib/_open.o psu_cortexa53_0/li
+TRACE::2025-11-18.12:33:05::SCWMssOS::b/_sbrk.o psu_cortexa53_0/lib/abort.o psu_cortexa53_0/lib/asm_vectors.o psu_cortexa53_0/lib/boot.o psu_cortexa53_0/lib/close.o 
+TRACE::2025-11-18.12:33:05::SCWMssOS::psu_cortexa53_0/lib/cpputest_time.o psu_cortexa53_0/lib/errno.o psu_cortexa53_0/lib/fcntl.o psu_cortexa53_0/lib/fstat.o psu_cor
+TRACE::2025-11-18.12:33:05::SCWMssOS::texa53_0/lib/getentropy.o psu_cortexa53_0/lib/getpid.o psu_cortexa53_0/lib/inbyte.o psu_cortexa53_0/lib/initialise_monitor_hand
+TRACE::2025-11-18.12:33:05::SCWMssOS::les.o psu_cortexa53_0/lib/isatty.o psu_cortexa53_0/lib/kill.o psu_cortexa53_0/lib/lseek.o psu_cortexa53_0/lib/open.o psu_cortex
+TRACE::2025-11-18.12:33:05::SCWMssOS::a53_0/lib/outbyte.o psu_cortexa53_0/lib/print.o psu_cortexa53_0/lib/putnum.o psu_cortexa53_0/lib/read.o psu_cortexa53_0/lib/sbr
+TRACE::2025-11-18.12:33:05::SCWMssOS::k.o psu_cortexa53_0/lib/sleep.o psu_cortexa53_0/lib/time.o psu_cortexa53_0/lib/translation_table.o psu_cortexa53_0/lib/unlink.o
+TRACE::2025-11-18.12:33:05::SCWMssOS:: psu_cortexa53_0/lib/vectors.o psu_cortexa53_0/lib/write.o psu_cortexa53_0/lib/xaxidma.o psu_cortexa53_0/lib/xaxidma_bd.o psu_c
+TRACE::2025-11-18.12:33:05::SCWMssOS::ortexa53_0/lib/xaxidma_bdring.o psu_cortexa53_0/lib/xaxidma_g.o psu_cortexa53_0/lib/xaxidma_selftest.o psu_cortexa53_0/lib/xaxi
+TRACE::2025-11-18.12:33:05::SCWMssOS::dma_sinit.o psu_cortexa53_0/lib/xaxipmon.o psu_cortexa53_0/lib/xaxipmon_g.o psu_cortexa53_0/lib/xaxipmon_selftest.o psu_cortexa
+TRACE::2025-11-18.12:33:05::SCWMssOS::53_0/lib/xaxipmon_sinit.o psu_cortexa53_0/lib/xclockps.o psu_cortexa53_0/lib/xclockps_divider.o psu_cortexa53_0/lib/xclockps_fi
+TRACE::2025-11-18.12:33:05::SCWMssOS::xedfactor.o psu_cortexa53_0/lib/xclockps_g.o psu_cortexa53_0/lib/xclockps_gate.o psu_cortexa53_0/lib/xclockps_mux.o psu_cortexa
+TRACE::2025-11-18.12:33:05::SCWMssOS::53_0/lib/xclockps_pll.o psu_cortexa53_0/lib/xclockps_sinit.o psu_cortexa53_0/lib/xcoresightpsdcc.o psu_cortexa53_0/lib/xcsudma.
+TRACE::2025-11-18.12:33:05::SCWMssOS::o psu_cortexa53_0/lib/xcsudma_g.o psu_cortexa53_0/lib/xcsudma_intr.o psu_cortexa53_0/lib/xcsudma_selftest.o psu_cortexa53_0/lib
+TRACE::2025-11-18.12:33:05::SCWMssOS::/xcsudma_sinit.o psu_cortexa53_0/lib/xddrcpsu.o psu_cortexa53_0/lib/xddrcpsu_sinit.o psu_cortexa53_0/lib/xgpio.o psu_cortexa53_
+TRACE::2025-11-18.12:33:05::SCWMssOS::0/lib/xgpio_extra.o psu_cortexa53_0/lib/xgpio_g.o psu_cortexa53_0/lib/xgpio_intr.o psu_cortexa53_0/lib/xgpio_selftest.o psu_cor
+TRACE::2025-11-18.12:33:05::SCWMssOS::texa53_0/lib/xgpio_sinit.o psu_cortexa53_0/lib/xgpiops.o psu_cortexa53_0/lib/xgpiops_g.o psu_cortexa53_0/lib/xgpiops_hw.o psu_c
+TRACE::2025-11-18.12:33:05::SCWMssOS::ortexa53_0/lib/xgpiops_intr.o psu_cortexa53_0/lib/xgpiops_selftest.o psu_cortexa53_0/lib/xgpiops_sinit.o psu_cortexa53_0/lib/xi
+TRACE::2025-11-18.12:33:05::SCWMssOS::icps.o psu_cortexa53_0/lib/xiicps_g.o psu_cortexa53_0/lib/xiicps_hw.o psu_cortexa53_0/lib/xiicps_intr.o psu_cortexa53_0/lib/xii
+TRACE::2025-11-18.12:33:05::SCWMssOS::cps_master.o psu_cortexa53_0/lib/xiicps_options.o psu_cortexa53_0/lib/xiicps_selftest.o psu_cortexa53_0/lib/xiicps_sinit.o psu_
+TRACE::2025-11-18.12:33:05::SCWMssOS::cortexa53_0/lib/xiicps_slave.o psu_cortexa53_0/lib/xiicps_xfer.o psu_cortexa53_0/lib/xil-crt0.o psu_cortexa53_0/lib/xil_assert.
+TRACE::2025-11-18.12:33:05::SCWMssOS::o psu_cortexa53_0/lib/xil_cache.o psu_cortexa53_0/lib/xil_clocking.o psu_cortexa53_0/lib/xil_exception.o psu_cortexa53_0/lib/xi
+TRACE::2025-11-18.12:33:05::SCWMssOS::l_mem.o psu_cortexa53_0/lib/xil_mmu.o psu_cortexa53_0/lib/xil_printf.o psu_cortexa53_0/lib/xil_sleepcommon.o psu_cortexa53_0/li
+TRACE::2025-11-18.12:33:05::SCWMssOS::b/xil_sleeptimer.o psu_cortexa53_0/lib/xil_smc.o psu_cortexa53_0/lib/xil_spinlock.o psu_cortexa53_0/lib/xil_testcache.o psu_cor
+TRACE::2025-11-18.12:33:05::SCWMssOS::texa53_0/lib/xil_testio.o psu_cortexa53_0/lib/xil_testmem.o psu_cortexa53_0/lib/xil_util.o psu_cortexa53_0/lib/xinterrupt_wrap.
+TRACE::2025-11-18.12:33:05::SCWMssOS::o psu_cortexa53_0/lib/xipipsu.o psu_cortexa53_0/lib/xipipsu_buf.o psu_cortexa53_0/lib/xipipsu_g.o psu_cortexa53_0/lib/xipipsu_h
+TRACE::2025-11-18.12:33:05::SCWMssOS::elper.o psu_cortexa53_0/lib/xipipsu_sinit.o psu_cortexa53_0/lib/xplatform_info.o psu_cortexa53_0/lib/xpm_counter.o psu_cortexa5
+TRACE::2025-11-18.12:33:05::SCWMssOS::3_0/lib/xpm_init.o psu_cortexa53_0/lib/xqspipsu.o psu_cortexa53_0/lib/xqspipsu_control.o psu_cortexa53_0/lib/xqspipsu_g.o psu_c
+TRACE::2025-11-18.12:33:05::SCWMssOS::ortexa53_0/lib/xqspipsu_hw.o psu_cortexa53_0/lib/xqspipsu_options.o psu_cortexa53_0/lib/xqspipsu_sinit.o psu_cortexa53_0/lib/xq
+TRACE::2025-11-18.12:33:05::SCWMssOS::spipsu_xfer.o psu_cortexa53_0/lib/xresetps.o psu_cortexa53_0/lib/xresetps_g.o psu_cortexa53_0/lib/xresetps_sinit.o psu_cortexa5
+TRACE::2025-11-18.12:33:05::SCWMssOS::3_0/lib/xrtcpsu.o psu_cortexa53_0/lib/xrtcpsu_g.o psu_cortexa53_0/lib/xrtcpsu_intr.o psu_cortexa53_0/lib/xrtcpsu_selftest.o psu
+TRACE::2025-11-18.12:33:05::SCWMssOS::_cortexa53_0/lib/xrtcpsu_sinit.o psu_cortexa53_0/lib/xscugic.o psu_cortexa53_0/lib/xscugic_g.o psu_cortexa53_0/lib/xscugic_hw.o
+TRACE::2025-11-18.12:33:05::SCWMssOS:: psu_cortexa53_0/lib/xscugic_intr.o psu_cortexa53_0/lib/xscugic_selftest.o psu_cortexa53_0/lib/xscugic_sinit.o psu_cortexa53_0/
+TRACE::2025-11-18.12:33:05::SCWMssOS::lib/xsdps.o psu_cortexa53_0/lib/xsdps_card.o psu_cortexa53_0/lib/xsdps_g.o psu_cortexa53_0/lib/xsdps_host.o psu_cortexa53_0/lib
+TRACE::2025-11-18.12:33:05::SCWMssOS::/xsdps_options.o psu_cortexa53_0/lib/xsdps_sinit.o psu_cortexa53_0/lib/xspips.o psu_cortexa53_0/lib/xspips_g.o psu_cortexa53_0/
+TRACE::2025-11-18.12:33:05::SCWMssOS::lib/xspips_hw.o psu_cortexa53_0/lib/xspips_options.o psu_cortexa53_0/lib/xspips_selftest.o psu_cortexa53_0/lib/xspips_sinit.o p
+TRACE::2025-11-18.12:33:05::SCWMssOS::su_cortexa53_0/lib/xsysmonpsu.o psu_cortexa53_0/lib/xsysmonpsu_g.o psu_cortexa53_0/lib/xsysmonpsu_intr.o psu_cortexa53_0/lib/xs
+TRACE::2025-11-18.12:33:05::SCWMssOS::ysmonpsu_selftest.o psu_cortexa53_0/lib/xsysmonpsu_sinit.o psu_cortexa53_0/lib/xtime_l.o psu_cortexa53_0/lib/xttcps.o psu_corte
+TRACE::2025-11-18.12:33:05::SCWMssOS::xa53_0/lib/xttcps_g.o psu_cortexa53_0/lib/xttcps_options.o psu_cortexa53_0/lib/xttcps_selftest.o psu_cortexa53_0/lib/xttcps_sin
+TRACE::2025-11-18.12:33:05::SCWMssOS::it.o psu_cortexa53_0/lib/xuartps.o psu_cortexa53_0/lib/xuartps_g.o psu_cortexa53_0/lib/xuartps_hw.o psu_cortexa53_0/lib/xuartps
+TRACE::2025-11-18.12:33:05::SCWMssOS::_intr.o psu_cortexa53_0/lib/xuartps_options.o psu_cortexa53_0/lib/xuartps_selftest.o psu_cortexa53_0/lib/xuartps_sinit.o psu_co
+TRACE::2025-11-18.12:33:05::SCWMssOS::rtexa53_0/lib/xwdtps.o psu_cortexa53_0/lib/xwdtps_g.o psu_cortexa53_0/lib/xwdtps_selftest.o psu_cortexa53_0/lib/xwdtps_sinit.o 
+TRACE::2025-11-18.12:33:05::SCWMssOS::psu_cortexa53_0/lib/xzdma.o psu_cortexa53_0/lib/xzdma_g.o psu_cortexa53_0/lib/xzdma_intr.o psu_cortexa53_0/lib/xzdma_selftest.o
+TRACE::2025-11-18.12:33:05::SCWMssOS:: psu_cortexa53_0/lib/xzdma_sinit.o
+
+TRACE::2025-11-18.12:33:05::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-11-18.12:33:06::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-11-18.12:33:06::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-11-18.12:33:06::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-11-18.12:33:06::SCWSystem::Completed Processing the sysconfig kv260_lab3_platform
+LOG::2025-11-18.12:33:06::SCWPlatform::Completed generating the artifacts for system configuration kv260_lab3_platform
+TRACE::2025-11-18.12:33:06::SCWPlatform::Started preparing the platform 
+TRACE::2025-11-18.12:33:06::SCWSystem::Writing the bif file for system config kv260_lab3_platform
+TRACE::2025-11-18.12:33:06::SCWSystem::dir created 
+TRACE::2025-11-18.12:33:06::SCWSystem::Writing the bif 
+TRACE::2025-11-18.12:33:06::SCWPlatform::Started writing the spfm file 
+TRACE::2025-11-18.12:33:06::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-11-18.12:33:06::SCWPlatform::Completed generating the platform
+TRACE::2025-11-18.12:33:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:33:06::SCWMssOS::Saving the mss changes C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2025-11-18.12:33:06::SCWMssOS::Writing the mss file completed C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::Commit changes completed.
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:33:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:33:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:33:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:33:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:33:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:33:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWWriter::formatted JSON is {
+	"platformName":	"kv260_lab3_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"kv260_lab3_platform",
+	"platHandOff":	"C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/speaker_2_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  ",
+	"pmufwExtraCompilerFlags":	"-MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"kv260_lab3_platform",
+	"systems":	[{
+			"systemName":	"kv260_lab3_platform",
+			"systemDesc":	"kv260_lab3_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"kv260_lab3_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"0bf2999340dfd935a35b235d35647fb81",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2", "xilsecure:5.3", "xilpm:5.2"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"xilsecure":	{
+							"tpm_support":	"true",
+							"libOptionNames":	["tpm_support"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs", "xilsecure"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"33089acf9c68e0444145947eac8f3e2d1",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:6.6", "xilsecure:5.3", "xilskey:7.6"],
+					"libOptions":	{
+						"psu_pmu_0":	{
+							"extra_compiler_flags":	"-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns  -Os -flto -ffat-lto-objects",
+							"libOptionNames":	["extra_compiler_flags"]
+						},
+						"libsContainingOptions":	["psu_pmu_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/kv260_lab3_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"875ff0dedf1950d216cd7ba11d7b7213",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-11-18.12:33:06::SCWPlatform::updated the xpfm file.
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to open the hw design at C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA given C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA absoulate path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform::DSA directory C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Platform Path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/hw/speaker_2_wrapper.xsa
+TRACE::2025-11-18.12:33:06::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-11-18.12:33:06::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-11-18.12:33:06::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-11-18.12:33:06::SCWMssOS::Checking the sw design at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-11-18.12:33:06::SCWMssOS::DEBUG:  swdes dump  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-11-18.12:33:06::SCWMssOS::Sw design exists and opened at  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss

@@ -56,10 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
-set_param bd.open.in_stealth_mode 1
+set_param bd.open.in_stealth_mode 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -85,6 +83,7 @@ read_vhdl -library xil_defaultlib {
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/Lab2_Resources/axi_gpio.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/fifo_speaker.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/i2s_transmitter.vhd
   C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/amplifier_pipeline.vhd
 }
@@ -127,13 +126,6 @@ set_property used_in_implementation false [get_files -all c:/Sadat_files/Academi
 set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc]
-set_property used_in_synthesis false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_0/bd_36cd_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/ip/ip_2/bd_36cd_slot_0_apcs_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/bd_36cd_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
