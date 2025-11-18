@@ -1,30 +1,6 @@
 /******************************************************************************
-* Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
-* SPDX-License-Identifier: MIT
+* Full Audio Capture + Playback with DMA Status Debug
 ******************************************************************************/
-/*
- * helloworld.c: simple test application
- *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
- */
-/******************************************************************************
-* Copyright (C) 2023 Advanced Micro Devices, Inc.
-* SPDX-License-Identifier: MIT
-******************************************************************************/
-/*
- * Simple audio capture to WAV on SD1 using FatFs and AXI DMA (S2MM).
- * - Uses drive "1:" explicitly
- * - Writes 16-bit PCM WAV
- */
 
 #include "xaxidma.h"
 #include "xparameters.h"
@@ -36,40 +12,49 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*** DMA device ***/
 #define DMA_DEV_ID              XPAR_AXIDMA_0_DEVICE_ID
+#define FS                      48000
+#define CHANNELS                1
+#define MIC_BITS                18
+#define OUT_BITS                16
 
-/*** Audio / file format ***/
-#define FS                      48000      // sample rate (Hz)
-#define CHANNELS                1          // mono
-#define MIC_BITS                18         // useful MSBs from the I2S mic
-#define OUT_BITS                16         // write 16-bit PCM in the WAV
-
-/*** Capture sizing ***/
-#define BURST_SAMPLES           256        // per DMA transfer
-#define BYTES_PER_SAMPLE        4          // PL streams 32-bit words
+#define BURST_SAMPLES           256
+#define BYTES_PER_SAMPLE        4
 #define BURST_BYTES             (BURST_SAMPLES * BYTES_PER_SAMPLE)
 
 #define SECONDS_TO_RECORD       7
 #define TOTAL_SAMPLES           (FS * SECONDS_TO_RECORD)
 
-/*** Globals ***/
 static XAxiDma AxiDma;
+static FATFS g_fs;
+static const char *DRIVE = "0:";
+
 static uint32_t rx32[BURST_SAMPLES] __attribute__((aligned(64)));
 static int16_t  pcm16[BURST_SAMPLES];
 
-/*** FatFs globals (must persist while mounted) ***/
-static FATFS g_fs;
-static const char *DRIVE = "0:";   // <-- SD1
+static uint32_t tx32[BURST_SAMPLES * 2] __attribute__((aligned(64)));
 
-/*** Utilities ***/
+// ------------------ UTIL FUNCS ------------------
 static inline int16_t to_pcm16(uint32_t w)
 {
-    // Treat as signed in 32-bit, keep top OUT_BITS bits.
     return (int16_t)((int32_t)w >> (MIC_BITS - OUT_BITS));
 }
 
-/*** 44-byte WAV header ***/
+static inline uint32_t i2s_word_from_pcm16(int16_t s)
+{
+    return (uint32_t)((int32_t)s << 16);
+}
+
+uint16_t swap_bits_u16(uint16_t word)
+{
+    uint16_t ret = 0;
+    for (int i = 0; i < 16; i++)
+        if (word & (1 << i))
+            ret |= (1 << (15 - i));
+    return ret;
+}
+
+// ------------------ WAV HEADER UTILS ------------------
 static void wav_header(uint8_t *h, uint32_t nsamples, uint32_t fs,
                        uint16_t bits, uint16_t ch)
 {
@@ -82,9 +67,9 @@ static void wav_header(uint8_t *h, uint32_t nsamples, uint32_t fs,
     h[4]= riffSize     &255; h[5]=(riffSize>>8)&255; h[6]=(riffSize>>16)&255; h[7]=(riffSize>>24)&255;
     h[8]='W';h[9]='A';h[10]='V';h[11]='E';
     h[12]='f';h[13]='m';h[14]='t';h[15]=' ';
-    h[16]=16; h[17]=0; h[18]=0; h[19]=0;          // fmt chunk size
-    h[20]=1;  h[21]=0;                            // PCM
-    h[22]=ch; h[23]=0;                            // channels
+    h[16]=16; h[17]=0; h[18]=0; h[19]=0;
+    h[20]=1;  h[21]=0;
+    h[22]=ch; h[23]=0;
     h[24]= fs        &255; h[25]=(fs>>8)&255; h[26]=(fs>>16)&255; h[27]=(fs>>24)&255;
     h[28]= byteRate  &255; h[29]=(byteRate>>8)&255; h[30]=(byteRate>>16)&255; h[31]=(byteRate>>24)&255;
     h[32]= blockAlign&255; h[33]=(blockAlign>>8)&255;
@@ -93,15 +78,6 @@ static void wav_header(uint8_t *h, uint32_t nsamples, uint32_t fs,
     h[40]= dataSize  &255; h[41]=(dataSize>>8)&255; h[42]=(dataSize>>16)&255; h[43]=(dataSize>>24)&255;
 }
 
-/*** Mount SD1 into g_fs ***/
-//static FRESULT sd_mount_sd1(void)
-//{
-//    // Be clean: unmount first (in case of prior run)
-//    f_mount(NULL, DRIVE, 1);
-//    return f_mount(&g_fs, DRIVE, 1);
-//}
-
-/*** Open WAV on SD1 and write placeholder header ***/
 static int sd_open_wav(FIL *fp, const char *filename,
                        uint32_t nsamples, uint32_t fs,
                        uint16_t bits, uint16_t ch)
@@ -111,31 +87,21 @@ static int sd_open_wav(FIL *fp, const char *filename,
     uint8_t hdr[44];
     char path[64];
 
-    xil_printf("unmount %s...\r\n", DRIVE);
     f_mount(NULL, DRIVE, 1);
-
-    xil_printf("mount %s...\r\n", DRIVE);
     fr = f_mount(&g_fs, DRIVE, 1);
-    xil_printf("f_mount -> %d\r\n", fr);
     if (fr != FR_OK) return -1;
 
     snprintf(path, sizeof(path), "%s/%s", DRIVE, filename);
-    xil_printf("f_open %s...\r\n", path);
     fr = f_open(fp, path, FA_CREATE_ALWAYS | FA_WRITE);
-    xil_printf("f_open -> %d\r\n", fr);
     if (fr != FR_OK) return -1;
 
     wav_header(hdr, nsamples, fs, bits, ch);
-    xil_printf("write header 44 bytes...\r\n");
     fr = f_write(fp, hdr, sizeof(hdr), &bw);
-    xil_printf("f_write hdr -> fr=%d bw=%u\r\n", fr, (unsigned)bw);
     if (fr != FR_OK || bw != sizeof(hdr)) { f_close(fp); return -1; }
 
-    xil_printf("header ok\r\n");
     return 0;
 }
 
-/*** Patch the header with the true sample count ***/
 static void sd_fix_header(FIL *fp, uint32_t nsamples, uint32_t fs,
                           uint16_t bits, uint16_t ch)
 {
@@ -145,100 +111,141 @@ static void sd_fix_header(FIL *fp, uint32_t nsamples, uint32_t fs,
     f_write(fp, hdr, sizeof(hdr), &bw);
 }
 
-/*** Reverses the order of all the bits of an unsigned 16-bit value ***/
-uint16_t swap_bits_u16(uint16_t word) {
-	uint16_t ret = 0;
-	for (int i = 0; i < sizeof(uint16_t) * 8; i++) {
-		if ((0b1 << i) & word) {
-			ret |= 1 << (sizeof(uint16_t) * 8 - 1 - i);
-		}
-	}
-	return ret;
-}
-
-///*** Swaps the endian-ness of an unsigned 16-bit value ***/
-// uint16_t swap_endian_u16(uint16_t word) {
-// 	return ((word & 0xFF) << 8)  |
-// 			((word & 0xFF00) >> 8);
-// }
-
+// ---------------------------------------------------------
+//                       MAIN
+// ---------------------------------------------------------
 int main(void)
 {
     xil_printf("Audio capture start...\r\n");
 
-    // -------- Init DMA (simple mode) --------
     XAxiDma_Config *Cfg = XAxiDma_LookupConfig(DMA_DEV_ID);
-    if (!Cfg) {
-        xil_printf("No DMA config found.\r\n");
-        return XST_FAILURE;
-    }
-    int status = XAxiDma_CfgInitialize(&AxiDma, Cfg);
-    if (status != XST_SUCCESS) {
-        xil_printf("DMA init failed (%d).\r\n", status);
-        return status;
-    }
-    if (XAxiDma_HasSg(&AxiDma)) {
-        xil_printf("Scatter-Gather DMA detected; expecting Simple mode.\r\n");
-        return XST_FAILURE;
-    }
+    if (!Cfg) return XST_FAILURE;
+    if (XAxiDma_CfgInitialize(&AxiDma, Cfg) != XST_SUCCESS) return XST_FAILURE;
+    if (XAxiDma_HasSg(&AxiDma)) return XST_FAILURE;
 
-    // -------- Open WAV on SD1 --------
-    xil_printf("Opening %s/rec.wav ...\r\n", DRIVE);
     FIL f; UINT bw;
-    if (sd_open_wav(&f, "rec.wav", TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0) {
-        xil_printf("Failed to open WAV on %s\r\n", DRIVE);
+    if (sd_open_wav(&f, "rec.wav", TOTAL_SAMPLES, FS, OUT_BITS, CHANNELS) != 0)
         return XST_FAILURE;
-    }
 
-    xil_printf("Recording %d s @ %d Hz� speak now!\r\n", SECONDS_TO_RECORD, FS);
+    xil_printf("Recording %d s @ %d Hz...\r\n", SECONDS_TO_RECORD, FS);
 
     uint32_t samples_written = 0;
-    while (samples_written < TOTAL_SAMPLES) {
-        // 1) kick S2MM for one burst
+    while (samples_written < TOTAL_SAMPLES)
+    {
         Xil_DCacheFlushRange((UINTPTR)rx32, BURST_BYTES);
-        status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)rx32, BURST_BYTES, XAXIDMA_DEVICE_TO_DMA);
-        if (status != XST_SUCCESS) {
-            xil_printf("DMA transfer setup failed.\r\n");
-            break;
-        }
+        XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)rx32, BURST_BYTES,
+                               XAXIDMA_DEVICE_TO_DMA);
 
-        // 2) wait for completion
-        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)) { /* spin */ }
+        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA));
 
-        // 3) see fresh data
         Xil_DCacheInvalidateRange((UINTPTR)rx32, BURST_BYTES);
 
-        // 4) convert to 16-bit PCM (and swap endianess)
-        for (int i = 0; i < BURST_SAMPLES; ++i) {
-//            pcm16[i] = to_pcm16(rx32[i]);
-//            pcm16[i] = swap_endian_u16(to_pcm16(rx32[i]));
+        for (int i = 0; i < BURST_SAMPLES; i++)
             pcm16[i] = swap_bits_u16(to_pcm16(rx32[i]));
-        }
 
-        // 5) write to SD (respect final partial chunk)
         uint32_t chunk = BURST_SAMPLES;
         if (samples_written + chunk > TOTAL_SAMPLES)
             chunk = TOTAL_SAMPLES - samples_written;
 
-        FRESULT fr = f_write(&f, pcm16, chunk * sizeof(int16_t), &bw);
-        if (fr != FR_OK || bw != chunk * sizeof(int16_t)) {
-            xil_printf("f_write short fr=%d (bw=%u vs %u)\r\n",
-                       fr, (unsigned)bw, (unsigned)(chunk*sizeof(int16_t)));
-            break;
-        }
-
+        f_write(&f, pcm16, chunk * sizeof(int16_t), &bw);
         samples_written += chunk;
-//        xil_printf("written %d samples\n", samples_written);
     }
 
-    // Patch header and close
     sd_fix_header(&f, samples_written, FS, OUT_BITS, CHANNELS);
     f_close(&f);
+    xil_printf("Saved %s/rec.wav\n", DRIVE);
 
-    // Optional: unmount now that we're done
+
+    // ===========================================================
+    //                         PLAYBACK
+    // ===========================================================
+
+    xil_printf("\n======== PLAYBACK ========\n");
+
+    // HARD RESET DMA BEFORE PLAYBACK
+    xil_printf("Resetting DMA...\n");
+    XAxiDma_Reset(&AxiDma);
+    while (!XAxiDma_ResetIsDone(&AxiDma));
+
+    // Re-init
+    Cfg = XAxiDma_LookupConfig(DMA_DEV_ID);
+    XAxiDma_CfgInitialize(&AxiDma, Cfg);
+
+    // Clear MM2S + S2MM status registers
+    XAxiDma_WriteReg(AxiDma.RegBase, XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET, 0xFFFFFFFF);
+    XAxiDma_WriteReg(AxiDma.RegBase, XAXIDMA_RX_OFFSET + XAXIDMA_SR_OFFSET, 0xFFFFFFFF);
+
+
+    FIL fplay;
+    UINT br;
+    if (f_open(&fplay, "0:/rec.wav", FA_READ) != FR_OK)
+    {
+        xil_printf("Failed to reopen WAV!\n");
+        return XST_FAILURE;
+    }
+
+    f_lseek(&fplay, 44);
+    xil_printf("Playback starting...\n");
+
+    u32 first_sr_before = 0;
+    u32 first_sr_after  = 0;
+    int first_status    = 0;
+    int first_taken     = 0;   // boolean flag
+
+    while (1)
+    {
+    	if (f_read(&fplay, pcm16, BURST_SAMPLES * sizeof(int16_t), &br) != FR_OK ||
+    	        br == 0) break;
+
+    	    int samples = br / (int)sizeof(int16_t);
+
+    	    for (int i = 0; i < samples; i++)
+    	    {
+    	        uint32_t w = i2s_word_from_pcm16(pcm16[i]);
+    	        tx32[2*i]   = w;
+    	        tx32[2*i+1] = w;
+    	    }
+
+    	    int tx_words = samples * 2;
+
+    	    Xil_DCacheFlushRange((UINTPTR)tx32, tx_words * sizeof(uint32_t));
+
+    	    int status = XAxiDma_SimpleTransfer(&AxiDma,
+    	                                        (UINTPTR)tx32,
+    	                                        tx_words * sizeof(uint32_t),
+    	                                        XAXIDMA_DMA_TO_DEVICE);
+
+    	    /* Only record the FIRST transfer's SR + status */
+    	    if (!first_taken) {
+    	        first_sr_before = XAxiDma_ReadReg(AxiDma.RegBase,
+    	                                          XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET);
+    	        first_status    = status;
+
+    	        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE))
+    	            ;
+
+    	        first_sr_after  = XAxiDma_ReadReg(AxiDma.RegBase,
+    	                                          XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET);
+    	        first_taken = 1;
+    	    } else {
+    	        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE))
+    	            ;
+    	    }
+
+    	    if (status != XST_SUCCESS) {
+    	        xil_printf("TX DMA transfer setup failed (%d)\r\n", status);
+    	        break;
+    	    }
+    }
+    xil_printf("\r\n--- FIRST MM2S DEBUG ---\r\n");
+    xil_printf("MM2S SR first before: 0x%08lx\r\n", (unsigned long)first_sr_before);
+    xil_printf("MM2S SR first after : 0x%08lx (status=%d)\r\n",
+               (unsigned long)first_sr_after, first_status);
+    f_close(&fplay);
     f_mount(NULL, DRIVE, 1);
 
-    xil_printf("Saved %s/rec.wav (%lu samples). Pull SD and play it.\r\n", DRIVE, (unsigned long)samples_written);
+    xil_printf("Playback done.\n");
     return 0;
 }
+
 

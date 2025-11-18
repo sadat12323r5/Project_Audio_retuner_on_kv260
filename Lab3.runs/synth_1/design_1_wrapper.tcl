@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,7 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param chipscope.maxJobs 3
+set_param bd.open.in_stealth_mode 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
 
@@ -64,49 +65,76 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.cache/wt [current_project]
-set_property parent.project_path /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.xpr [current_project]
+set_property webtalk.parent_dir C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.cache/wt [current_project]
+set_property parent.project_path C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
-set_property ip_output_repo /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.cache/ip [current_project]
+set_property ip_output_repo c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 read_vhdl -library xil_defaultlib {
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/params.vhd
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd
-  /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/Lab2_Resources/axi_gpio.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/params.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/ctrl_bus.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/fifo.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/i2s_master.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/IBR_Resources/audio_pipeline.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/imports/Lab2_Resources/axi_gpio.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/fifo_speaker.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/i2s_transmitter.vhd
+  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/new/amplifier_pipeline.vhd
 }
-add_files /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/bd_afc3_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/bd_afc3_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/bd_afc3_sawn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/bd_afc3_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/bd_afc3_swn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/bd_afc3_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/bd_afc3_sbn_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/bd_afc3_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc]
-set_property used_in_synthesis false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/bd_afc3_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/bd_afc3_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/bd_afc3_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/bd_afc3_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/bd_afc3_sawn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/bd_afc3_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/bd_afc3_swn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/bd_afc3_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/bd_afc3_sbn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/bd_afc3_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/bd_afc3_sarn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_19/bd_afc3_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_19/bd_afc3_srn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_20/bd_afc3_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_21/bd_afc3_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_21/bd_afc3_m00arn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_22/bd_afc3_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_22/bd_afc3_m00rn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/bd_afc3_m00awn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/bd_afc3_m00wn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00bn_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc]
+set_property used_in_synthesis false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -117,14 +145,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/constrs_1/imports/COMP3601/kria-constraints.xdc
-set_property used_in_implementation false [get_files /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/constrs_1/imports/COMP3601/kria-constraints.xdc]
+read_xdc C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/constrs_1/imports/COMP3601/kria-constraints.xdc
+set_property used_in_implementation false [get_files C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/constrs_1/imports/COMP3601/kria-constraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/Lab3.srcs/utils_1/imports/synth_1/audio_pipeline.dcp
+read_checkpoint -auto_incremental -incremental C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/Lab3.srcs/utils_1/imports/synth_1/audio_pipeline.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

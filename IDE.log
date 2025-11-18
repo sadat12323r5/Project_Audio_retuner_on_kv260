@@ -1311,3 +1311,2258 @@ con
 
 11:04:21 INFO  : Launch script is exported to file '/home/benh/Desktop/comp3601_labs/COMP3601_Project_Audio_tuner/kv260_lab3_system/_ide/scripts/systemdebugger_kv260_lab3_system_standalone.tcl'
 11:16:16 INFO  : Disconnected from the channel tcfchan#16.
+16:32:19 DEBUG : Logs will be stored at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/IDE.log'.
+16:32:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\temp_xsdb_launch_script.tcl
+16:32:20 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+16:32:20 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+16:32:20 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+16:32:24 INFO  : XSCT server has started successfully.
+16:32:24 INFO  : plnx-install-location is set to ''
+16:32:24 INFO  : Successfully done setting XSCT server connection channel  
+16:32:24 INFO  : Successfully done setting workspace for the tool. 
+16:32:26 INFO  : Registering command handlers for Vitis TCF services
+16:32:27 INFO  : Platform repository initialization has completed.
+16:32:33 INFO  : Successfully done query RDI_DATADIR 
+17:56:32 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+17:59:04 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+17:59:04 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+18:05:17 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:05:26 INFO  : Updating application flags with new BSP settings...
+18:05:27 INFO  : Successfully updated application flags for project kv260_lab3.
+18:05:30 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+18:05:30 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\v2.0.bit' stored in project is removed.
+18:05:30 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+18:05:30 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+18:05:31 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+18:05:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:59 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:05:59 INFO  : 'jtag frequency' command is executed.
+18:05:59 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:05:59 INFO  : Context for 'APU' is selected.
+18:05:59 INFO  : System reset is completed.
+18:06:03 INFO  : 'after 3000' command is executed.
+18:06:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:06:07 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_wrapper.bit"
+18:06:07 INFO  : Context for 'APU' is selected.
+18:06:08 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_wrapper.xsa'.
+18:06:08 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:08 INFO  : Context for 'APU' is selected.
+18:06:08 INFO  : Boot mode is read from the target.
+18:06:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:06:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:06:08 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:06:09 INFO  : 'set bp_6_8_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:06:10 INFO  : 'con -block -timeout 60' command is executed.
+18:06:10 INFO  : 'bpremove $bp_6_8_fsbl_bp' command is executed.
+18:06:10 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:06:10 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:06:10 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:06:11 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_6_8_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_6_8_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:11 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:06:11 INFO  : 'con' command is executed.
+18:06:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:06:11 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:10:35 INFO  : Disconnected from the channel tcfchan#3.
+12:40:26 DEBUG : Logs will be stored at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/IDE.log'.
+12:40:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\temp_xsdb_launch_script.tcl
+12:40:28 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:40:28 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:40:28 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:40:34 INFO  : XSCT server has started successfully.
+12:40:34 INFO  : plnx-install-location is set to ''
+12:40:34 INFO  : Successfully done setting XSCT server connection channel  
+12:40:34 INFO  : Successfully done setting workspace for the tool. 
+12:40:34 INFO  : Registering command handlers for Vitis TCF services
+12:40:34 INFO  : Platform repository initialization has completed.
+12:40:40 INFO  : Successfully done query RDI_DATADIR 
+14:19:44 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+14:19:44 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+14:23:51 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+14:29:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:22 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+14:29:22 INFO  : 'jtag frequency' command is executed.
+14:29:22 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+14:29:22 INFO  : Context for 'APU' is selected.
+14:29:22 INFO  : System reset is completed.
+14:29:25 INFO  : 'after 3000' command is executed.
+14:29:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+14:29:30 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_wrapper.bit"
+14:29:30 INFO  : Context for 'APU' is selected.
+14:29:30 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_wrapper.xsa'.
+14:29:30 INFO  : 'configparams force-mem-access 1' command is executed.
+14:29:30 INFO  : Context for 'APU' is selected.
+14:29:30 INFO  : Boot mode is read from the target.
+14:29:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:29:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:29:31 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:29:31 INFO  : 'set bp_29_31_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+14:29:32 INFO  : 'con -block -timeout 60' command is executed.
+14:29:32 INFO  : 'bpremove $bp_29_31_fsbl_bp' command is executed.
+14:29:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:29:32 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:29:33 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:29:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_29_31_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_29_31_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:29:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:29:33 INFO  : 'con' command is executed.
+14:29:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+14:29:33 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+15:12:10 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+15:12:44 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+15:12:44 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+15:13:18 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+15:13:27 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:13:27 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_wrapper.bit' stored in project is removed.
+15:13:27 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+15:13:27 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+15:13:28 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+15:13:52 INFO  : Disconnected from the channel tcfchan#3.
+15:13:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:53 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+15:13:53 INFO  : 'jtag frequency' command is executed.
+15:13:53 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:13:53 INFO  : Context for 'APU' is selected.
+15:13:54 INFO  : System reset is completed.
+15:13:57 INFO  : 'after 3000' command is executed.
+15:13:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+15:14:01 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+15:14:01 INFO  : Context for 'APU' is selected.
+15:14:02 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+15:14:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:14:02 INFO  : Context for 'APU' is selected.
+15:14:02 INFO  : Boot mode is read from the target.
+15:14:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:14:02 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:14:02 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:14:02 INFO  : 'set bp_14_2_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:14:03 INFO  : 'con -block -timeout 60' command is executed.
+15:14:03 INFO  : 'bpremove $bp_14_2_fsbl_bp' command is executed.
+15:14:03 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:14:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:14:04 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:14:04 INFO  : 'configparams force-mem-access 0' command is executed.
+15:14:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_14_2_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_14_2_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:14:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:14:04 INFO  : 'con' command is executed.
+15:14:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:14:04 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+15:34:48 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+15:35:21 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+15:35:21 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+15:35:44 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+15:35:54 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:35:54 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_2_wrapper.bit' stored in project is removed.
+15:35:54 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+15:35:54 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+15:35:55 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+15:36:48 INFO  : Disconnected from the channel tcfchan#6.
+15:36:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:36:49 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+15:36:49 INFO  : 'jtag frequency' command is executed.
+15:36:49 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:36:49 INFO  : Context for 'APU' is selected.
+15:36:49 INFO  : System reset is completed.
+15:36:52 INFO  : 'after 3000' command is executed.
+15:36:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+15:36:56 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+15:36:56 INFO  : Context for 'APU' is selected.
+15:36:57 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+15:36:57 INFO  : 'configparams force-mem-access 1' command is executed.
+15:36:57 INFO  : Context for 'APU' is selected.
+15:36:57 INFO  : Boot mode is read from the target.
+15:36:57 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:36:57 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:36:58 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:36:58 INFO  : 'set bp_36_58_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:36:59 INFO  : 'con -block -timeout 60' command is executed.
+15:36:59 INFO  : 'bpremove $bp_36_58_fsbl_bp' command is executed.
+15:36:59 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:36:59 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:36:59 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:36:59 INFO  : 'configparams force-mem-access 0' command is executed.
+15:36:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_36_58_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_36_58_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:37:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:37:00 INFO  : 'con' command is executed.
+15:37:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:37:00 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+15:41:44 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+15:42:04 INFO  : Disconnected from the channel tcfchan#9.
+15:42:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:42:04 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+15:42:04 INFO  : 'jtag frequency' command is executed.
+15:42:04 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:42:04 INFO  : Context for 'APU' is selected.
+15:42:04 INFO  : System reset is completed.
+15:42:07 INFO  : 'after 3000' command is executed.
+15:42:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+15:42:12 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+15:42:12 INFO  : Context for 'APU' is selected.
+15:42:12 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+15:42:12 INFO  : 'configparams force-mem-access 1' command is executed.
+15:42:12 INFO  : Context for 'APU' is selected.
+15:42:12 INFO  : Boot mode is read from the target.
+15:42:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:42:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:42:13 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:42:13 INFO  : 'set bp_42_13_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:42:14 INFO  : 'con -block -timeout 60' command is executed.
+15:42:14 INFO  : 'bpremove $bp_42_13_fsbl_bp' command is executed.
+15:42:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:42:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:42:15 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:42:15 INFO  : 'configparams force-mem-access 0' command is executed.
+15:42:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_42_13_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_42_13_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:42:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:42:15 INFO  : 'con' command is executed.
+15:42:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:42:15 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+15:53:24 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+15:53:50 INFO  : Disconnected from the channel tcfchan#11.
+15:53:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:50 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+15:53:50 INFO  : 'jtag frequency' command is executed.
+15:53:50 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:53:50 INFO  : Context for 'APU' is selected.
+15:53:50 INFO  : System reset is completed.
+15:53:53 INFO  : 'after 3000' command is executed.
+15:53:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+15:53:58 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+15:53:58 INFO  : Context for 'APU' is selected.
+15:53:58 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+15:53:58 INFO  : 'configparams force-mem-access 1' command is executed.
+15:53:58 INFO  : Context for 'APU' is selected.
+15:53:58 INFO  : Boot mode is read from the target.
+15:53:58 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:53:58 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:53:59 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:53:59 INFO  : 'set bp_53_59_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:54:00 INFO  : 'con -block -timeout 60' command is executed.
+15:54:00 INFO  : 'bpremove $bp_53_59_fsbl_bp' command is executed.
+15:54:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:54:00 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:54:01 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:54:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:54:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_53_59_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_53_59_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:54:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:54:01 INFO  : 'con' command is executed.
+15:54:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:54:01 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:10:07 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+17:10:44 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+17:10:44 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+17:10:52 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+17:11:08 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+17:11:08 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_2_wrapper.bit' stored in project is removed.
+17:11:08 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+17:11:08 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+17:11:09 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+17:11:30 INFO  : Disconnected from the channel tcfchan#13.
+17:11:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:11:31 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:11:31 INFO  : 'jtag frequency' command is executed.
+17:11:31 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:11:31 INFO  : Context for 'APU' is selected.
+17:11:31 INFO  : System reset is completed.
+17:11:34 INFO  : 'after 3000' command is executed.
+17:11:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:11:39 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:11:39 INFO  : Context for 'APU' is selected.
+17:11:39 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:11:39 INFO  : 'configparams force-mem-access 1' command is executed.
+17:11:39 INFO  : Context for 'APU' is selected.
+17:11:39 INFO  : Boot mode is read from the target.
+17:11:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:40 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:11:40 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:11:40 INFO  : 'set bp_11_40_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:11:41 INFO  : 'con -block -timeout 60' command is executed.
+17:11:41 INFO  : 'bpremove $bp_11_40_fsbl_bp' command is executed.
+17:11:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:41 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:11:42 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:11:42 INFO  : 'configparams force-mem-access 0' command is executed.
+17:11:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_11_40_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_11_40_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:11:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:42 INFO  : 'con' command is executed.
+17:11:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:11:42 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:16:11 INFO  : Disconnected from the channel tcfchan#16.
+17:16:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:11 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:16:11 INFO  : 'jtag frequency' command is executed.
+17:16:11 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:16:11 INFO  : Context for 'APU' is selected.
+17:16:11 INFO  : System reset is completed.
+17:16:14 INFO  : 'after 3000' command is executed.
+17:16:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:16:19 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:16:19 INFO  : Context for 'APU' is selected.
+17:16:19 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:16:19 INFO  : 'configparams force-mem-access 1' command is executed.
+17:16:19 INFO  : Context for 'APU' is selected.
+17:16:19 INFO  : Boot mode is read from the target.
+17:16:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:19 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:16:19 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:16:19 INFO  : 'set bp_16_19_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:16:21 INFO  : 'con -block -timeout 60' command is executed.
+17:16:21 INFO  : 'bpremove $bp_16_19_fsbl_bp' command is executed.
+17:16:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:21 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:16:21 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:16:21 INFO  : 'configparams force-mem-access 0' command is executed.
+17:16:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_16_19_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_16_19_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:16:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:22 INFO  : 'con' command is executed.
+17:16:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:16:22 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:18:53 INFO  : Disconnected from the channel tcfchan#17.
+17:18:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:53 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:18:53 INFO  : 'jtag frequency' command is executed.
+17:18:53 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:18:53 INFO  : Context for 'APU' is selected.
+17:18:53 INFO  : System reset is completed.
+17:18:56 INFO  : 'after 3000' command is executed.
+17:18:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:19:01 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:19:01 INFO  : Context for 'APU' is selected.
+17:19:01 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:19:01 INFO  : 'configparams force-mem-access 1' command is executed.
+17:19:01 INFO  : Context for 'APU' is selected.
+17:19:01 INFO  : Boot mode is read from the target.
+17:19:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:19:01 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:19:02 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:19:02 INFO  : 'set bp_19_2_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:19:03 INFO  : 'con -block -timeout 60' command is executed.
+17:19:03 INFO  : 'bpremove $bp_19_2_fsbl_bp' command is executed.
+17:19:03 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:19:03 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:19:04 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:19:04 INFO  : 'configparams force-mem-access 0' command is executed.
+17:19:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_19_2_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_19_2_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:19:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:19:04 INFO  : 'con' command is executed.
+17:19:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:19:04 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:19:51 INFO  : Disconnected from the channel tcfchan#18.
+17:19:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:51 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:19:51 INFO  : 'jtag frequency' command is executed.
+17:19:51 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:19:51 INFO  : Context for 'APU' is selected.
+17:19:52 INFO  : System reset is completed.
+17:19:55 INFO  : 'after 3000' command is executed.
+17:19:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:19:59 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:19:59 INFO  : Context for 'APU' is selected.
+17:19:59 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:19:59 INFO  : 'configparams force-mem-access 1' command is executed.
+17:19:59 INFO  : Context for 'APU' is selected.
+17:19:59 INFO  : Boot mode is read from the target.
+17:19:59 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:00 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:20:00 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:20:00 INFO  : 'set bp_20_0_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:20:01 INFO  : 'con -block -timeout 60' command is executed.
+17:20:01 INFO  : 'bpremove $bp_20_0_fsbl_bp' command is executed.
+17:20:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:01 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:20:02 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:20:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:20:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_20_0_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_20_0_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:20:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:02 INFO  : 'con' command is executed.
+17:20:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:20:02 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:20:44 INFO  : Disconnected from the channel tcfchan#19.
+17:20:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:45 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:20:45 INFO  : 'jtag frequency' command is executed.
+17:20:45 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:20:45 INFO  : Context for 'APU' is selected.
+17:20:45 INFO  : System reset is completed.
+17:20:48 INFO  : 'after 3000' command is executed.
+17:20:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:20:53 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:20:53 INFO  : Context for 'APU' is selected.
+17:20:53 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:20:53 INFO  : 'configparams force-mem-access 1' command is executed.
+17:20:53 INFO  : Context for 'APU' is selected.
+17:20:53 INFO  : Boot mode is read from the target.
+17:20:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:53 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:20:53 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:20:53 INFO  : 'set bp_20_53_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:20:54 INFO  : 'con -block -timeout 60' command is executed.
+17:20:54 INFO  : 'bpremove $bp_20_53_fsbl_bp' command is executed.
+17:20:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:55 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:20:55 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:20:55 INFO  : 'configparams force-mem-access 0' command is executed.
+17:20:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_20_53_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_20_53_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:20:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:20:56 INFO  : 'con' command is executed.
+17:20:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:20:56 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:21:25 INFO  : Disconnected from the channel tcfchan#20.
+17:21:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:25 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:21:25 INFO  : 'jtag frequency' command is executed.
+17:21:25 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:21:25 INFO  : Context for 'APU' is selected.
+17:21:25 INFO  : System reset is completed.
+17:21:28 INFO  : 'after 3000' command is executed.
+17:21:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:21:33 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:21:33 INFO  : Context for 'APU' is selected.
+17:21:33 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:21:33 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:33 INFO  : Context for 'APU' is selected.
+17:21:33 INFO  : Boot mode is read from the target.
+17:21:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:21:33 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:21:34 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:21:34 INFO  : 'set bp_21_34_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:21:34 INFO  : 'con -block -timeout 60' command is executed.
+17:21:34 INFO  : 'bpremove $bp_21_34_fsbl_bp' command is executed.
+17:21:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:21:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:21:35 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:21:35 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_21_34_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_21_34_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:35 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:21:35 INFO  : 'con' command is executed.
+17:21:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:21:35 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:22:04 INFO  : Disconnected from the channel tcfchan#21.
+17:22:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:04 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:22:04 INFO  : 'jtag frequency' command is executed.
+17:22:04 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:22:04 INFO  : Context for 'APU' is selected.
+17:22:04 INFO  : System reset is completed.
+17:22:07 INFO  : 'after 3000' command is executed.
+17:22:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:22:12 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:22:16 INFO  : Context for 'APU' is selected.
+17:22:17 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:22:17 INFO  : 'configparams force-mem-access 1' command is executed.
+17:22:17 INFO  : Context for 'APU' is selected.
+17:22:17 INFO  : Boot mode is read from the target.
+17:22:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:22:17 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:22:17 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:22:17 INFO  : 'set bp_22_17_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:22:18 INFO  : 'con -block -timeout 60' command is executed.
+17:22:18 INFO  : 'bpremove $bp_22_17_fsbl_bp' command is executed.
+17:22:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:22:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:22:19 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:22:19 INFO  : 'configparams force-mem-access 0' command is executed.
+17:22:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_22_17_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_22_17_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:22:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:22:19 INFO  : 'con' command is executed.
+17:22:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:22:19 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:25:56 INFO  : Disconnected from the channel tcfchan#22.
+17:25:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:56 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:25:56 INFO  : 'jtag frequency' command is executed.
+17:25:56 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:25:56 INFO  : Context for 'APU' is selected.
+17:25:56 INFO  : System reset is completed.
+17:25:59 INFO  : 'after 3000' command is executed.
+17:26:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:26:04 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:26:04 INFO  : Context for 'APU' is selected.
+17:26:04 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:26:04 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:04 INFO  : Context for 'APU' is selected.
+17:26:04 INFO  : Boot mode is read from the target.
+17:26:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:26:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:26:05 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:26:05 INFO  : 'set bp_26_5_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:26:06 INFO  : 'con -block -timeout 60' command is executed.
+17:26:06 INFO  : 'bpremove $bp_26_5_fsbl_bp' command is executed.
+17:26:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:26:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:26:07 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:26:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_26_5_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_26_5_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:26:07 INFO  : 'con' command is executed.
+17:26:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:26:07 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:27:37 INFO  : Disconnected from the channel tcfchan#23.
+17:27:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:37 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:27:37 INFO  : 'jtag frequency' command is executed.
+17:27:37 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:27:37 INFO  : Context for 'APU' is selected.
+17:27:37 INFO  : System reset is completed.
+17:27:40 INFO  : 'after 3000' command is executed.
+17:27:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:27:45 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:27:45 INFO  : Context for 'APU' is selected.
+17:27:45 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:27:45 INFO  : 'configparams force-mem-access 1' command is executed.
+17:27:45 INFO  : Context for 'APU' is selected.
+17:27:45 INFO  : Boot mode is read from the target.
+17:27:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:27:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:27:46 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:27:46 INFO  : 'set bp_27_46_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:27:47 INFO  : 'con -block -timeout 60' command is executed.
+17:27:47 INFO  : 'bpremove $bp_27_46_fsbl_bp' command is executed.
+17:27:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:27:47 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:27:48 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:27:48 INFO  : 'configparams force-mem-access 0' command is executed.
+17:27:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_27_46_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_27_46_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:27:48 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:27:48 INFO  : 'con' command is executed.
+17:27:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:27:48 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+17:28:53 INFO  : Disconnected from the channel tcfchan#24.
+17:28:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:53 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+17:28:53 INFO  : 'jtag frequency' command is executed.
+17:28:53 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:28:53 INFO  : Context for 'APU' is selected.
+17:28:53 INFO  : System reset is completed.
+17:28:56 INFO  : 'after 3000' command is executed.
+17:28:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+17:29:01 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+17:29:01 INFO  : Context for 'APU' is selected.
+17:29:01 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+17:29:01 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:01 INFO  : Context for 'APU' is selected.
+17:29:01 INFO  : Boot mode is read from the target.
+17:29:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:01 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:29:01 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:29:01 INFO  : 'set bp_29_1_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:29:01 INFO  : 'con -block -timeout 60' command is executed.
+17:29:01 INFO  : 'bpremove $bp_29_1_fsbl_bp' command is executed.
+17:29:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:02 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:29:02 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:29:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_29_1_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_29_1_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:02 INFO  : 'con' command is executed.
+17:29:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:29:02 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:22:03 INFO  : Disconnected from the channel tcfchan#25.
+18:22:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:03 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:22:03 INFO  : 'jtag frequency' command is executed.
+18:22:03 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:22:03 INFO  : Context for 'APU' is selected.
+18:22:04 INFO  : System reset is completed.
+18:22:07 INFO  : 'after 3000' command is executed.
+18:22:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:22:12 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:22:12 INFO  : Context for 'APU' is selected.
+18:22:12 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:22:12 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:12 INFO  : Context for 'APU' is selected.
+18:22:12 INFO  : Boot mode is read from the target.
+18:22:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:22:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:22:13 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:22:13 INFO  : 'set bp_22_13_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:22:14 INFO  : 'con -block -timeout 60' command is executed.
+18:22:14 INFO  : 'bpremove $bp_22_13_fsbl_bp' command is executed.
+18:22:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:22:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:22:15 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:22:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_22_13_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_22_13_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:22:15 INFO  : 'con' command is executed.
+18:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:22:15 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:32:13 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:36:17 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:36:54 INFO  : Disconnected from the channel tcfchan#26.
+18:36:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:54 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:36:54 INFO  : 'jtag frequency' command is executed.
+18:36:54 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:36:54 INFO  : Context for 'APU' is selected.
+18:36:54 INFO  : System reset is completed.
+18:36:57 INFO  : 'after 3000' command is executed.
+18:36:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:37:02 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:37:02 INFO  : Context for 'APU' is selected.
+18:37:02 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:37:02 INFO  : 'configparams force-mem-access 1' command is executed.
+18:37:02 INFO  : Context for 'APU' is selected.
+18:37:02 INFO  : Boot mode is read from the target.
+18:37:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:37:02 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:37:03 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:37:03 INFO  : 'set bp_37_3_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:37:04 INFO  : 'con -block -timeout 60' command is executed.
+18:37:04 INFO  : 'bpremove $bp_37_3_fsbl_bp' command is executed.
+18:37:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:37:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:37:05 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:37:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:37:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_37_3_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_37_3_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:37:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:37:05 INFO  : 'con' command is executed.
+18:37:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:37:05 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:44:20 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:44:54 INFO  : Disconnected from the channel tcfchan#29.
+18:44:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:55 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:44:55 INFO  : 'jtag frequency' command is executed.
+18:44:55 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:44:55 INFO  : Context for 'APU' is selected.
+18:44:55 INFO  : System reset is completed.
+18:44:58 INFO  : 'after 3000' command is executed.
+18:44:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:45:03 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:45:03 INFO  : Context for 'APU' is selected.
+18:45:03 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:45:03 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:03 INFO  : Context for 'APU' is selected.
+18:45:03 INFO  : Boot mode is read from the target.
+18:45:03 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:45:03 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:45:04 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:45:04 INFO  : 'set bp_45_4_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:45:04 INFO  : 'con -block -timeout 60' command is executed.
+18:45:04 INFO  : 'bpremove $bp_45_4_fsbl_bp' command is executed.
+18:45:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:45:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:45:05 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:45:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_45_4_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_45_4_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:45:05 INFO  : 'con' command is executed.
+18:45:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:45:05 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:50:54 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:51:15 INFO  : Disconnected from the channel tcfchan#31.
+18:51:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:15 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:51:15 INFO  : 'jtag frequency' command is executed.
+18:51:15 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:51:15 INFO  : Context for 'APU' is selected.
+18:51:16 INFO  : System reset is completed.
+18:51:19 INFO  : 'after 3000' command is executed.
+18:51:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:51:23 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:51:23 INFO  : Context for 'APU' is selected.
+18:51:23 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:51:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:51:23 INFO  : Context for 'APU' is selected.
+18:51:23 INFO  : Boot mode is read from the target.
+18:51:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:51:23 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:51:24 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:51:24 INFO  : 'set bp_51_24_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:51:25 INFO  : 'con -block -timeout 60' command is executed.
+18:51:25 INFO  : 'bpremove $bp_51_24_fsbl_bp' command is executed.
+18:51:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:51:25 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:51:26 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:51:26 INFO  : 'configparams force-mem-access 0' command is executed.
+18:51:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_51_24_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_51_24_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:51:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:51:26 INFO  : 'con' command is executed.
+18:51:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:51:26 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:52:05 INFO  : Disconnected from the channel tcfchan#33.
+18:52:06 ERROR : (XRT Server)C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+18:52:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:52:35 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:52:35 INFO  : 'jtag frequency' command is executed.
+18:52:35 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:52:35 INFO  : Context for 'APU' is selected.
+18:52:35 INFO  : System reset is completed.
+18:52:38 INFO  : 'after 3000' command is executed.
+18:52:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:52:43 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:52:43 INFO  : Context for 'APU' is selected.
+18:52:43 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:52:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:52:43 INFO  : Context for 'APU' is selected.
+18:52:43 INFO  : Boot mode is read from the target.
+18:52:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:52:43 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:52:44 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:52:44 INFO  : 'set bp_52_44_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:52:45 INFO  : 'con -block -timeout 60' command is executed.
+18:52:45 INFO  : 'bpremove $bp_52_44_fsbl_bp' command is executed.
+18:52:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:52:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:52:46 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:52:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:52:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_52_44_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_52_44_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:52:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:52:46 INFO  : 'con' command is executed.
+18:52:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:52:46 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+18:53:05 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+18:57:49 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+18:58:15 INFO  : Disconnected from the channel tcfchan#34.
+18:58:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:16 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+18:58:16 INFO  : 'jtag frequency' command is executed.
+18:58:16 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:58:16 INFO  : Context for 'APU' is selected.
+18:58:16 INFO  : System reset is completed.
+18:58:19 INFO  : 'after 3000' command is executed.
+18:58:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+18:58:24 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit"
+18:58:24 INFO  : Context for 'APU' is selected.
+18:58:24 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa'.
+18:58:24 INFO  : 'configparams force-mem-access 1' command is executed.
+18:58:24 INFO  : Context for 'APU' is selected.
+18:58:24 INFO  : Boot mode is read from the target.
+18:58:24 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:58:24 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:58:24 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:58:25 INFO  : 'set bp_58_24_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:58:26 INFO  : 'con -block -timeout 60' command is executed.
+18:58:26 INFO  : 'bpremove $bp_58_24_fsbl_bp' command is executed.
+18:58:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:58:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:58:26 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:58:26 INFO  : 'configparams force-mem-access 0' command is executed.
+18:58:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_3_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_3_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_58_24_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_58_24_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:58:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:58:26 INFO  : 'con' command is executed.
+18:58:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:58:26 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+19:26:44 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+19:27:32 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+19:27:32 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+19:27:36 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+19:27:52 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+19:27:52 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_3_wrapper.bit' stored in project is removed.
+19:27:52 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+19:27:52 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+19:27:53 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+19:28:12 INFO  : Disconnected from the channel tcfchan#36.
+19:28:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:28:13 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+19:28:13 INFO  : 'jtag frequency' command is executed.
+19:28:13 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+19:28:13 INFO  : Context for 'APU' is selected.
+19:28:14 INFO  : System reset is completed.
+19:28:17 INFO  : 'after 3000' command is executed.
+19:28:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+19:28:21 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit"
+19:28:21 INFO  : Context for 'APU' is selected.
+19:28:22 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa'.
+19:28:22 INFO  : 'configparams force-mem-access 1' command is executed.
+19:28:22 INFO  : Context for 'APU' is selected.
+19:28:22 INFO  : Boot mode is read from the target.
+19:28:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:28:22 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:28:23 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:28:23 INFO  : 'set bp_28_23_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+19:28:24 INFO  : 'con -block -timeout 60' command is executed.
+19:28:24 INFO  : 'bpremove $bp_28_23_fsbl_bp' command is executed.
+19:28:24 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:28:24 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+19:28:25 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+19:28:25 INFO  : 'configparams force-mem-access 0' command is executed.
+19:28:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_28_23_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_28_23_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:28:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+19:28:25 INFO  : 'con' command is executed.
+19:28:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+19:28:25 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+21:53:05 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:53:26 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:53:41 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:53:58 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:54:19 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:54:36 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:54:53 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+21:55:18 INFO  : Disconnected from the channel tcfchan#39.
+21:55:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:55:19 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+21:55:19 INFO  : 'jtag frequency' command is executed.
+21:55:19 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+21:55:19 INFO  : Context for 'APU' is selected.
+21:55:19 INFO  : System reset is completed.
+21:55:22 INFO  : 'after 3000' command is executed.
+21:55:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+21:55:27 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit"
+21:55:27 INFO  : Context for 'APU' is selected.
+21:55:27 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa'.
+21:55:27 INFO  : 'configparams force-mem-access 1' command is executed.
+21:55:27 INFO  : Context for 'APU' is selected.
+21:55:27 INFO  : Boot mode is read from the target.
+21:55:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:55:27 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:55:27 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:55:28 INFO  : 'set bp_55_27_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:55:29 INFO  : 'con -block -timeout 60' command is executed.
+21:55:29 INFO  : 'bpremove $bp_55_27_fsbl_bp' command is executed.
+21:55:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:55:29 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:55:29 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:55:29 INFO  : 'configparams force-mem-access 0' command is executed.
+21:55:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_55_27_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_55_27_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:55:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:55:30 INFO  : 'con' command is executed.
+21:55:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+21:55:30 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+22:00:01 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+22:00:30 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+22:00:56 INFO  : Disconnected from the channel tcfchan#41.
+22:00:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:56 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+22:00:56 INFO  : 'jtag frequency' command is executed.
+22:00:56 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+22:00:56 INFO  : Context for 'APU' is selected.
+22:00:57 INFO  : System reset is completed.
+22:01:00 INFO  : 'after 3000' command is executed.
+22:01:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+22:01:04 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit"
+22:01:04 INFO  : Context for 'APU' is selected.
+22:01:04 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa'.
+22:01:04 INFO  : 'configparams force-mem-access 1' command is executed.
+22:01:04 INFO  : Context for 'APU' is selected.
+22:01:04 INFO  : Boot mode is read from the target.
+22:01:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:01:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:01:05 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:01:05 INFO  : 'set bp_1_5_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+22:01:05 INFO  : 'con -block -timeout 60' command is executed.
+22:01:05 INFO  : 'bpremove $bp_1_5_fsbl_bp' command is executed.
+22:01:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:01:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:01:06 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:01:06 INFO  : 'configparams force-mem-access 0' command is executed.
+22:01:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_1_5_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_1_5_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:01:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:01:06 INFO  : 'con' command is executed.
+22:01:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+22:01:06 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+22:47:22 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+22:49:52 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+22:49:52 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+22:50:43 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+22:50:58 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:50:58 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_4_wrapper.bit' stored in project is removed.
+22:50:58 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+22:50:58 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+22:50:59 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+22:51:42 INFO  : Disconnected from the channel tcfchan#44.
+22:51:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:51:43 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+22:51:43 INFO  : 'jtag frequency' command is executed.
+22:51:43 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+22:51:43 INFO  : Context for 'APU' is selected.
+22:51:44 INFO  : System reset is completed.
+22:51:47 INFO  : 'after 3000' command is executed.
+22:51:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+22:51:51 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_1_wrapper.bit"
+22:51:51 INFO  : Context for 'APU' is selected.
+22:51:52 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_1_wrapper.xsa'.
+22:51:52 INFO  : 'configparams force-mem-access 1' command is executed.
+22:51:52 INFO  : Context for 'APU' is selected.
+22:51:52 INFO  : Boot mode is read from the target.
+22:51:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:51:52 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:51:52 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:51:52 INFO  : 'set bp_51_52_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+22:51:53 INFO  : 'con -block -timeout 60' command is executed.
+22:51:54 INFO  : 'bpremove $bp_51_52_fsbl_bp' command is executed.
+22:51:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:51:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+22:51:54 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+22:51:54 INFO  : 'configparams force-mem-access 0' command is executed.
+22:51:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_51_52_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_51_52_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:51:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+22:51:54 INFO  : 'con' command is executed.
+22:51:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+22:51:54 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+23:00:58 INFO  : Disconnected from the channel tcfchan#47.
+12:31:33 DEBUG : Logs will be stored at 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/IDE.log'.
+12:31:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\temp_xsdb_launch_script.tcl
+12:31:34 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:31:34 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:31:34 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+12:31:38 INFO  : Platform repository initialization has completed.
+12:31:39 INFO  : XSCT server has started successfully.
+12:31:39 INFO  : plnx-install-location is set to ''
+12:31:39 INFO  : Successfully done setting XSCT server connection channel  
+12:31:39 INFO  : Successfully done setting workspace for the tool. 
+12:31:40 INFO  : Registering command handlers for Vitis TCF services
+12:31:43 INFO  : Successfully done query RDI_DATADIR 
+12:32:26 INFO  : Hardware specification for platform project 'kv260_lab3_platform' is updated.
+12:33:06 INFO  : Result from executing command 'getProjects': kv260_lab3_platform
+12:33:06 INFO  : Result from executing command 'getPlatforms': kv260_lab3_platform|C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm;xilinx_zcu102_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_202410_1/xilinx_zcu102_base_202410_1.xpfm;xilinx_zcu102_base_dfx_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu102_base_dfx_202410_1/xilinx_zcu102_base_dfx_202410_1.xpfm;xilinx_zcu104_base_202410_1|C:/Xilinx/Vitis/2024.1/base_platforms/xilinx_zcu104_base_202410_1/xilinx_zcu104_base_202410_1.xpfm
+12:33:55 INFO  : Checking for BSP changes to sync application flags for project 'kv260_lab3'...
+12:34:07 INFO  : The hardware specification used by project 'kv260_lab3' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+12:34:07 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream\speaker_1_wrapper.bit' stored in project is removed.
+12:34:07 INFO  : The updated bitstream files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\bitstream' in project 'kv260_lab3'.
+12:34:07 INFO  : The file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit\psu_init.tcl' stored in project is removed.
+12:34:08 INFO  : The updated ps init files are copied from platform to folder 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3\_ide\psinit' in project 'kv260_lab3'.
+12:34:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:57 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:34:57 INFO  : 'jtag frequency' command is executed.
+12:34:57 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:34:57 INFO  : Context for 'APU' is selected.
+12:34:58 INFO  : System reset is completed.
+12:35:01 INFO  : 'after 3000' command is executed.
+12:35:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:35:05 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:35:05 INFO  : Context for 'APU' is selected.
+12:35:06 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:35:06 INFO  : 'configparams force-mem-access 1' command is executed.
+12:35:06 INFO  : Context for 'APU' is selected.
+12:35:06 INFO  : Boot mode is read from the target.
+12:35:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:35:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:35:06 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:35:07 INFO  : 'set bp_35_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:35:08 INFO  : 'con -block -timeout 60' command is executed.
+12:35:08 INFO  : 'bpremove $bp_35_6_fsbl_bp' command is executed.
+12:35:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:35:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:35:08 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:35:08 INFO  : 'configparams force-mem-access 0' command is executed.
+12:35:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_35_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_35_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:35:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:35:09 INFO  : 'con' command is executed.
+12:35:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:35:09 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:36:25 INFO  : Disconnected from the channel tcfchan#3.
+12:36:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:26 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:36:26 INFO  : 'jtag frequency' command is executed.
+12:36:26 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:36:26 INFO  : Context for 'APU' is selected.
+12:36:26 INFO  : System reset is completed.
+12:36:29 INFO  : 'after 3000' command is executed.
+12:36:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:36:34 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:36:34 INFO  : Context for 'APU' is selected.
+12:36:34 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:36:34 INFO  : 'configparams force-mem-access 1' command is executed.
+12:36:34 INFO  : Context for 'APU' is selected.
+12:36:34 INFO  : Boot mode is read from the target.
+12:36:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:36:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:36:34 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:36:34 INFO  : 'set bp_36_34_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:36:35 INFO  : 'con -block -timeout 60' command is executed.
+12:36:35 INFO  : 'bpremove $bp_36_34_fsbl_bp' command is executed.
+12:36:35 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:36:35 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:36:36 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:36:36 INFO  : 'configparams force-mem-access 0' command is executed.
+12:36:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_36_34_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_36_34_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:36:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:36:36 INFO  : 'con' command is executed.
+12:36:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:36:36 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:43:09 INFO  : Disconnected from the channel tcfchan#4.
+12:43:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:43:09 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:43:09 INFO  : 'jtag frequency' command is executed.
+12:43:09 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:43:09 INFO  : Context for 'APU' is selected.
+12:43:09 INFO  : System reset is completed.
+12:43:12 INFO  : 'after 3000' command is executed.
+12:43:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:43:17 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:43:17 INFO  : Context for 'APU' is selected.
+12:43:17 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:43:17 INFO  : 'configparams force-mem-access 1' command is executed.
+12:43:17 INFO  : Context for 'APU' is selected.
+12:43:17 INFO  : Boot mode is read from the target.
+12:43:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:43:17 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:43:18 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:43:18 INFO  : 'set bp_43_18_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:43:19 INFO  : 'con -block -timeout 60' command is executed.
+12:43:19 INFO  : 'bpremove $bp_43_18_fsbl_bp' command is executed.
+12:43:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:43:19 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:43:20 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:43:20 INFO  : 'configparams force-mem-access 0' command is executed.
+12:43:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_43_18_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_43_18_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:43:20 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:43:20 INFO  : 'con' command is executed.
+12:43:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:43:20 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:48:31 INFO  : Disconnected from the channel tcfchan#5.
+12:48:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:48:31 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:48:31 INFO  : 'jtag frequency' command is executed.
+12:48:31 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:48:31 INFO  : Context for 'APU' is selected.
+12:48:32 INFO  : System reset is completed.
+12:48:35 INFO  : 'after 3000' command is executed.
+12:48:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:48:40 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:48:40 INFO  : Context for 'APU' is selected.
+12:48:40 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:48:40 INFO  : 'configparams force-mem-access 1' command is executed.
+12:48:40 INFO  : Context for 'APU' is selected.
+12:48:40 INFO  : Boot mode is read from the target.
+12:48:40 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:48:40 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:48:40 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:48:41 INFO  : 'set bp_48_40_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:48:42 INFO  : 'con -block -timeout 60' command is executed.
+12:48:42 INFO  : 'bpremove $bp_48_40_fsbl_bp' command is executed.
+12:48:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:48:42 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:48:43 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:48:43 INFO  : 'configparams force-mem-access 0' command is executed.
+12:48:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_48_40_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_48_40_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:48:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:48:43 INFO  : 'con' command is executed.
+12:48:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:48:43 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:49:09 INFO  : Disconnected from the channel tcfchan#6.
+12:49:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:10 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:49:10 INFO  : 'jtag frequency' command is executed.
+12:49:10 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:49:10 INFO  : Context for 'APU' is selected.
+12:49:10 INFO  : System reset is completed.
+12:49:13 INFO  : 'after 3000' command is executed.
+12:49:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:49:18 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:49:18 INFO  : Context for 'APU' is selected.
+12:49:18 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:49:18 INFO  : 'configparams force-mem-access 1' command is executed.
+12:49:18 INFO  : Context for 'APU' is selected.
+12:49:18 INFO  : Boot mode is read from the target.
+12:49:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:49:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:49:18 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:49:19 INFO  : 'set bp_49_18_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:49:20 INFO  : 'con -block -timeout 60' command is executed.
+12:49:20 INFO  : 'bpremove $bp_49_18_fsbl_bp' command is executed.
+12:49:20 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:49:20 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:49:21 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:49:21 INFO  : 'configparams force-mem-access 0' command is executed.
+12:49:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_49_18_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_49_18_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:49:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:49:21 INFO  : 'con' command is executed.
+12:49:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:49:21 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:51:11 INFO  : Disconnected from the channel tcfchan#7.
+12:51:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:51:12 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:51:12 INFO  : 'jtag frequency' command is executed.
+12:51:12 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:51:12 INFO  : Context for 'APU' is selected.
+12:51:12 INFO  : System reset is completed.
+12:51:15 INFO  : 'after 3000' command is executed.
+12:51:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:51:20 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:51:20 INFO  : Context for 'APU' is selected.
+12:51:20 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:51:20 INFO  : 'configparams force-mem-access 1' command is executed.
+12:51:20 INFO  : Context for 'APU' is selected.
+12:51:20 INFO  : Boot mode is read from the target.
+12:51:20 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:51:20 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:51:21 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:51:21 INFO  : 'set bp_51_21_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:51:22 INFO  : 'con -block -timeout 60' command is executed.
+12:51:22 INFO  : 'bpremove $bp_51_21_fsbl_bp' command is executed.
+12:51:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:51:22 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:51:22 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:51:22 INFO  : 'configparams force-mem-access 0' command is executed.
+12:51:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_51_21_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_51_21_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:51:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:51:23 INFO  : 'con' command is executed.
+12:51:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:51:23 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:52:05 INFO  : Disconnected from the channel tcfchan#8.
+12:52:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:52:05 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:52:06 INFO  : 'jtag frequency' command is executed.
+12:52:06 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:52:06 INFO  : Context for 'APU' is selected.
+12:52:06 INFO  : System reset is completed.
+12:52:09 INFO  : 'after 3000' command is executed.
+12:52:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:52:13 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:52:13 INFO  : Context for 'APU' is selected.
+12:52:13 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:52:13 INFO  : 'configparams force-mem-access 1' command is executed.
+12:52:13 INFO  : Context for 'APU' is selected.
+12:52:13 INFO  : Boot mode is read from the target.
+12:52:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:52:13 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:52:14 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:52:14 INFO  : 'set bp_52_14_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:52:15 INFO  : 'con -block -timeout 60' command is executed.
+12:52:15 INFO  : 'bpremove $bp_52_14_fsbl_bp' command is executed.
+12:52:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:52:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:52:16 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:52:16 INFO  : 'configparams force-mem-access 0' command is executed.
+12:52:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_52_14_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_52_14_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:52:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:52:16 INFO  : 'con' command is executed.
+12:52:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:52:16 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:56:44 INFO  : Disconnected from the channel tcfchan#9.
+12:56:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:44 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:56:44 INFO  : 'jtag frequency' command is executed.
+12:56:44 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:56:44 INFO  : Context for 'APU' is selected.
+12:56:44 INFO  : System reset is completed.
+12:56:47 INFO  : 'after 3000' command is executed.
+12:56:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:56:52 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:56:52 INFO  : Context for 'APU' is selected.
+12:56:52 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:56:52 INFO  : 'configparams force-mem-access 1' command is executed.
+12:56:52 INFO  : Context for 'APU' is selected.
+12:56:52 INFO  : Boot mode is read from the target.
+12:56:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:56:52 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:56:53 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:56:53 INFO  : 'set bp_56_53_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:56:54 INFO  : 'con -block -timeout 60' command is executed.
+12:56:54 INFO  : 'bpremove $bp_56_53_fsbl_bp' command is executed.
+12:56:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:56:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:56:55 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:56:55 INFO  : 'configparams force-mem-access 0' command is executed.
+12:56:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_56_53_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_56_53_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:56:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:56:55 INFO  : 'con' command is executed.
+12:56:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:56:55 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:57:50 INFO  : Disconnected from the channel tcfchan#10.
+12:57:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:50 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:57:50 INFO  : 'jtag frequency' command is executed.
+12:57:50 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:57:50 INFO  : Context for 'APU' is selected.
+12:57:50 INFO  : System reset is completed.
+12:57:53 INFO  : 'after 3000' command is executed.
+12:57:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:57:58 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:57:58 INFO  : Context for 'APU' is selected.
+12:57:58 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:57:58 INFO  : 'configparams force-mem-access 1' command is executed.
+12:57:58 INFO  : Context for 'APU' is selected.
+12:57:58 INFO  : Boot mode is read from the target.
+12:57:58 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:57:58 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:57:58 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:57:58 INFO  : 'set bp_57_58_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:57:59 INFO  : 'con -block -timeout 60' command is executed.
+12:57:59 INFO  : 'bpremove $bp_57_58_fsbl_bp' command is executed.
+12:57:59 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:57:59 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:58:00 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:58:00 INFO  : 'configparams force-mem-access 0' command is executed.
+12:58:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_57_58_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_57_58_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:58:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:58:00 INFO  : 'con' command is executed.
+12:58:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:58:00 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+12:59:19 INFO  : Disconnected from the channel tcfchan#11.
+12:59:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:59:19 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1ERK0FIC1A' is selected.
+12:59:19 INFO  : 'jtag frequency' command is executed.
+12:59:19 INFO  : Sourcing of 'C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:59:19 INFO  : Context for 'APU' is selected.
+12:59:19 INFO  : System reset is completed.
+12:59:22 INFO  : 'after 3000' command is executed.
+12:59:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}' command is executed.
+12:59:27 INFO  : Device configured successfully with "C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit"
+12:59:27 INFO  : Context for 'APU' is selected.
+12:59:27 INFO  : Hardware design and registers information is loaded from 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa'.
+12:59:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:59:27 INFO  : Context for 'APU' is selected.
+12:59:27 INFO  : Boot mode is read from the target.
+12:59:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:59:27 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:59:28 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:59:28 INFO  : 'set bp_59_28_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:59:29 INFO  : 'con -block -timeout 60' command is executed.
+12:59:29 INFO  : 'bpremove $bp_59_28_fsbl_bp' command is executed.
+12:59:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:59:29 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:59:30 INFO  : The application 'C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:59:30 INFO  : 'configparams force-mem-access 0' command is executed.
+12:59:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2024.1/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1ERK0FIC1A" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1ERK0FIC1A-04724093-0"}
+fpga -file C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/hw/speaker_2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/boot/fsbl.elf
+set bp_59_28_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_59_28_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:59:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:59:30 INFO  : 'con' command is executed.
+12:59:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:59:30 INFO  : Launch script is exported to file 'C:\Sadat_files\Academics\Current_Term\COMP3601\Project\project_repo\COMP3601_Project_Audio_tuner\kv260_lab3_system\_ide\scripts\systemdebugger_kv260_lab3_system_standalone.tcl'
+13:01:14 INFO  : Disconnected from the channel tcfchan#12.
