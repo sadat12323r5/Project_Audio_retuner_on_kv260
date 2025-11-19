@@ -1,4 +1,3 @@
-activeuserprofiles=S-K;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=safay
-useridperkey=S-K.Local\=safay;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=benh
+useridperkey=fpga.Local\=benh;
