@@ -1,0 +1,16 @@
+2025-11-19T14:50:57.186774100255-14:50:57 **** Build of configuration Debug for project kv260_lab3_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 57245 C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm standalone_domain C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+000-'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+000-operable program or batch file.
+000-'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+000-operable program or batch file.
+000-'\gnuwin\bin\' is not recognized as an internal or external command,
+000-operable program or batch file.
+000-sdcard_gen --xpfm C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/4fir_wrapper.bit --elf C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
+000-creating BOOT.BIN using C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/4fir_wrapper.bit
+000-Running C:/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+14:51:12 Build Finished (took 15s.242ms)
+
