@@ -8,9 +8,11 @@ LN_FLAGS := -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxi
 
 c_SOURCES := $(wildcard *.c)
 S_SOURCES := $(wildcard *.S)
+s_SOURCES := $(wildcard *.s)
 INCLUDES := $(wildcard *.h)
 OBJS := $(patsubst %.c, %.o, $(c_SOURCES))
 OBJS += $(patsubst %.S, %.o, $(S_SOURCES))
+OBJS += $(patsubst %.s, %.o, $(s_SOURCES))
 LSCRIPT := -Tlscript.ld
 
 CURRENT_DIR = $(shell pwd)

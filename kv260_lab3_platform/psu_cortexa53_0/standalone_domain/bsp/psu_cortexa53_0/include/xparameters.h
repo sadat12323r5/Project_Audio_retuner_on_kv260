@@ -1678,4 +1678,5 @@
 #define FILE_SYSTEM_USE_STRFUNC 0
 #define FILE_SYSTEM_SET_FS_RPATH 0
 #define FILE_SYSTEM_WORD_ACCESS
+#define XPAR_XILPM_ENABLED
 #endif  /* end of protection macro */

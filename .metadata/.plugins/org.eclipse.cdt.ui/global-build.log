@@ -1,42 +1,12 @@
 Nothing to build in platform 'kv260_lab3_platform'
 
-12:33:54 **** Clean-only build of configuration Debug for project kv260_lab3 ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  kv260_lab3.elf.size  kv260_lab3.elf
-' '
-12:34:03 **** Incremental Build of configuration Debug for project kv260_lab3 ****
+12:02:45 **** Incremental Build of configuration Debug for project audio_tuner ****
 make all 
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: kv260_lab3.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/kv260_lab3_platform/standalone_domain/bsplib/lib -o "kv260_lab3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: kv260_lab3.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size kv260_lab3.elf  |tee "kv260_lab3.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 145368	   4848	  30740	 180956	  2c2dc	kv260_lab3.elf
-'Finished building: kv260_lab3.elf.size'
-' '
-12:34:08 **** Incremental Build of configuration Debug for project kv260_lab3_system ****
+make: Nothing to be done for 'all'.
+12:02:46 **** Incremental Build of configuration Debug for project audio_tuner_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 53346 C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm standalone_domain C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
-'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-'\gnuwin\bin\' is not recognized as an internal or external command,
-operable program or batch file.
-sdcard_gen --xpfm C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif --bitstream C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit --elf C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/Debug/kv260_lab3.elf,psu_cortexa53_0
-creating BOOT.BIN using C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3/_ide/bitstream/speaker_2_wrapper.bit
-Running C:/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+Executing command '::scw::generate_bif -xpfm /home/benh/Desktop/vitis_workspace/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm -domains standalone_domain -bifpath /home/benh/Desktop/vitis_workspace/audio_tuner_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/benh/Desktop/vitis_workspace/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm --sys_config kv260_lab3_platform --bif /home/benh/Desktop/vitis_workspace/audio_tuner_system/Debug/system.bif --bitstream /home/benh/Desktop/vitis_workspace/audio_tuner/_ide/bitstream/speaker_2_wrapper.bit --elf /home/benh/Desktop/vitis_workspace/audio_tuner/Debug/audio_tuner.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/benh/Desktop/vitis_workspace/audio_tuner/_ide/bitstream/speaker_2_wrapper.bit
+Running /tools/Xilinx/Vitis/2024.1/bin/bootgen -arch zynqmp -image /home/benh/Desktop/vitis_workspace/audio_tuner_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
