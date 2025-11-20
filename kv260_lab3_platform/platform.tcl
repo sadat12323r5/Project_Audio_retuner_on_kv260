@@ -110,3 +110,7 @@ bsp reload
 platform generate
 platform active {kv260_lab3_platform}
 platform generate -domains 
+platform active {kv260_lab3_platform}
+platform generate
+platform config -updatehw {C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/speaker_2_wrapper.xsa}
+platform generate -domains 

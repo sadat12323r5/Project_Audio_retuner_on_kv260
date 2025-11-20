@@ -1,3 +1,4 @@
+activeuserprofiles=S-K;Team;fpga
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=benh
 useridperkey=fpga.Local\=benh;

@@ -1,0 +1,659 @@
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.00:38:04::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2025-11-12.00:38:04::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.00:38:04::SCWBifWriter::proc type : 
+TRACE::2025-11-12.00:38:04::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.00:38:04::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:38:04::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:38:04::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:38:04::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.00:38:04::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.00:43:14::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2025-11-12.00:43:14::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.00:43:14::SCWBifWriter::proc type : 
+TRACE::2025-11-12.00:43:14::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.00:43:14::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:43:14::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.00:43:14::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:43:14::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:43:14::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.00:43:14::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.00:50:27::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.00:50:28::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2025-11-12.00:50:28::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.00:50:28::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.00:50:28::SCWBifWriter::proc type : 
+TRACE::2025-11-12.00:50:28::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.00:50:28::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.00:50:28::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.00:50:28::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.00:50:28::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:50:28::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.00:50:28::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:50:28::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.00:50:28::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.00:50:28::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.01:21:45::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2025-11-12.01:21:45::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.01:21:45::SCWBifWriter::proc type : 
+TRACE::2025-11-12.01:21:45::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.01:21:45::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:21:45::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.01:21:45::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:21:45::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:21:45::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.01:21:45::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.01:57:14::SCWBifWriter::hardware databse : design_1_wrapper
+TRACE::2025-11-12.01:57:14::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.01:57:14::SCWBifWriter::proc type : 
+TRACE::2025-11-12.01:57:14::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.01:57:14::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:57:14::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.01:57:14::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:57:14::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:57:14::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.01:57:14::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.01:59:02::SCWBifWriter::hardware databse : design_1_wrapper
+TRACE::2025-11-12.01:59:02::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.01:59:02::SCWBifWriter::proc type : 
+TRACE::2025-11-12.01:59:02::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.01:59:02::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:59:02::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.01:59:02::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:59:02::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.01:59:02::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.01:59:02::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.02:03:29::SCWBifWriter::hardware databse : design_1_wrapper_1
+TRACE::2025-11-12.02:03:29::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.02:03:29::SCWBifWriter::proc type : 
+TRACE::2025-11-12.02:03:29::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.02:03:29::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:03:29::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.02:03:29::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:03:29::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:03:29::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.02:03:29::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-12.02:04:49::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-12.02:04:50::SCWBifWriter::hardware databse : design_1_wrapper_1
+TRACE::2025-11-12.02:04:50::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-12.02:04:50::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-12.02:04:50::SCWBifWriter::proc type : 
+TRACE::2025-11-12.02:04:50::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-12.02:04:50::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-12.02:04:50::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-12.02:04:50::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-12.02:04:50::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:04:50::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-12.02:04:50::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:04:50::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-12.02:04:50::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-12.02:04:50::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.05:20:07::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.05:20:07::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.05:20:07::SCWBifWriter::proc type : 
+TRACE::2025-11-13.05:20:07::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.05:20:07::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:20:07::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.05:20:07::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:20:07::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:20:07::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.05:20:07::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.05:40:37::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.05:40:37::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.05:40:37::SCWBifWriter::proc type : 
+TRACE::2025-11-13.05:40:37::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.05:40:37::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:40:37::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.05:40:37::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:40:37::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:40:37::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.05:40:37::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.05:46:23::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.05:46:23::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.05:46:23::SCWBifWriter::proc type : 
+TRACE::2025-11-13.05:46:23::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.05:46:23::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:46:23::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.05:46:23::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:46:23::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:46:23::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.05:46:23::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.05:51:10::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.05:51:10::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.05:51:10::SCWBifWriter::proc type : 
+TRACE::2025-11-13.05:51:10::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.05:51:10::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:51:10::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.05:51:10::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:51:10::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:51:10::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.05:51:10::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.05:57:01::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.05:57:01::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.05:57:01::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.05:57:01::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.05:57:01::SCWBifWriter::proc type : 
+TRACE::2025-11-13.05:57:01::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.05:57:01::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.05:57:01::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.05:57:01::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.05:57:01::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:57:01::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.05:57:01::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:57:02::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.05:57:02::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.05:57:02::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:08:35::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.06:08:35::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:08:35::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:08:35::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:08:35::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:08:35::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:08:35::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:08:35::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:08:35::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:08:35::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:09:43::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.06:09:43::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:09:43::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:09:43::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:09:43::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:09:43::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:09:43::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:09:43::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:09:43::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:09:43::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:10:45::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.06:10:45::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:10:45::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:10:45::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:10:45::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:10:45::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:10:45::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:10:45::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:10:45::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:10:45::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:11:52::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-13.06:11:52::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:11:52::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:11:52::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:11:52::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:11:52::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:11:52::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:11:52::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:11:52::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:11:52::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:52:28::SCWBifWriter::hardware databse : design_1_wrapper_7
+TRACE::2025-11-13.06:52:28::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:52:28::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:52:28::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:52:28::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:52:28::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:52:28::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:52:28::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:52:28::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:52:28::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.06:53:50::SCWBifWriter::hardware databse : design_1_wrapper_7
+TRACE::2025-11-13.06:53:50::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.06:53:50::SCWBifWriter::proc type : 
+TRACE::2025-11-13.06:53:50::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.06:53:50::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:53:50::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.06:53:50::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:53:50::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.06:53:50::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.06:53:50::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-13.13:42:45::SCWBifWriter::hardware databse : design_1_wrapper
+TRACE::2025-11-13.13:42:45::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-13.13:42:45::SCWBifWriter::proc type : 
+TRACE::2025-11-13.13:42:45::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-13.13:42:45::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.13:42:45::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-13.13:42:45::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.13:42:45::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-13.13:42:45::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-13.13:42:45::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-14.09:05:07::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-14.09:05:07::SCWBifWriter::hardware databse : design_1_wrapper_0
+TRACE::2025-11-14.09:05:07::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-14.09:05:07::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-14.09:05:07::SCWBifWriter::proc type : 
+TRACE::2025-11-14.09:05:07::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-14.09:05:07::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-14.09:05:07::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-14.09:05:07::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-14.09:05:07::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-14.09:05:07::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-14.09:05:07::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-14.09:05:08::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-14.09:05:08::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-14.09:05:08::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-16.07:30:48::SCWBifWriter::hardware databse : design_1_wrapper_1
+TRACE::2025-11-16.07:30:48::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-16.07:30:48::SCWBifWriter::proc type : 
+TRACE::2025-11-16.07:30:48::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-16.07:30:48::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.07:30:48::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-16.07:30:48::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.07:30:48::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.07:30:48::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-16.07:30:48::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-16.15:31:31::SCWBifWriter::hardware databse : design_1_wrapper_5
+TRACE::2025-11-16.15:31:31::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-16.15:31:31::SCWBifWriter::proc type : 
+TRACE::2025-11-16.15:31:31::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-16.15:31:31::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.15:31:31::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-16.15:31:31::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.15:31:31::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.15:31:31::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-16.15:31:31::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-16.16:05:05::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-16.16:05:06::SCWBifWriter::hardware databse : design_1_wrapper_9
+TRACE::2025-11-16.16:05:06::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-16.16:05:06::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-16.16:05:06::SCWBifWriter::proc type : 
+TRACE::2025-11-16.16:05:06::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-16.16:05:06::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-16.16:05:06::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-16.16:05:06::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-16.16:05:06::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.16:05:06::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-16.16:05:06::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.16:05:06::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.16:05:06::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-16.16:05:06::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-16.18:05:34::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-16.18:05:34::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-16.18:05:34::SCWBifWriter::proc type : 
+TRACE::2025-11-16.18:05:34::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-16.18:05:34::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.18:05:34::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-16.18:05:34::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.18:05:34::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-16.18:05:34::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-16.18:05:34::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.14:24:04::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.14:24:04::SCWBifWriter::hardware databse : design_1_wrapper_0
+TRACE::2025-11-17.14:24:04::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.14:24:04::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.14:24:04::SCWBifWriter::proc type : 
+TRACE::2025-11-17.14:24:04::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.14:24:04::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.14:24:04::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.14:24:04::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.14:24:04::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.14:24:04::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.14:24:04::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.14:24:05::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.14:24:05::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.14:24:05::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.15:13:30::SCWBifWriter::hardware databse : design_1_wrapper_4
+TRACE::2025-11-17.15:13:30::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.15:13:30::SCWBifWriter::proc type : 
+TRACE::2025-11-17.15:13:30::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.15:13:30::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:13:30::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.15:13:30::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:13:30::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:13:30::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.15:13:30::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.15:35:58::SCWBifWriter::hardware databse : design_1_wrapper_8
+TRACE::2025-11-17.15:35:58::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.15:35:58::SCWBifWriter::proc type : 
+TRACE::2025-11-17.15:35:58::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.15:35:58::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:35:58::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.15:35:58::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:35:58::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:35:58::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.15:35:58::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.15:41:48::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.15:41:49::SCWBifWriter::hardware databse : design_1_wrapper_8
+TRACE::2025-11-17.15:41:49::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.15:41:49::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.15:41:49::SCWBifWriter::proc type : 
+TRACE::2025-11-17.15:41:49::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.15:41:49::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.15:41:49::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.15:41:49::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.15:41:49::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:41:49::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.15:41:49::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:41:49::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:41:49::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.15:41:49::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.15:53:29::SCWBifWriter::hardware databse : design_1_wrapper_8
+TRACE::2025-11-17.15:53:29::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.15:53:29::SCWBifWriter::proc type : 
+TRACE::2025-11-17.15:53:29::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.15:53:29::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:53:29::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.15:53:29::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:53:29::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.15:53:29::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.15:53:29::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.17:11:11::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.17:11:11::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.17:11:11::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.17:11:11::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.17:11:11::SCWBifWriter::proc type : 
+TRACE::2025-11-17.17:11:11::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.17:11:11::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.17:11:11::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.17:11:11::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.17:11:12::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.17:11:12::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.17:11:12::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.17:11:12::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.17:11:12::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.17:11:12::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.18:32:20::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.18:32:20::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.18:32:20::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.18:32:20::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.18:32:20::SCWBifWriter::proc type : 
+TRACE::2025-11-17.18:32:20::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.18:32:20::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.18:32:20::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.18:32:20::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.18:32:20::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:32:20::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.18:32:20::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:32:21::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:32:21::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.18:32:21::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.18:36:23::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.18:36:23::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.18:36:23::SCWBifWriter::proc type : 
+TRACE::2025-11-17.18:36:23::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.18:36:23::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:36:23::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.18:36:23::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:36:23::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:36:23::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.18:36:23::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.18:44:24::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.18:44:24::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.18:44:24::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.18:44:24::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.18:44:24::SCWBifWriter::proc type : 
+TRACE::2025-11-17.18:44:24::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.18:44:24::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.18:44:24::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.18:44:24::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.18:44:24::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:44:24::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.18:44:24::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:44:25::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:44:25::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.18:44:25::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.18:50:59::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.18:50:59::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.18:50:59::SCWBifWriter::proc type : 
+TRACE::2025-11-17.18:50:59::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.18:50:59::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:50:59::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.18:50:59::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:50:59::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:50:59::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.18:50:59::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.18:57:54::SCWBifWriter::hardware databse : design_1_wrapper_12
+TRACE::2025-11-17.18:57:54::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.18:57:54::SCWBifWriter::proc type : 
+TRACE::2025-11-17.18:57:54::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.18:57:54::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:57:54::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.18:57:54::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:57:54::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.18:57:54::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.18:57:54::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.19:27:55::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.19:27:55::SCWBifWriter::hardware databse : design_1_wrapper_16
+TRACE::2025-11-17.19:27:55::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.19:27:55::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.19:27:55::SCWBifWriter::proc type : 
+TRACE::2025-11-17.19:27:55::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.19:27:55::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.19:27:55::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.19:27:55::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.19:27:55::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.19:27:55::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.19:27:55::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.19:27:56::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.19:27:56::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.19:27:56::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.21:54:59::SCWBifWriter::hardware databse : design_1_wrapper_16
+TRACE::2025-11-17.21:54:59::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.21:54:59::SCWBifWriter::proc type : 
+TRACE::2025-11-17.21:54:59::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.21:54:59::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.21:54:59::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.21:54:59::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.21:54:59::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.21:54:59::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.21:54:59::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.22:00:05::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.22:00:06::SCWBifWriter::hardware databse : design_1_wrapper_16
+TRACE::2025-11-17.22:00:06::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.22:00:06::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.22:00:06::SCWBifWriter::proc type : 
+TRACE::2025-11-17.22:00:06::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.22:00:06::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.22:00:06::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.22:00:06::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.22:00:06::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:06::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.22:00:06::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:06::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:06::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.22:00:06::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.22:00:35::SCWBifWriter::hardware databse : design_1_wrapper_16
+TRACE::2025-11-17.22:00:35::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.22:00:35::SCWBifWriter::proc type : 
+TRACE::2025-11-17.22:00:35::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.22:00:35::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:35::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.22:00:35::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:35::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:00:35::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.22:00:35::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-17.22:51:01::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-17.22:51:02::SCWBifWriter::hardware databse : design_1_wrapper_21
+TRACE::2025-11-17.22:51:02::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-17.22:51:02::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-17.22:51:02::SCWBifWriter::proc type : 
+TRACE::2025-11-17.22:51:02::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-17.22:51:02::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-17.22:51:02::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-17.22:51:02::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-17.22:51:02::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:51:02::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-17.22:51:02::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:51:02::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-17.22:51:02::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-17.22:51:02::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-18.12:34:11::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-18.12:34:11::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-18.12:34:11::SCWBifWriter::proc type : 
+TRACE::2025-11-18.12:34:11::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-18.12:34:11::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-18.12:34:11::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-18.12:34:11::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-18.12:34:11::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-18.12:34:11::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-18.12:34:11::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-19.08:27:18::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-19.08:27:18::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-19.08:27:18::SCWBifWriter::proc type : 
+TRACE::2025-11-19.08:27:18::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-19.08:27:18::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.08:27:18::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-19.08:27:18::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.08:27:18::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.08:27:18::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-19.08:27:18::SCWBifWriter::Boot processor is :a53-0
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Found the complete platform C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/kv260_lab3_platform.xpfm
+TRACE::2025-11-19.14:51:00::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-19.14:51:00::SCWBifWriter::bitstream found in the design
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2025-11-19.14:51:00::SCWBifWriter::proc type : 
+TRACE::2025-11-19.14:51:00::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Device type is : zynqMP
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Writing BIF to file : C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_system/Debug/system.bif
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2025-11-19.14:51:00::SCWBifWriter::System Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.14:51:00::SCWBifWriter:: Removed readelf log file successfully
+TRACE::2025-11-19.14:51:00::SCWBifWriter:: Command Ran  C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.14:51:00::SCWBifWriter::FSBL processor, command ran C:/Xilinx/Vitis/2024.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  C:/Sadat_files/Academics/Current_Term/COMP3601/Project/project_repo/COMP3601_Project_Audio_tuner/kv260_lab3_platform/export/kv260_lab3_platform/sw/fsbl.elf
+TRACE::2025-11-19.14:51:00::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2025-11-19.14:51:00::SCWBifWriter::Boot processor is :a53-0
