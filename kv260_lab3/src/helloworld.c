@@ -187,11 +187,6 @@ int main(void)
     f_lseek(&fplay, 44);
     xil_printf("Playback starting...\n");
 
-    u32 first_sr_before = 0;
-    u32 first_sr_after  = 0;
-    int first_status    = 0;
-    int first_taken     = 0;   // boolean flag
-
     while (1)
     {
     	if (f_read(&fplay, pcm16, BURST_SAMPLES * sizeof(int16_t), &br) != FR_OK ||
@@ -214,33 +209,15 @@ int main(void)
     	                                        (UINTPTR)tx32,
     	                                        tx_words * sizeof(uint32_t),
     	                                        XAXIDMA_DMA_TO_DEVICE);
-
-    	    /* Only record the FIRST transfer's SR + status */
-    	    if (!first_taken) {
-    	        first_sr_before = XAxiDma_ReadReg(AxiDma.RegBase,
-    	                                          XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET);
-    	        first_status    = status;
-
-    	        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE))
-    	            ;
-
-    	        first_sr_after  = XAxiDma_ReadReg(AxiDma.RegBase,
-    	                                          XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET);
-    	        first_taken = 1;
-    	    } else {
-    	        while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE))
-    	            ;
-    	    }
-
+ 
+    	    while (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE));
+    	    
     	    if (status != XST_SUCCESS) {
     	        xil_printf("TX DMA transfer setup failed (%d)\r\n", status);
     	        break;
     	    }
     }
-    xil_printf("\r\n--- FIRST MM2S DEBUG ---\r\n");
-    xil_printf("MM2S SR first before: 0x%08lx\r\n", (unsigned long)first_sr_before);
-    xil_printf("MM2S SR first after : 0x%08lx (status=%d)\r\n",
-               (unsigned long)first_sr_after, first_status);
+
     f_close(&fplay);
     f_mount(NULL, DRIVE, 1);
 
